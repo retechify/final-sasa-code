@@ -23,8 +23,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Programs', path: '/programs' },
+    { name: 'Core Team', path: '/core-team' },
     { name: 'Campus Life', path: '/campus-life' },
-    { name: 'Admissions', path: '/admissions' },
+    { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -35,9 +36,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           scrolled ? 'shadow-md mt-2 w-[95%]' : 'shadow-[0_10px_30px_rgba(139,92,246,0.1)] mt-4 md:mt-6 w-[90%]'
         }`}
       >
-        <Link to="/" className="font-display-lg text-headline-md text-primary flex items-center gap-2">
-          <span className="material-symbols-outlined text-primary text-2xl md:text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>cloud</span>
-          <span className="tracking-tight text-lg md:text-xl font-bold">Sasha</span>
+        <Link to="/" className="flex items-center">
+          <img src="/logo/logo.png" alt="SASHA School" className="h-14 md:h-16 w-auto" />
         </Link>
         <div className="hidden md:flex gap-8 items-center">
           {navLinks.filter(link => link.name !== 'Contact').map(link => (
@@ -74,11 +74,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-40 bg-surface/95 backdrop-blur-lg flex flex-col items-center justify-center gap-8 md:hidden animate-fade-in">
           <div className="absolute top-6 left-6">
-            <div className="font-display-lg text-headline-md text-primary flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>cloud</span>
-              <span className="tracking-tight font-bold">Sasha School</span>
-            </div>
-          </div>
+            <Link to="/">
+<img src="/logo/logo.png" alt="SASHA School" className="h-14 w-auto" />
+          </Link>
+        </div>
           
           <div className="flex flex-col items-center gap-6">
             {navLinks.map(link => (
@@ -113,12 +112,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 text-left mb-12">
           {/* Brand Col */}
           <div className="md:col-span-4 space-y-4">
-            <div className="font-display-lg text-headline-md text-primary flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>cloud</span>
-              <span className="tracking-tight font-extrabold text-2xl">Sasha School</span>
-            </div>
+            <Link to="/" className="inline-block">
+              <img src="/logo/logo.png" alt="SASHA School" className="h-16 w-auto" />
+            </Link>
             <p className="font-body-md text-sm text-tertiary leading-relaxed">
-              A premium, boutique academy designed to bridge child-led Montessori philosophy with modern emotional intelligence, sensory development, and organic nature-based exploration.
+              There is more in LIFE than ACADEMICS, but we are good at that too
             </p>
             <div className="flex gap-3">
               <Link to="#" className="w-9 h-9 rounded-full border border-outline-variant/50 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
@@ -137,29 +135,42 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="md:col-span-3 space-y-4">
             <h4 className="text-xs font-bold text-primary tracking-widest uppercase font-mono">Quick Navigation</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><Link to="/" className="text-tertiary hover:text-primary transition-colors font-medium">Home Portal</Link></li>
-              <li><Link to="/about" className="text-tertiary hover:text-primary transition-colors font-medium">Our Story &amp; Founders</Link></li>
-              <li><Link to="/programs" className="text-tertiary hover:text-primary transition-colors font-medium">Academic Programs</Link></li>
-              <li><Link to="/campus-life" className="text-tertiary hover:text-primary transition-colors font-medium">Life &amp; Facilities on Campus</Link></li>
-              <li><Link to="/admissions" className="text-tertiary hover:text-primary transition-colors font-medium">Tuition &amp; Admissions Process</Link></li>
+              <li><Link to="/" className="text-tertiary hover:text-primary transition-colors font-medium">Home</Link></li>
+              <li><Link to="/about" className="text-tertiary hover:text-primary transition-colors font-medium">About Us</Link></li>
+              <li><Link to="/programs" className="text-tertiary hover:text-primary transition-colors font-medium">Our Curricula</Link></li>
+              <li><Link to="/core-team" className="text-tertiary hover:text-primary transition-colors font-medium">Core Team</Link></li>
+              <li><Link to="/campus-life" className="text-tertiary hover:text-primary transition-colors font-medium">Features &amp; Activities</Link></li>
+              <li><Link to="/gallery" className="text-tertiary hover:text-primary transition-colors font-medium">Gallery</Link></li>
+              <li><Link to="/admissions" className="text-tertiary hover:text-primary transition-colors font-medium">Admissions</Link></li>
+            </ul>
+          </div>
+
+          {/* Curricula */}
+          <div className="md:col-span-2 space-y-4">
+            <h4 className="text-xs font-bold text-primary tracking-widest uppercase font-mono">Curricula</h4>
+            <ul className="space-y-2.5 text-sm">
+              <li><Link to="/programs" className="text-tertiary hover:text-primary transition-colors font-medium">Montessori Education</Link></li>
+              <li><Link to="/programs" className="text-tertiary hover:text-primary transition-colors font-medium">IGCSE</Link></li>
+              <li><Link to="/programs" className="text-tertiary hover:text-primary transition-colors font-medium">Waldorf Education</Link></li>
+              <li><Link to="/programs" className="text-tertiary hover:text-primary transition-colors font-medium">Reggio Emilio</Link></li>
             </ul>
           </div>
 
           {/* Contact Col */}
-          <div className="md:col-span-5 space-y-4">
+          <div className="md:col-span-3 space-y-4">
             <h4 className="text-xs font-bold text-primary tracking-widest uppercase font-mono">Contact Information</h4>
             <div className="space-y-3 text-sm text-tertiary leading-relaxed">
               <div className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-primary text-lg mt-0.5" style={{ fontVariationSettings: "'FILL' 1" }}>location_on</span>
-                <span>123 Ethereal Lane, Wonderland District, CA 90210</span>
+                <span>Kulathupalayam Kovaipudur, Coimbatore</span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-primary text-lg mt-0.5" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-                <span>+1 (555) 123-4567 (Direct line to Registrar)</span>
+                <span>+91 97501 70007</span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-primary text-lg mt-0.5" style={{ fontVariationSettings: "'FILL' 1" }}>mail</span>
-                <span>hello@sashaschool.edu / admissions@sashaschool.edu</span>
+                <span>sashaschoolcbe@gmail.com</span>
               </div>
             </div>
           </div>
@@ -167,7 +178,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         <div className="max-w-7xl mx-auto pt-8 border-t border-outline-variant/30 text-center flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="font-body-md text-xs text-tertiary opacity-80">
-            © 2026 Sasha School. All rights reserved. Registered Montessori &amp; Early Learning Academy.
+            © Sasha School of Life. Designed and Developed by Yatratechs.
           </p>
           <div className="flex gap-6 text-xs text-tertiary font-mono">
             <Link to="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
