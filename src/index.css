@@ -229,9 +229,16 @@ body {
 }
 
 .hero-rainbow {
-    background: linear-gradient(45deg, #ffd8ed, #e9ddff, #d3e5f6, #fdd0ea);
+    background: linear-gradient(135deg, #ffd8ed, #e9ddff, #d3e5f6, #fdd0ea, #fde68a, #ffd8ed);
+    background-size: 300% 300%;
+    animation: rainbowShift 8s ease-in-out infinite;
     mask-image: radial-gradient(circle at 50% 100%, transparent 40%, black 41%);
     -webkit-mask-image: radial-gradient(circle at 50% 100%, transparent 40%, black 41%);
+}
+
+@keyframes rainbowShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
 }
 
 .lavender-text-gradient {

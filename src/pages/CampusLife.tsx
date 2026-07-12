@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function CampusLife() {
@@ -168,8 +168,8 @@ export default function CampusLife() {
       </section>
 
       {/* ─── PROGRAMS OVERVIEW— Overlapping Editorial Cards ─── */}
-      <section className="py-24 bg-[#FEFCE8]/25 border-y border-[#FEF08A]/20 relative overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary-fixed/10 rounded-full blur-3xl pointer-events-none"></div>
+      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#C4B5FD]/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter">
           <div className="text-center mb-16">
             <span className="bg-secondary-fixed/30 text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider">Programs Overview</span>

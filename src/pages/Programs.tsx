@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Programs() {
@@ -225,7 +225,7 @@ export default function Programs() {
       </section>
 
       {/* ─── PHILOSOPHY IN ACTION ─── */}
-      <section className="bg-[#FEFCE8]/30 border-y border-[#FEF08A]/20 py-24 relative z-10">
+      <section className="bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 py-24 relative z-10">
         <div className="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Column: Styled classroom image */}
           <div className="relative group flex justify-center">

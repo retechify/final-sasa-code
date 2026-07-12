@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Admissions() {
@@ -133,8 +133,8 @@ export default function Admissions() {
       </section>
 
       {/* ─── ADMISSIONS PROCESS— Timeline Steps ─── */}
-      <section className="py-24 bg-[#FEFCE8]/20 border-y border-[#FEF08A]/20 relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"></div>
+      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#C4B5FD]/5 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
           <div className="text-center mb-16">
             <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider">ADMISSIONS PROCESS</span>
@@ -247,19 +247,25 @@ export default function Admissions() {
 
       {/* ─── CLOSING CTA ─── */}
       <section className="py-24 relative overflow-hidden">
-        <div className="max-w-5xl mx-auto px-gutter text-center relative z-10">
-          <span className="material-symbols-outlined text-[#F59E0B] text-6xl mb-4 inline-block doodle-float-1">stars</span>
-          <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 font-bold leading-tight">
-            Happy <span className="text-[#F59E0B]">Schooling!</span>
-          </h2>
-          <p className="font-body-lg text-body-lg text-tertiary mb-10 leading-relaxed max-w-lg mx-auto">Let's partner in making your child's educational experience truly exceptional!</p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="primary-pill px-12 py-4 rounded-full text-white font-bold text-lg hover:scale-105 transition-transform shadow-xl">
-              Contact Us Today
-            </Link>
-            <Link to="/about" className="golden-pill px-12 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform">
-              Meet Our Founders
-            </Link>
+        <div className="max-w-7xl mx-auto px-gutter rounded-[2.5rem] bg-gradient-to-br from-[#8B5CF6] to-[#C4B5FD] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl">
+          <div className="absolute inset-0 opacity-10 pointer-events-none">
+            <div className="absolute top-8 left-8 w-20 h-20 bg-white rounded-full"></div>
+            <div className="absolute bottom-8 right-8 w-32 h-32 bg-white rounded-full"></div>
+          </div>
+          <div className="relative z-10">
+            <span className="material-symbols-outlined text-white/30 text-6xl mb-4 inline-block">stars</span>
+            <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">
+              Happy <span className="text-[#FEF08A]">Schooling!</span>
+            </h2>
+            <p className="font-body-lg text-body-lg opacity-90 max-w-xl mx-auto mb-10 leading-relaxed">Let's partner in making your child's educational experience truly exceptional!</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link to="/contact" className="bg-white text-primary px-12 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-xl">
+                Contact Us Today
+              </Link>
+              <Link to="/about" className="border-2 border-white/30 text-white px-12 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all backdrop-blur-sm">
+                Meet Our Founders
+              </Link>
+            </div>
           </div>
         </div>
       </section>

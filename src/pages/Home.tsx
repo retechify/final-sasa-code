@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -85,96 +85,73 @@ export default function Home() {
       <div className="watercolor-gradient absolute top-1/2 -right-20 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>
       <div className="absolute top-[20%] right-[10%] w-[400px] h-[400px] bg-[#FEF9C3]/15 rounded-full blur-3xl pointer-events-none"></div>
 
-      {/*  HERO SECTION— SPLIT LAYOUT  */}
-      <section className="relative max-w-7xl mx-auto px-gutter py-12 md:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left— Content */}
-          <div className="relative z-10 order-2 lg:order-1">
-            <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm mb-6 inline-block uppercase tracking-wider">ABOUT SASHA</span>
-            
-            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg max-w-2xl mb-6 leading-tight text-primary">
-              There is More in <span className="text-[#F59E0B]">LIFE</span> than Academics
-            </h1>
-            
-            <p className="font-body-lg text-body-lg text-tertiary max-w-lg mb-3 leading-relaxed">
-              Premium Primary School for Progressive Parents
-            </p>
+      {/*  HERO SECTION — IMAGE TOP, TEXT BOTTOM  */}
+      <section className="relative max-w-5xl mx-auto px-gutter py-12 md:py-20 flex flex-col items-center text-center">
+        {/* Image Top */}
+        <div className="relative mb-12 w-full max-w-4xl flex items-center justify-center h-96 md:h-[580px]">
+          {/* Rainbow Ring Background */}
+          <div className="hero-rainbow absolute top-[120%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95vw] sm:w-[600px] md:w-[850px] lg:w-[1000px] aspect-square opacity-50 rounded-full -z-10"></div>
 
-            <p className="font-headline-md text-headline-md text-secondary mb-8 flex items-center gap-2">
-              <span className="material-symbols-outlined text-[#F59E0B] text-lg">school</span>
-              Admission Open— Toddler Pre-KG to Grade V
-            </p>
-            
-            <div className="flex flex-wrap gap-4 mb-12">
-              <Link to="/contact" className="primary-pill px-10 py-4 rounded-full text-white font-bold text-lg transition-transform hover:scale-105 active:scale-95 shadow-lg text-center inline-block">
-                Book a Campus Visit
-              </Link>
+          {/* Image & Badges Wrapper */}
+          <div className="relative">
+            <div className="absolute -inset-8 rounded-full border-[3px] border-dashed border-[#F59E0B]/60 doodle-float-2"></div>
+            <div className="relative z-10 w-80 h-80 md:w-[500px] md:h-[500px] rounded-full overflow-hidden border-8 border-white shadow-2xl hero-float">
+              <img 
+                className="w-full h-full object-cover" 
+                src="/hero%20image/hero%20image.png" 
+                alt="SASHA School Happy Kids"
+              />
             </div>
-
-            {/* Quick Stats Row */}
-            <div className="flex gap-8 pt-8 border-t border-[#FEF08A]/40">
-              <div className="text-center">
-                <span className="font-display-lg text-3xl font-bold text-primary">18+</span>
-                <p className="text-xs text-tertiary font-medium mt-1">Years Exp.</p>
-              </div>
-              <div className="text-center">
-                <span className="font-display-lg text-3xl font-bold text-[#F59E0B]">4</span>
-                <p className="text-xs text-tertiary font-medium mt-1">Curricula</p>
-              </div>
-              <div className="text-center">
-                <span className="font-display-lg text-3xl font-bold text-secondary">1:10</span>
-                <p className="text-xs text-tertiary font-medium mt-1">Edu. Ratio</p>
-              </div>
-              <div className="text-center">
-                <span className="font-display-lg text-3xl font-bold text-primary">4C's</span>
-                <p className="text-xs text-tertiary font-medium mt-1">Life Skills</p>
-              </div>
+            <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 z-20 w-24 h-24 md:w-40 md:h-40 rounded-full bg-white border-4 md:border-8 border-white shadow-xl overflow-hidden flex items-center justify-center hover:scale-105 transition-transform duration-300 hero-float">
+              <img src="/dora logo/dora.jpeg" alt="Dora Montessori" className="w-full h-full object-contain p-1.5" />
             </div>
           </div>
+        </div>
 
-          {/* Right— Hero Image Composition */}
-          <div className="relative order-1 lg:order-2 flex justify-center">
-            <div className="relative">
-              {/* Dotted Circle Border */}
-              <div className="absolute -inset-6 rounded-full border-[3px] border-dashed border-[#F59E0B]/60 doodle-float-2"></div>
-              {/* Main Hero Circle */}
-              <div className="relative z-10 w-72 h-72 md:w-[480px] md:h-[480px] lg:w-[540px] lg:h-[540px] rounded-full overflow-hidden border-8 border-white shadow-2xl hero-float">
-                <img 
-                  className="w-full h-full object-cover" 
-                  src="/hero%20image/hero%20image.png" 
-                  alt="SASHA School Happy Kids"
-                />
-              </div>
+        {/* Text Content Bottom */}
+        <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg max-w-3xl mb-4 leading-tight text-primary">
+          There is More in <span className="text-[#F59E0B]">LIFE</span> than Academics
+        </h1>
 
-              {/* Overlapping Dora Logo */}
-              <div className="absolute bottom-2 -right-2 md:bottom-4 md:-right-4 lg:bottom-6 lg:-right-6 z-20 w-24 h-24 md:w-40 md:h-40 rounded-full bg-white border-4 md:border-8 border-white shadow-2xl overflow-hidden flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                <img 
-                  src="/dora logo/dora.jpeg" 
-                  alt="Dora Montessori School" 
-                  className="w-full h-full object-contain p-1.5"
-                />
-              </div>
+        <p className="font-body-lg text-body-lg text-tertiary max-w-lg mb-2 leading-relaxed">
+          Premium Primary School for Progressive Parents
+        </p>
 
-              {/* Floating Doodle Accent */}
-              <div className="absolute -top-4 -left-4 md:-top-8 md:-left-8 z-20 w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-[#E0F2FE] to-[#BAE6FD] rounded-full border-4 md:border-8 border-white flex items-center justify-center shadow-xl doodle-float-1 rotate-[-15deg] group hover:scale-110 transition-transform duration-500">
-                <span className="material-symbols-outlined text-[#0284C7] text-5xl md:text-6xl" style={{ fontVariationSettings: "'FILL' 1" }}>toys</span>
-              </div>
+        <p className="font-headline-md text-headline-md text-secondary mb-6 flex items-center gap-2">
+          <span className="material-symbols-outlined text-[#F59E0B] text-lg">school</span>
+          Admission Open— Toddler Pre-KG to Grade V
+        </p>
 
-              {/* Golden Accent Badge */}
-              <div className="absolute top-1/3 -right-6 md:-right-10 z-20 w-14 h-14 md:w-20 md:h-20 bg-[#FEF9C3]/80 backdrop-blur-sm rounded-2xl border-4 border-[#FEF08A]/40 flex items-center justify-center shadow-lg doodle-float-2">
-                <span className="material-symbols-outlined text-[#F59E0B] text-2xl md:text-3xl">auto_awesome</span>
-              </div>
+        <div className="flex flex-wrap gap-4 mb-10">
+          <Link to="/contact" className="primary-pill px-10 py-4 rounded-full text-white font-bold text-lg transition-transform hover:scale-105 active:scale-95 shadow-lg text-center inline-block">
+            Book a Campus Visit
+          </Link>
+        </div>
 
-              {/* Background Glow */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] h-[130%] bg-gradient-to-br from-primary-fixed/20 via-[#FEF9C3]/10 to-secondary-fixed/20 rounded-full blur-3xl -z-10 pointer-events-none"></div>
-            </div>
+        {/* Quick Stats Row */}
+        <div className="flex gap-8 pt-6 border-t border-[#C4B5FD]/30">
+          <div className="text-center">
+            <span className="font-display-lg text-3xl font-bold text-primary">18+</span>
+            <p className="text-xs text-tertiary font-medium mt-1">Years Exp.</p>
+          </div>
+          <div className="text-center">
+            <span className="font-display-lg text-3xl font-bold text-[#F59E0B]">4</span>
+            <p className="text-xs text-tertiary font-medium mt-1">Curricula</p>
+          </div>
+          <div className="text-center">
+            <span className="font-display-lg text-3xl font-bold text-secondary">1:10</span>
+            <p className="text-xs text-tertiary font-medium mt-1">Edu. Ratio</p>
+          </div>
+          <div className="text-center">
+            <span className="font-display-lg text-3xl font-bold text-primary">4C's</span>
+            <p className="text-xs text-tertiary font-medium mt-1">Life Skills</p>
           </div>
         </div>
       </section>
 
       {/*  ABOUT SASHA— EDITORIAL SPLIT  */}
-      <section className="py-24 bg-[#FEFCE8]/25 border-y border-[#FEF08A]/20 relative overflow-hidden">
-        <div className="absolute -bottom-20 left-10 w-64 h-64 bg-[#FEF08A]/15 rounded-full blur-3xl pointer-events-none"></div>
+      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden">
+        <div className="absolute -bottom-20 left-10 w-64 h-64 bg-[#C4B5FD]/15 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left: Image */}
@@ -307,7 +284,7 @@ export default function Home() {
         </div>
       </section>
       {/*  GALLERY PREVIEW  */}
-      <section className="py-24 bg-[#FEFCE8]/15 border-y border-[#FEF08A]/20 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/40 to-[#E0F2FE]/40 border-y border-[#C4B5FD]/20 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
@@ -445,7 +422,7 @@ export default function Home() {
       </section>
 
       {/*  FAQ— EDITORIAL ACCORDION  */}
-      <section className="py-24 bg-[#FEFCE8]/20 border-y border-[#FEF08A]/20 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-4xl mx-auto px-gutter relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
