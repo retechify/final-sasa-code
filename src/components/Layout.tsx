@@ -226,7 +226,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Brand Col */}
           <div className="md:col-span-4 space-y-4">
             <Link to="/" className="inline-block">
-              <img src="/logo/logo.png" alt="SASHA School" className="h-16 w-auto" />
+              <img src="/logo/logo.png" alt="SASHA School" className="h-24 w-auto" />
             </Link>
             <p className="font-body-md text-sm text-tertiary leading-relaxed">
               There is more in LIFE than ACADEMICS, but we are good at that too
