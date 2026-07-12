@@ -56,7 +56,7 @@ export default function Programs() {
       iconBg: 'bg-tertiary-fixed/40',
       iconColor: 'text-tertiary',
       tag: 'Holistic & Creative',
-      description: "The Waldorf education system, also known as the Steiner education method, emphasizes a holistic approach to education, focusing on nurturing a child's intellectual, artistic, and practical skills in a balanced way. It aims to develop the whole child 2013 cognitive, emotional, physical, and social aspects.",
+      description: "The Waldorf education system, also known as the Steiner education method, emphasizes a holistic approach to education, focusing on nurturing a child's intellectual, artistic, and practical skills in a balanced way. It aims to develop the whole child — cognitive, emotional, physical, and social aspects.",
       areas: [
         'Head— Thinking (Intellectual Skills)',
         'Heart— Feeling (Artistic & Social Skills)',
@@ -143,7 +143,7 @@ export default function Programs() {
       </section>
 
       {/* ─── PROGRAM DETAILS— Alternating Editorial Cards ─── */}
-      <section className="relative z-10">
+      <section className="relative z-10 reveal">
         <div className="space-y-8">
           {curricula.map((program, idx) => {
             const isEven = idx % 2 === 0;
@@ -225,7 +225,7 @@ export default function Programs() {
       </section>
 
       {/* ─── PHILOSOPHY IN ACTION ─── */}
-      <section className="bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 py-24 relative z-10">
+      <section className="bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 py-24 relative z-10 reveal">
         <div className="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Column: Styled classroom image */}
           <div className="relative group flex justify-center">
@@ -235,6 +235,7 @@ export default function Programs() {
                 className="w-full h-full object-cover hover:scale-102 transition-transform duration-700" 
                 src="/images/IMG-20260620-WA0035.jpg.jpeg" 
                 alt="Montessori classroom wonder" 
+                loading="lazy"
               />
             </div>
           </div>
@@ -276,7 +277,7 @@ export default function Programs() {
       </section>
 
       {/* ─── CLOSING CTA ─── */}
-      <section className="py-24 px-gutter relative overflow-hidden">
+      <section className="py-24 px-gutter relative overflow-hidden reveal">
         <div className="max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-br from-[#8B5CF6] to-[#C4B5FD] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <div className="absolute top-8 left-8 w-20 h-20 bg-white rounded-full"></div>

@@ -67,7 +67,7 @@ export default function Contact() {
       </section>
 
       {/* ─── CONTACT INFO CARDS + FORM ─── */}
-      <section className="max-w-7xl mx-auto px-gutter pb-24 relative z-10">
+      <section className="max-w-7xl mx-auto px-gutter pb-24 relative z-10 reveal">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           {/* Left Column: Info Cards */}
           <div className="lg:col-span-5 space-y-5">
@@ -342,7 +342,7 @@ export default function Contact() {
       </section>
 
       {/* ─── FULL-WIDTH MAP ─── */}
-      <section className="w-full relative">
+      <section className="w-full relative reveal">
         <div className="text-center mb-8 px-gutter">
           <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm mb-3 inline-block uppercase tracking-wider">FIND US HERE</span>
           <h2 className="font-display-lg text-2xl md:text-3xl text-primary font-bold">Our Location</h2>

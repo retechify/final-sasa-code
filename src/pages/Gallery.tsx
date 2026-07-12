@@ -95,7 +95,7 @@ export default function Gallery() {
       <div className="absolute top-1/3 right-0 w-[400px] h-[400px] bg-[#FEF9C3]/20 rounded-full blur-3xl pointer-events-none"></div>
 
       {/* ─── HERO SECTION ─── */}
-      <section className="relative max-w-7xl mx-auto px-gutter py-12 md:py-20">
+      <section className="relative max-w-7xl mx-auto px-gutter py-12 md:py-20 reveal">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-8">
           {/* Left: Content */}
           <div className="relative z-10">
@@ -141,7 +141,7 @@ export default function Gallery() {
       </section>
 
       {/* ─── FILTER TABS ─── */}
-      <section className="max-w-7xl mx-auto px-gutter mb-12">
+      <section className="max-w-7xl mx-auto px-gutter mb-12 reveal">
         <div className="flex flex-wrap justify-center gap-2 p-2 bg-white/40 backdrop-blur-sm rounded-full border border-white/50 shadow-sm max-w-fit mx-auto">
           {categories.map((cat) => (
             <button
@@ -163,7 +163,7 @@ export default function Gallery() {
       </section>
 
       {/* ─── MASONRY GALLERY ─── */}
-      <section className="pb-24 px-gutter max-w-7xl mx-auto z-10 relative">
+      <section className="pb-24 px-gutter max-w-7xl mx-auto z-10 relative reveal">
         <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[200px] md:auto-rows-[220px] gap-4">
           {filteredImages.map((img, idx) => (
             <div 
@@ -195,7 +195,7 @@ export default function Gallery() {
       </section>
 
       {/* ─── CTA ─── */}
-      <section className="py-24 px-gutter relative overflow-hidden">
+      <section className="py-24 px-gutter relative overflow-hidden reveal">
         <div className="max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-br from-[#8B5CF6] to-[#C4B5FD] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <div className="absolute top-8 left-8 w-20 h-20 bg-white rounded-full"></div>

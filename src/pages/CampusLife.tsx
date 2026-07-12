@@ -23,7 +23,7 @@ export default function CampusLife() {
   const detailedActivities = [
     {
       program: 'Value Inculcation Program',
-      activities: '2022 Learning invaluable Indian Values\n2022 Social Manners & Etiquette\n2022 Involved by Parents',
+      activities: 'Learning invaluable Indian Values\nSocial Manners & Etiquette\nInvolved by Parents',
       lifeSkills: 'Character formation',
       icon: 'diversity_1',
       accent: 'from-[#E9DDFF] to-[#F5F3FF]',
@@ -32,7 +32,7 @@ export default function CampusLife() {
     },
     {
       program: 'Lifeskill and Leadership',
-      activities: '2022 Exclusive Class for Personal Grooming\n2022 Public Presentation Skills\n2022 Confidence coaching',
+      activities: 'Exclusive Class for Personal Grooming\nPublic Presentation Skills\nConfidence coaching',
       lifeSkills: 'To groom every Learner',
       icon: 'stars',
       accent: 'from-[#FEF9C3] to-[#FEFCE8]',
@@ -41,7 +41,7 @@ export default function CampusLife() {
     },
     {
       program: 'Brain Gym',
-      activities: '2022 Every session commences with Whole brain exercises and activities\n2022 Integration movements',
+      activities: 'Every session commences with Whole brain exercises and activities\nIntegration movements',
       lifeSkills: 'Whole Brain development',
       icon: 'psychology',
       accent: 'from-[#D3E5F6] to-[#F0F7FF]',
@@ -50,7 +50,7 @@ export default function CampusLife() {
     },
     {
       program: 'Neuro Linguistic Programming',
-      activities: '2022 Ambidextrous activity (using two hands simultaneously)\n2022 Sensory refinement exercises',
+      activities: 'Ambidextrous activity (using two hands simultaneously)\nSensory refinement exercises',
       lifeSkills: 'To quit gadgets and engage in productive activities',
       icon: 'mindfulness',
       accent: 'from-[#FFD8ED] to-[#FFF5FA]',
@@ -59,7 +59,7 @@ export default function CampusLife() {
     },
     {
       program: 'British Council',
-      activities: "2022 World's No.1 UK based international organization for English communication\n2022 Interactive speaking tools",
+      activities: "World's No.1 UK based international organization for English communication\nInteractive speaking tools",
       lifeSkills: 'Language, Communication and Public Speaking Skill',
       icon: 'language',
       accent: 'from-[#E9DDFF] to-[#F5F3FF]',
@@ -68,7 +68,7 @@ export default function CampusLife() {
     },
     {
       program: 'EduSports',
-      activities: "2022 India's No.1 Sports education organization\n2022 Structured age-appropriate physical activities",
+      activities: "India's No.1 Sports education organization\nStructured age-appropriate physical activities",
       lifeSkills: 'Physical, Social and Mental Fitness',
       icon: 'sports_tennis',
       accent: 'from-[#D1FAE5] to-[#ECFDF5]',
@@ -77,7 +77,7 @@ export default function CampusLife() {
     },
     {
       program: 'Kinder Dance International',
-      activities: '2022 USA based Edu Organisation for Education through dance and movement\n2022 Kinesthetic development',
+      activities: 'USA based Edu Organisation for Education through dance and movement\nKinesthetic development',
       lifeSkills: 'No stage fear & gross motor skills development',
       icon: 'music_note',
       accent: 'from-[#FEF9C3] to-[#FEFCE8]',
@@ -109,7 +109,7 @@ export default function CampusLife() {
               Life at <span className="text-[#F59E0B]">SASHA</span> School
             </h1>
             <p className="font-body-lg text-body-lg text-tertiary max-w-lg mb-8 leading-relaxed">
-              Leaders groomed for Life 2013 our promise to Parents! We offer a comprehensive educational experience with world-class facilities and a gamut of curated activities.
+              Leaders groomed for Life — our promise to Parents! We offer a comprehensive educational experience with world-class facilities and a gamut of curated activities.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="primary-pill px-8 py-4 rounded-full text-white font-bold transition-transform hover:scale-105 shadow-lg text-center">
@@ -168,7 +168,7 @@ export default function CampusLife() {
       </section>
 
       {/* ─── PROGRAMS OVERVIEW— Overlapping Editorial Cards ─── */}
-      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden reveal">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#C4B5FD]/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter">
           <div className="text-center mb-16">
@@ -182,11 +182,12 @@ export default function CampusLife() {
               <div className="relative rounded-[2rem] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                 {/* Image */}
                 <div className="relative h-64 md:h-80 overflow-hidden">
-                  <img
-                    src="/campus life/1.jpeg"
-                    alt="Holistic Development Programme"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+<img
+                  src="/campus life/1.jpeg"
+                  alt="Holistic Development Programme"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-6 left-6 right-6 z-10">
                     <span className="bg-[#E0F2FE]/90 backdrop-blur-sm text-[#0369A1] px-4 py-1.5 rounded-full font-label-sm text-xs font-bold uppercase tracking-wider shadow-sm">
@@ -218,6 +219,7 @@ export default function CampusLife() {
                     src="/campus life/2.jpeg"
                     alt="Mind & Body Wellness"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-6 left-6 right-6 z-10">
@@ -230,7 +232,7 @@ export default function CampusLife() {
                 {/* Content */}
                 <div className="bg-white/90 backdrop-blur-md p-8 border-t border-[#FEF08A]/30">
                   <p className="font-body-md text-sm text-tertiary leading-relaxed mb-6">
-                    Yoga, Karate, Silambam, Skating, Dance and Brain Gym 2013 a comprehensive wellness programme for physical and mental development.
+                    Yoga, Karate, Silambam, Skating, Dance and Brain Gym — a comprehensive wellness programme for physical and mental development.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {activities[1].items.map((item, i) => (
@@ -245,7 +247,7 @@ export default function CampusLife() {
       </section>
 
       {/* ─── FACILITIES— Bento Grid Layout ─── */}
-      <section className="py-24 max-w-7xl mx-auto px-gutter relative">
+      <section className="py-24 max-w-7xl mx-auto px-gutter relative reveal">
         <div className="text-center mb-16">
           <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider">OUR FACILITIES</span>
           <h2 className="font-display-lg text-headline-lg text-primary mt-4">World-Class Infrastructure</h2>
@@ -314,7 +316,7 @@ export default function CampusLife() {
       </section>
 
       {/* ─── CURATED PROGRAMS— Alternating Timeline ─── */}
-      <section className="py-24 bg-surface-container-low/30 border-y border-white/40 relative overflow-hidden">
+      <section className="py-24 bg-surface-container-low/30 border-y border-white/40 relative overflow-hidden reveal">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#FEF9C3]/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
@@ -362,7 +364,7 @@ export default function CampusLife() {
                             {act.activities.split('\n').map((line, lIdx) => (
                               <div key={lIdx} className="flex items-start gap-3">
                                 <span className="material-symbols-outlined text-[#F59E0B] text-base mt-0.5 shrink-0">check_circle</span>
-                                <p className="text-sm text-tertiary leading-relaxed">{line.replace('2022 ', '')}</p>
+                                <p className="text-sm text-tertiary leading-relaxed">{line}</p>
                               </div>
                             ))}
                           </div>
@@ -386,7 +388,7 @@ export default function CampusLife() {
       </section>
 
       {/* ─── CLOSING— Quote + CTA ─── */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-24 relative overflow-hidden reveal">
         <div className="max-w-5xl mx-auto px-gutter relative z-10">
           {/* Quote Card */}
           <div className="golden-glass-card rounded-[2.5rem] p-10 md:p-16 text-center relative overflow-hidden shadow-xl mb-16">
@@ -400,7 +402,7 @@ export default function CampusLife() {
       </section>
 
       {/* ─── CLOSING CTA BANNER ─── */}
-      <section className="py-24 px-gutter relative overflow-hidden">
+      <section className="py-24 px-gutter relative overflow-hidden reveal">
         <div className="max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-br from-[#8B5CF6] to-[#C4B5FD] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <div className="absolute top-8 left-8 w-20 h-20 bg-white rounded-full"></div>

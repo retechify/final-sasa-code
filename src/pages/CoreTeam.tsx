@@ -99,7 +99,7 @@ export default function CoreTeam() {
       </section>
 
       {/* ─── TEAM MEMBERS— Alternating Editorial ─── */}
-      <section className="relative z-10">
+      <section className="relative z-10 reveal">
         {team.map((member, idx) => {
           const isEven = idx % 2 === 0;
           return (
@@ -176,7 +176,7 @@ export default function CoreTeam() {
       </section>
 
       {/* ─── CLOSING CTA ─── */}
-      <section className="py-24 px-gutter relative overflow-hidden">
+      <section className="py-24 px-gutter relative overflow-hidden reveal">
         <div className="max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-br from-[#8B5CF6] to-[#C4B5FD] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <div className="absolute top-8 left-8 w-20 h-20 bg-white rounded-full"></div>

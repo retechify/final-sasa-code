@@ -277,6 +277,24 @@ body {
 .doodle-float-glow {
     animation: floatSlow 12s ease-in-out infinite, glowPulse 3s ease-in-out infinite;
 }
+.doodle-float-glow-pink {
+    animation: floatMedium 14s ease-in-out infinite, glowPink 3s ease-in-out infinite;
+}
+.doodle-float-glow-blue {
+    animation: floatFast 10s ease-in-out infinite, glowBlue 3s ease-in-out infinite;
+}
+.doodle-float-glow-green {
+    animation: floatSlow 13s ease-in-out infinite, glowGreen 3s ease-in-out infinite;
+}
+.doodle-float-glow-orange {
+    animation: floatMedium 15s ease-in-out infinite, glowOrange 3s ease-in-out infinite;
+}
+.doodle-float-glow-purple {
+    animation: floatFast 11s ease-in-out infinite, glowPurple 3s ease-in-out infinite;
+}
+.doodle-float-glow-teal {
+    animation: floatSlow 14s ease-in-out infinite, glowTeal 3s ease-in-out infinite;
+}
 
 @keyframes floatSlow {
     0%, 100% { transform: translateY(0px) rotate(0deg); }
@@ -293,6 +311,30 @@ body {
 @keyframes glowPulse {
     0%, 100% { filter: drop-shadow(0 0 8px rgba(253, 224, 71, 0.3)) drop-shadow(0 0 20px rgba(253, 224, 71, 0.1)); }
     50% { filter: drop-shadow(0 0 16px rgba(253, 224, 71, 0.6)) drop-shadow(0 0 40px rgba(253, 224, 71, 0.2)); }
+}
+@keyframes glowPink {
+    0%, 100% { filter: drop-shadow(0 0 8px rgba(244, 114, 182, 0.3)) drop-shadow(0 0 20px rgba(244, 114, 182, 0.1)); }
+    50% { filter: drop-shadow(0 0 20px rgba(244, 114, 182, 0.6)) drop-shadow(0 0 40px rgba(244, 114, 182, 0.25)); }
+}
+@keyframes glowBlue {
+    0%, 100% { filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.3)) drop-shadow(0 0 20px rgba(56, 189, 248, 0.1)); }
+    50% { filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.6)) drop-shadow(0 0 40px rgba(56, 189, 248, 0.25)); }
+}
+@keyframes glowGreen {
+    0%, 100% { filter: drop-shadow(0 0 8px rgba(52, 211, 153, 0.3)) drop-shadow(0 0 20px rgba(52, 211, 153, 0.1)); }
+    50% { filter: drop-shadow(0 0 20px rgba(52, 211, 153, 0.6)) drop-shadow(0 0 40px rgba(52, 211, 153, 0.25)); }
+}
+@keyframes glowOrange {
+    0%, 100% { filter: drop-shadow(0 0 8px rgba(251, 146, 60, 0.3)) drop-shadow(0 0 20px rgba(251, 146, 60, 0.1)); }
+    50% { filter: drop-shadow(0 0 20px rgba(251, 146, 60, 0.6)) drop-shadow(0 0 40px rgba(251, 146, 60, 0.25)); }
+}
+@keyframes glowPurple {
+    0%, 100% { filter: drop-shadow(0 0 8px rgba(167, 139, 250, 0.3)) drop-shadow(0 0 20px rgba(167, 139, 250, 0.1)); }
+    50% { filter: drop-shadow(0 0 20px rgba(167, 139, 250, 0.6)) drop-shadow(0 0 40px rgba(167, 139, 250, 0.25)); }
+}
+@keyframes glowTeal {
+    0%, 100% { filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.3)) drop-shadow(0 0 20px rgba(45, 212, 191, 0.1)); }
+    50% { filter: drop-shadow(0 0 20px rgba(45, 212, 191, 0.6)) drop-shadow(0 0 40px rgba(45, 212, 191, 0.25)); }
 }
 
 /* Activity Icon Animations */
@@ -340,5 +382,59 @@ body {
 @keyframes iconFloat {
     0%, 100% { transform: translateY(0) rotate(0deg); }
     50% { transform: translateY(-6px) rotate(3deg); }
+}
+
+/* ─── SCROLL REVEAL ANIMATIONS ─── */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+.reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-scale.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ─── PAGE TRANSITION ─── */
+.page-enter {
+    animation: pageIn 0.5s ease-out forwards;
+}
+
+@keyframes pageIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 

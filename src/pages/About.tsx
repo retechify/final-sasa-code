@@ -40,7 +40,7 @@ export default function About() {
           <div className="relative flex justify-center">
             <div className="relative">
               <div className="organic-cloud-shape overflow-hidden w-72 h-72 md:w-[440px] md:h-[440px] relative shadow-2xl z-10 border-8 border-white/60 hero-float">
-                <img src="/about%20hero/campus.png" alt="SASHA School Campus" className="w-full h-full object-cover" />
+                <img src="/about%20hero/campus.png" alt="SASHA School Campus" className="w-full h-full object-cover" loading="lazy" />
               </div>
               <div className="absolute -top-4 -right-4 w-20 h-20 md:w-28 md:h-28 bg-[#FEF9C3]/60 rounded-full border-4 border-[#FEF08A]/40 flex items-center justify-center z-20 doodle-float-1">
                 <span className="material-symbols-outlined text-[#F59E0B] text-2xl md:text-3xl">auto_awesome</span>
@@ -52,7 +52,7 @@ export default function About() {
       </section>
 
       {/* ─── FOUNDERS SECTION ─── */}
-      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden reveal">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#C4B5FD]/5 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
           <div className="text-center mb-20">
@@ -67,7 +67,7 @@ export default function About() {
               <div className="lg:col-span-4 flex justify-center">
                 <div className="relative">
                   <div className="w-56 h-56 md:w-72 md:h-72 rounded-[2.5rem] overflow-hidden border-8 border-white shadow-2xl hero-float relative z-10">
-                    <img src="/gallery/erer.png" alt="Dr. Sashi Kumaar Samraj" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
+                    <img src="/gallery/erer.png" alt="Dr. Sashi Kumaar Samraj" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" loading="lazy" />
                   </div>
                   <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-[#FEF9C3] to-[#FEFCE8] rounded-2xl border border-white/50 flex items-center justify-center z-20 shadow-lg">
                     <span className="material-symbols-outlined text-[#F59E0B] text-xl">school</span>
@@ -118,7 +118,7 @@ export default function About() {
               <div className="lg:col-span-4 lg:order-2 flex justify-center">
                 <div className="relative">
                   <div className="w-56 h-56 md:w-72 md:h-72 rounded-[2.5rem] overflow-hidden border-8 border-white shadow-2xl hero-float relative z-10 bg-white/50" style={{ animationDelay: '1.5s' }}>
-                    <img src="/gallery/56.png" alt="Smt. Hemalatha Sashi Kumaar" className="w-full h-full object-contain hover:scale-105 transition-transform duration-700" />
+                    <img src="/gallery/56.png" alt="Smt. Hemalatha Sashi Kumaar" className="w-full h-full object-contain hover:scale-105 transition-transform duration-700" loading="lazy" />
                   </div>
                   <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-[#FFD8ED] to-[#FFF5FA] rounded-2xl border border-white/50 flex items-center justify-center z-20 shadow-lg">
                     <span className="material-symbols-outlined text-secondary text-xl">workspace_premium</span>
@@ -166,7 +166,7 @@ export default function About() {
       </section>
 
       {/* ─── CORE PILLARS ─── */}
-      <section className="py-24 px-gutter relative">
+      <section className="py-24 px-gutter relative reveal">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider">Our Core Pillars</span>
@@ -192,7 +192,7 @@ export default function About() {
       </section>
 
       {/* ─── MESSAGE FROM MANAGEMENT ─── */}
-      <section className="py-24 px-gutter relative overflow-hidden">
+      <section className="py-24 px-gutter relative overflow-hidden reveal">
         <div className="max-w-4xl mx-auto relative z-10">
           <div className="bg-white/90 backdrop-blur-md p-8 md:p-14 rounded-[2.5rem] relative overflow-hidden shadow-xl border border-white/60">
             <div className="absolute -top-6 -right-6 w-40 h-40 bg-gradient-to-br from-[#E9DDFF] to-[#F5F3FF] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
@@ -247,7 +247,7 @@ export default function About() {
       </section>
 
       {/* ─── CLOSING CTA ─── */}
-      <section className="py-24 px-gutter relative overflow-hidden">
+      <section className="py-24 px-gutter relative overflow-hidden reveal">
         <div className="max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-br from-[#8B5CF6] to-[#C4B5FD] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <div className="absolute top-10 left-10 w-20 h-20 bg-white rounded-full"></div>

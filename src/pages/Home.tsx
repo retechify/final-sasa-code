@@ -150,7 +150,7 @@ export default function Home() {
       </section>
 
       {/*  ABOUT SASHA— EDITORIAL SPLIT  */}
-      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden reveal">
         <div className="absolute -bottom-20 left-10 w-64 h-64 bg-[#C4B5FD]/15 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -158,7 +158,7 @@ export default function Home() {
             <div className="relative flex justify-center">
               <div className="relative">
                 <div className="w-72 h-56 md:w-[440px] md:h-[300px] rounded-[2.5rem] overflow-hidden border-8 border-white shadow-2xl z-10 relative">
-                  <img src="/campus life/2.jpeg" alt="SASHA Campus" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/campus life/2.jpeg" alt="SASHA Campus" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
                 </div>
                 {/* Accent */}
                 <div className="absolute -bottom-5 -right-5 w-28 h-28 md:w-40 md:h-40 bg-gradient-to-br from-[#E9DDFF] to-[#F5F3FF] rounded-[2rem] border border-white/60 shadow-lg z-0 flex items-center justify-center">
@@ -178,7 +178,7 @@ export default function Home() {
                 Embark on an educational journey where success goes beyond exams, preparing children for the grander challenge— LIFE itself. To nurture essential life skills, we have seamlessly blended the world's finest curricula: IGCSE, Montessori, Waldorf and Reggio Emilia.
               </p>
               <p className="font-body-md text-sm text-tertiary leading-relaxed">
-                This carefully crafted approach systematically imparts the UNESCO endorsed 4C's of 21st century life skills, ensuring WHOLE CHILD development.
+                This carefully crafted approach systematically imparts the UNESCO endorsed 4C's of 21st century life skills, enhanced with AI-powered learning tools that personalize each child's educational journey.
               </p>
               <Link to="/about" className="primary-pill px-8 py-3.5 rounded-full text-white font-bold transition-transform hover:scale-105 shadow-lg inline-flex items-center gap-2">
                 Learn Our Philosophy
@@ -190,7 +190,7 @@ export default function Home() {
       </section>
 
       {/*  CURRICULA— EDITORIAL CARDS  */}
-      <section className="py-24 bg-surface-container-low/30 border-y border-white/30 relative overflow-hidden">
+      <section className="py-24 bg-surface-container-low/30 border-y border-white/30 relative overflow-hidden reveal">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
           <div className="text-center mb-16">
@@ -230,7 +230,7 @@ export default function Home() {
       </section>
 
       {/*  KEY PILLARS— BENTO GRID  */}
-      <section className="max-w-7xl mx-auto px-gutter py-24 relative">
+      <section className="max-w-7xl mx-auto px-gutter py-24 relative reveal">
         <div className="text-center mb-16">
           <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider">Key Pillars</span>
           <h2 className="font-display-lg text-headline-lg text-primary mt-4">Nurtured For the <span className="text-[#F59E0B]">Universe</span></h2>
@@ -258,7 +258,7 @@ export default function Home() {
         </div>
       </section>
       {/* ─────────── ACTIVITIES— GRADIENT PILL GRID ─────────── */}
-      <section className="py-24 max-w-7xl mx-auto px-gutter relative overflow-hidden">
+      <section className="py-24 max-w-7xl mx-auto px-gutter relative overflow-hidden reveal">
         <div className="text-center mb-16">
           <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider">BEYOND THE CLASSROOM</span>
           <h2 className="font-display-lg text-headline-lg text-primary mt-4">Gamut of <span className="text-[#F59E0B]">Co-Curricular</span> Activities</h2>
@@ -284,7 +284,7 @@ export default function Home() {
         </div>
       </section>
       {/*  GALLERY PREVIEW  */}
-      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/40 to-[#E0F2FE]/40 border-y border-[#C4B5FD]/20 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/40 to-[#E0F2FE]/40 border-y border-[#C4B5FD]/20 relative overflow-hidden reveal">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
@@ -332,7 +332,7 @@ export default function Home() {
       </section>
 
       {/*  TESTIMONIALS  */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-24 relative overflow-hidden reveal">
         <div className="absolute top-1/4 -left-20 w-[400px] h-[400px] bg-secondary-fixed/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute bottom-1/4 -right-20 w-[400px] h-[400px] bg-tertiary-fixed/10 rounded-full blur-3xl pointer-events-none"></div>
         
@@ -422,7 +422,7 @@ export default function Home() {
       </section>
 
       {/*  FAQ— EDITORIAL ACCORDION  */}
-      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden reveal">
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-4xl mx-auto px-gutter relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">

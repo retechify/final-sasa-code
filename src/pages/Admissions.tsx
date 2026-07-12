@@ -85,7 +85,7 @@ export default function Admissions() {
           <div className="relative z-10 order-2 lg:order-1">
             <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider mb-6 inline-block">ADMISSIONS OPEN</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
-              Leaders Groomed for <span className="text-[#F59E0B]">Life</span> 2013 Our Promise!
+              Leaders Groomed for <span className="text-[#F59E0B]">Life</span> — Our Promise!
             </h1>
             <p className="font-body-lg text-body-lg text-tertiary max-w-lg mb-8 leading-relaxed">
               We firmly focus to nurture our children not only for UNIVERSITY, but also for UNIVERSE. Let's partner in making your child's educational experience truly exceptional!
@@ -133,7 +133,7 @@ export default function Admissions() {
       </section>
 
       {/* ─── ADMISSIONS PROCESS— Timeline Steps ─── */}
-      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-[#F5F3FF]/45 to-[#E0F2FE]/45 border-y border-[#C4B5FD]/20 relative overflow-hidden reveal">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#C4B5FD]/5 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
           <div className="text-center mb-16">
@@ -166,7 +166,7 @@ export default function Admissions() {
       </section>
 
       {/* ─── WHY CHOOSE SASHA ─── */}
-      <section className="py-24 max-w-7xl mx-auto px-gutter relative">
+      <section className="py-24 max-w-7xl mx-auto px-gutter relative reveal">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left: Features */}
           <div>
@@ -237,7 +237,7 @@ export default function Admissions() {
 
               <div className="mt-6 pt-6 border-t border-[#FEF08A]/30">
                 <p className="font-label-sm text-xs text-[#854D0E] font-bold uppercase tracking-widest mb-1.5">Admissions Office</p>
-                <p className="font-body-md text-xs text-tertiary font-medium">Monday 2013 Friday: 9:00 AM 2013 4:00 PM</p>
+                <p className="font-body-md text-xs text-tertiary font-medium">Monday — Friday: 9:00 AM — 4:00 PM</p>
                 <p className="font-body-md text-sm text-primary font-bold mt-2 font-mono">admissions@sashaschool.edu</p>
               </div>
             </div>
@@ -246,7 +246,7 @@ export default function Admissions() {
       </section>
 
       {/* ─── CLOSING CTA ─── */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-24 relative overflow-hidden reveal">
         <div className="max-w-7xl mx-auto px-gutter rounded-[2.5rem] bg-gradient-to-br from-[#8B5CF6] to-[#C4B5FD] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <div className="absolute top-8 left-8 w-20 h-20 bg-white rounded-full"></div>

@@ -16,6 +16,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Intersection Observer for scroll reveal
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+    );
+    const targets = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+    targets.forEach(el => observer.observe(el));
+    return () => observer.disconnect();
+  }, [location.pathname]);
+
   // Close mobile menu on page transition
   useEffect(() => {
     setMobileMenuOpen(false);
@@ -87,31 +104,45 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Background Floating Colorful Doodles */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         {/* Doodle 1: Golden Star - Top Left */}
-        <span className="material-symbols-outlined absolute text-[#FBBF24] text-7xl md:text-8xl opacity-15 md:opacity-20 doodle-float-1" style={{ top: '12%', left: '4%' }}>star</span>
+        <span className="material-symbols-outlined absolute text-[#FBBF24] text-8xl md:text-9xl opacity-20 md:opacity-30 doodle-float-glow" style={{ top: '10%', left: '3%' }}>star</span>
         {/* Doodle 2: Sky Blue Cloud - Top Right */}
-        <span className="material-symbols-outlined absolute text-[#38BDF8] text-8xl md:text-9xl opacity-15 md:opacity-20 doodle-float-2" style={{ top: '15%', right: '5%' }}>cloud</span>
+        <span className="material-symbols-outlined absolute text-[#38BDF8] text-9xl md:text-[10rem] opacity-15 md:opacity-20 doodle-float-2" style={{ top: '12%', right: '3%' }}>cloud</span>
         {/* Doodle 3: Coral Paint Palette - Middle Left */}
-        <span className="material-symbols-outlined absolute text-[#F87171] text-7xl md:text-8xl opacity-15 md:opacity-20 doodle-float-3" style={{ top: '48%', left: '3%' }}>palette</span>
+        <span className="material-symbols-outlined absolute text-[#F87171] text-8xl md:text-9xl opacity-20 md:opacity-25 doodle-float-glow-pink" style={{ top: '45%', left: '2%' }}>palette</span>
         {/* Doodle 4: Cherry Pink Heart - Middle Right */}
-        <span className="material-symbols-outlined absolute text-[#F472B6] text-6xl md:text-7xl opacity-20 md:opacity-25 doodle-float-1" style={{ top: '35%', right: '4%' }}>favorite</span>
+        <span className="material-symbols-outlined absolute text-[#F472B6] text-7xl md:text-9xl opacity-20 md:opacity-30 doodle-float-glow-pink" style={{ top: '33%', right: '3%' }}>favorite</span>
         {/* Doodle 5: Mint Green Sprout - Bottom Left */}
-        <span className="material-symbols-outlined absolute text-[#34D399] text-7xl md:text-8xl opacity-15 md:opacity-20 doodle-float-2" style={{ bottom: '20%', left: '8%' }}>spa</span>
+        <span className="material-symbols-outlined absolute text-[#34D399] text-8xl md:text-9xl opacity-20 md:opacity-25 doodle-float-glow-green" style={{ bottom: '18%', left: '6%' }}>spa</span>
         {/* Doodle 6: Orange Sun - Bottom Right */}
-        <span className="material-symbols-outlined absolute text-[#FB923C] text-8xl md:text-9xl opacity-10 md:opacity-15 doodle-float-3" style={{ bottom: '10%', right: '6%' }}>wb_sunny</span>
+        <span className="material-symbols-outlined absolute text-[#FB923C] text-9xl md:text-[10rem] opacity-20 md:opacity-25 doodle-float-glow-orange" style={{ bottom: '8%', right: '4%' }}>wb_sunny</span>
         {/* Doodle 7: Violet Book - Bottom Center Left */}
-        <span className="material-symbols-outlined absolute text-[#A78BFA] text-6xl md:text-7xl opacity-15 md:opacity-20 doodle-float-1" style={{ bottom: '30%', left: '25%' }}>menu_book</span>
+        <span className="material-symbols-outlined absolute text-[#A78BFA] text-7xl md:text-8xl opacity-20 md:opacity-25 doodle-float-glow-purple" style={{ bottom: '28%', left: '22%' }}>menu_book</span>
         {/* Doodle 8: Teal Rocket - Top Center Right */}
-        <span className="material-symbols-outlined absolute text-[#2DD4BF] text-7xl md:text-8xl opacity-10 md:opacity-20 doodle-float-2" style={{ top: '25%', right: '30%' }}>rocket_launch</span>
+        <span className="material-symbols-outlined absolute text-[#2DD4BF] text-8xl md:text-9xl opacity-20 md:opacity-25 doodle-float-glow-teal" style={{ top: '22%', right: '28%' }}>rocket_launch</span>
         {/* Doodle 9: Golden Lightbulb - Bottom Right Center */}
-        <span className="material-symbols-outlined absolute text-[#FDE047] text-7xl md:text-8xl opacity-15 md:opacity-20 doodle-float-1" style={{ bottom: '25%', right: '35%' }}>lightbulb</span>
+        <span className="material-symbols-outlined absolute text-[#FDE047] text-8xl md:text-9xl opacity-20 md:opacity-30 doodle-float-glow" style={{ bottom: '22%', right: '32%' }}>lightbulb</span>
         {/* Doodle 10: Yellow Glowing Bolt - Top Center */}
-        <span className="material-symbols-outlined absolute text-[#FBBF24] text-6xl md:text-7xl opacity-25 md:opacity-30 doodle-float-glow" style={{ top: '18%', left: '50%', transform: 'translateX(-50%)' }}>bolt</span>
+        <span className="material-symbols-outlined absolute text-[#FBBF24] text-8xl md:text-9xl opacity-30 md:opacity-40 doodle-float-glow" style={{ top: '15%', left: '48%', transform: 'translateX(-50%)' }}>bolt</span>
         {/* Doodle 11: Yellow Glowing Star - Bottom Left */}
-        <span className="material-symbols-outlined absolute text-[#FDE047] text-5xl md:text-6xl opacity-30 md:opacity-35 doodle-float-glow" style={{ bottom: '40%', left: '15%' }}>stars</span>
-        {/* Doodle 11: Lavender Butterfly - Middle Left Center */}
-        <span className="material-symbols-outlined absolute text-[#C084FC] text-6xl md:text-7xl opacity-20 md:opacity-25 doodle-float-2" style={{ top: '60%', left: '20%' }}>cruelty_free</span>
-        {/* Doodle 12: Sky Blue Kite - Middle Right Center */}
-        <span className="material-symbols-outlined absolute text-[#38BDF8] text-7xl md:text-8xl opacity-15 md:opacity-20 doodle-float-3" style={{ top: '65%', right: '22%' }}>sailing</span>
+        <span className="material-symbols-outlined absolute text-[#FDE047] text-7xl md:text-8xl opacity-35 md:opacity-40 doodle-float-glow" style={{ bottom: '38%', left: '12%' }}>stars</span>
+        {/* Doodle 12: Lavender Butterfly - Middle Left Center */}
+        <span className="material-symbols-outlined absolute text-[#C084FC] text-7xl md:text-8xl opacity-20 md:opacity-25 doodle-float-glow-purple" style={{ top: '58%', left: '18%' }}>cruelty_free</span>
+        {/* Doodle 13: Sky Blue Kite - Middle Right Center */}
+        <span className="material-symbols-outlined absolute text-[#38BDF8] text-8xl md:text-9xl opacity-20 md:opacity-25 doodle-float-glow-blue" style={{ top: '62%', right: '20%' }}>sailing</span>
+        {/* Doodle 14: Coral Music Note - Top Center Left */}
+        <span className="material-symbols-outlined absolute text-[#FB7185] text-8xl md:text-9xl opacity-20 md:opacity-25 doodle-float-glow-pink" style={{ top: '30%', left: '12%' }}>music_note</span>
+        {/* Doodle 15: Emerald Colorize - Bottom Center */}
+        <span className="material-symbols-outlined absolute text-[#34D399] text-6xl md:text-7xl opacity-20 md:opacity-25 doodle-float-glow-green" style={{ bottom: '45%', left: '45%', transform: 'translateX(-50%)' }}>colorize</span>
+        {/* Doodle 16: Rose Diamond - Middle Far Right */}
+        <span className="material-symbols-outlined absolute text-[#F472B6] text-6xl md:text-8xl opacity-20 md:opacity-25 doodle-float-glow-pink" style={{ top: '50%', right: '10%' }}>diamond</span>
+        {/* Doodle 17: Amber Auto Awesome - Bottom Far Right */}
+        <span className="material-symbols-outlined absolute text-[#F59E0B] text-7xl md:text-8xl opacity-20 md:opacity-25 doodle-float-glow" style={{ bottom: '15%', right: '18%' }}>auto_awesome</span>
+        {/* Doodle 18: Violet Psychology - Top Far Left */}
+        <span className="material-symbols-outlined absolute text-[#A78BFA] text-6xl md:text-7xl opacity-15 md:opacity-20 doodle-float-3" style={{ top: '8%', left: '22%' }}>psychology</span>
+        {/* Doodle 19: Teal Toppings - Middle Left */}
+        <span className="material-symbols-outlined absolute text-[#2DD4BF] text-6xl md:text-8xl opacity-20 md:opacity-25 doodle-float-glow-teal" style={{ top: '70%', left: '35%' }}>toys</span>
+        {/* Doodle 20: Warm Sunset - Top Right */}
+        <span className="material-symbols-outlined absolute text-[#FB923C] text-6xl md:text-8xl opacity-20 md:opacity-25 doodle-float-glow-orange" style={{ top: '20%', right: '15%' }}>flare</span>
       </div>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-6 md:px-8 py-3 mx-auto bg-surface/80 backdrop-blur-md rounded-full transition-all duration-300 border border-white/40 ${
@@ -186,7 +217,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
       )}
 
-      <div className="flex-grow">
+      <div className="flex-grow page-enter">
         {children}
       </div>
 
@@ -237,7 +268,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <li><Link to="/programs" className="text-tertiary hover:text-primary transition-colors font-medium">Montessori Education</Link></li>
               <li><Link to="/programs" className="text-tertiary hover:text-primary transition-colors font-medium">IGCSE</Link></li>
               <li><Link to="/programs" className="text-tertiary hover:text-primary transition-colors font-medium">Waldorf Education</Link></li>
-              <li><Link to="/programs" className="text-tertiary hover:text-primary transition-colors font-medium">Reggio Emilio</Link></li>
+              <li><Link to="/programs" className="text-tertiary hover:text-primary transition-colors font-medium">Reggio Emilia</Link></li>
             </ul>
           </div>
 
@@ -263,13 +294,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         <div className="max-w-7xl mx-auto pt-8 border-t border-outline-variant/30 text-center flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="font-body-md text-xs text-tertiary opacity-80">
-            © Sasha School of Life. Designed and Developed by Yatratechs.
+            © Sasha School of Life. Designed and Developed by Retechify.
           </p>
-          <div className="flex gap-6 text-xs text-tertiary font-mono">
-            <Link to="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
-            <Link to="#" className="hover:text-primary transition-colors">Parent Handbook Code</Link>
-            <Link to="#" className="hover:text-primary transition-colors">Legal Terms</Link>
-          </div>
+          <div className="flex gap-6 text-xs text-tertiary font-mono"></div>
         </div>
       </footer>
 
