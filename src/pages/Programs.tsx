@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Programs() {
@@ -6,7 +6,9 @@ export default function Programs() {
     {
       title: 'Montessori Education',
       icon: 'psychology',
-      colorBg: 'bg-secondary-fixed/30',
+      accent: 'from-[#E9DDFF] to-[#F5F3FF]',
+      iconBg: 'bg-primary-fixed/40',
+      iconColor: 'text-primary',
       description: "Children grow like butterflies; the needs from the stage of pupa to butterfly don't remain the same. Like the colourful butterflies, each and every child is unique, and the needs of the children differ at different stages. SASHA School offers stress-free Montessori learning classrooms which follow the philosophy of Dr. Maria Montessori to CELEBRATE LEARNING where children can 'learn to explore' and 'explore to learn'.",
       tag: 'Child-Centered',
       areas: [
@@ -28,7 +30,9 @@ export default function Programs() {
     {
       title: 'Cambridge IGCSE',
       icon: 'school',
-      colorBg: 'bg-primary-fixed/30',
+      accent: 'from-[#FEF9C3] to-[#FEFCE8]',
+      iconBg: 'bg-[#FEF9C3]',
+      iconColor: 'text-[#854D0E]',
       featured: true,
       tag: 'Globally Recognized',
       description: 'The International General Certificate of Secondary Education (IGCSE) is a globally recognized curriculum that prepares students for further academic success. It systematically develops critical thinking, analytical problem-solving, and international communication skills.',
@@ -48,13 +52,15 @@ export default function Programs() {
     {
       title: 'Waldorf Education',
       icon: 'filter_drama',
-      colorBg: 'bg-tertiary-fixed/30',
+      accent: 'from-[#D3E5F6] to-[#F0F7FF]',
+      iconBg: 'bg-tertiary-fixed/40',
+      iconColor: 'text-tertiary',
       tag: 'Holistic & Creative',
-      description: "The Waldorf education system, also known as the Steiner education method, emphasizes a holistic approach to education, focusing on nurturing a child's intellectual, artistic, and practical skills in a balanced way. It aims to develop the whole child – cognitive, emotional, physical, and social aspects.",
+      description: "The Waldorf education system, also known as the Steiner education method, emphasizes a holistic approach to education, focusing on nurturing a child's intellectual, artistic, and practical skills in a balanced way. It aims to develop the whole child â€“ cognitive, emotional, physical, and social aspects.",
       areas: [
-        'Head — Thinking (Intellectual Skills)',
-        'Heart — Feeling (Artistic & Social Skills)',
-        'Hands — Doing (Practical & Gross Motor Skills)'
+        'Head â€” Thinking (Intellectual Skills)',
+        'Heart â€” Feeling (Artistic & Social Skills)',
+        'Hands â€” Doing (Practical & Gross Motor Skills)'
       ],
       benefits: [
         'Balanced, holistic development',
@@ -67,7 +73,9 @@ export default function Programs() {
     {
       title: 'Reggio Emilia',
       icon: 'palette',
-      colorBg: 'bg-primary-fixed-dim/20',
+      accent: 'from-[#FFD8ED] to-[#FFF5FA]',
+      iconBg: 'bg-secondary-fixed/40',
+      iconColor: 'text-secondary',
       tag: 'Artistic Expression',
       description: "Reggio Emilia pedagogy celebrates creative expression as a fundamental tool for children's exploration and understanding. Through art, music, and imaginative play, this approach cultivates curiosity, collaboration, and communication, empowering children to express themselves and construct knowledge in unique, meaningful ways.",
       areas: [
@@ -87,99 +95,145 @@ export default function Programs() {
   ];
 
   return (
-    <main className="relative pt-40 pb-32 overflow-hidden">
-      {/* Glow backgrounds */}
+    <main className="relative pt-32 pb-32 overflow-hidden">
+      {/* Background washes */}
       <div className="watercolor-gradient absolute -top-40 left-1/4 w-[600px] h-[600px] rounded-full blur-3xl opacity-40 pointer-events-none"></div>
       <div className="watercolor-gradient absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>
-      {/* Page Header */}
-      <section className="max-w-7xl mx-auto px-gutter text-center mb-24 relative z-10">
-        <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm mb-4 inline-block uppercase tracking-wider">OUR CURRICULA</span>
-        <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
-          World-Class Educational Approaches
-        </h1>
-        <p className="font-body-lg text-body-lg text-tertiary max-w-3xl mx-auto leading-relaxed">
-          SASHA School seamlessly blends the world's finest curricula: Montessori, IGCSE, Waldorf Education and Reggio Emilia, systematically imparting the UNESCO endorsed 4C's of 21st century life skills.
-        </p>
-      </section>
+      <div className="absolute top-1/3 right-0 w-[400px] h-[400px] bg-[#FEF9C3]/20 rounded-full blur-3xl pointer-events-none"></div>
 
-      {/* Program Cards Bento-Style Grid */}
-      <section className="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10 items-stretch">
-        {curricula.map((program, idx) => (
-          <div 
-            key={idx} 
-            className={`glass-card rounded-2xl p-8 md:p-10 flex flex-col justify-between relative border-white/60 shadow-xl transition-all duration-300 bg-white/70 hover:shadow-2xl hover:-translate-y-2`}
-          >
-            {/* Tag Badges */}
-            <span className={`absolute top-0 left-8 -translate-y-1/2 ${
-              program.featured ? 'bg-primary text-white' : 'bg-secondary-fixed text-on-secondary-fixed'
-            } text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-md`}>
-              {program.tag}
-            </span>
-            
-            <div className="mb-8">
-              {/* Icon Container */}
-              <div className={`w-16 h-16 mb-6 ${program.colorBg} rounded-full flex items-center justify-center text-primary group-hover:scale-110 transition-transform`}>
-                <span className="material-symbols-outlined text-[32px]" style={{ fontVariationSettings: "'FILL' 1" }}>{program.icon}</span>
-              </div>
-              
-              {/* Title */}
-              <h3 className="font-display-lg text-2xl md:text-3xl text-primary font-bold mb-4">{program.title}</h3>
-
-              {/* Description */}
-              <p className="font-body-md text-sm text-tertiary mb-8 leading-relaxed">{program.description}</p>
-
-              {/* Areas list */}
-              <div className="mb-6">
-                <h4 className="text-xs font-bold text-secondary tracking-widest uppercase mb-3 font-mono">
-                  {program.title === 'Montessori Education' ? '5 Areas of Learning' : 
-                   program.title === 'Waldorf Education' ? 'Waldorf Methodology' :
-                   program.title === 'Reggio Emilia' ? 'Key Elements' : 'Key Areas'}
-                </h4>
-                <ul className="space-y-2.5">
-                  {program.areas.map((area, aIdx) => (
-                    <li key={aIdx} className="flex items-start gap-3">
-                      <span className="material-symbols-outlined text-secondary text-sm shrink-0 mt-0.5" style={{ fontVariationSettings: "'FILL' 1" }}>auto_awesome</span>
-                      <span className="font-label-sm text-sm text-on-surface-variant">{area}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* Benefits & Outcomes */}
-            <div>
-              <div className="h-px w-full bg-primary-fixed/20 mb-6"></div>
-              <h4 className="text-xs font-bold text-secondary tracking-widest uppercase mb-3 font-mono">Benefits & Outcomes</h4>
-              <ul className="w-full space-y-2.5 mb-8">
-                {program.benefits.map((b, bIdx) => (
-                  <li key={bIdx} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-primary-container text-sm shrink-0 mt-0.5" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
-                    <span className="font-label-sm text-sm text-on-surface-variant">{b}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <Link 
-                to="/contact" 
-                className="w-full bg-surface-container-highest hover:bg-primary-fixed text-primary hover:text-on-primary-fixed transition-all font-bold py-3.5 rounded-full text-sm block font-mono tracking-wide uppercase text-center border border-primary-fixed/20 hover:scale-102"
-              >
-                Inquire About {program.title.split(' ')[0]}
+      {/* â”€â”€â”€ HERO SECTION â”€â”€â”€ */}
+      <section className="max-w-7xl mx-auto px-gutter relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-24">
+          {/* Left: Content */}
+          <div className="relative z-10">
+            <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm mb-6 inline-block uppercase tracking-wider">OUR CURRICULA</span>
+            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
+              World-Class <span className="text-[#EAB308]">Educational</span> Approaches
+            </h1>
+            <p className="font-body-lg text-body-lg text-tertiary max-w-lg mb-8 leading-relaxed">
+              SASHA School seamlessly blends the world's finest curricula: Montessori, IGCSE, Waldorf Education and Reggio Emilia, systematically imparting the UNESCO endorsed 4C's of 21st century life skills.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link to="/contact" className="primary-pill px-8 py-4 rounded-full text-white font-bold transition-transform hover:scale-105 shadow-lg text-center">
+                Inquire Now
+              </Link>
+              <Link to="/campus-life" className="golden-pill px-8 py-4 rounded-full font-bold transition-all hover:scale-105 text-center">
+                Campus Life
               </Link>
             </div>
           </div>
-        ))}
+
+          {/* Right: Visual â€” 4 curricula icons grid */}
+          <div className="relative flex justify-center">
+            <div className="grid grid-cols-2 gap-5 max-w-sm">
+              {curricula.map((c, i) => (
+                <div key={i} className={`bg-gradient-to-br ${c.accent} rounded-[2rem] p-6 flex flex-col items-center text-center border border-white/60 shadow-lg hover:-translate-y-2 transition-all duration-300 group`}>
+                  <div className={`w-14 h-14 ${c.iconBg} rounded-2xl flex items-center justify-center ${c.iconColor} mb-4 group-hover:scale-110 transition-transform shadow-sm`}>
+                    <span className="material-symbols-outlined text-2xl">{c.icon}</span>
+                  </div>
+                  <h3 className="font-headline-md text-sm text-primary font-bold leading-snug">{c.title}</h3>
+                  <span className="text-[10px] text-tertiary mt-1 font-mono uppercase tracking-wider">{c.tag}</span>
+                </div>
+              ))}
+            </div>
+            {/* Background Glow */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] h-[130%] bg-gradient-to-br from-primary-fixed/15 via-[#FEF9C3]/10 to-secondary-fixed/15 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+          </div>
+        </div>
       </section>
 
-      {/* Curriculum of Pure Wonder Section (Newly Added Content Enhancement) */}
-      <section className="bg-[#FFFBEB]/30 border-y border-[#FDE68A]/20 py-24 my-24 relative z-10">
+      {/* â”€â”€â”€ PROGRAM DETAILS â€” Alternating Editorial Cards â”€â”€â”€ */}
+      <section className="relative z-10">
+        <div className="space-y-8">
+          {curricula.map((program, idx) => {
+            const isEven = idx % 2 === 0;
+            return (
+              <div key={idx} className={`py-16 ${isEven ? 'bg-[#FEFCE8]/20' : 'bg-surface-container-low/30'} border-y border-white/30`}>
+                <div className="max-w-7xl mx-auto px-gutter">
+                  <div className={`grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start ${isEven ? '' : 'direction-rtl'}`}>
+                    {/* Left Column â€” Main Info */}
+                    <div className={`lg:col-span-7 ${!isEven ? 'lg:order-2' : ''}`}>
+                      {/* Tag */}
+                      <div className="flex items-center gap-3 mb-6">
+                        <div className={`w-12 h-12 ${program.iconBg} rounded-2xl flex items-center justify-center ${program.iconColor} shadow-sm`}>
+                          <span className="material-symbols-outlined text-xl">{program.icon}</span>
+                        </div>
+                        <span className={`${program.featured ? 'golden-badge' : 'bg-primary-fixed/20 text-primary'} px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider`}>
+                          {program.tag}
+                        </span>
+                      </div>
+
+                      <h2 className="font-display-lg text-2xl md:text-4xl text-primary font-bold mb-6 leading-tight">{program.title}</h2>
+                      <p className="font-body-lg text-base text-tertiary leading-relaxed mb-8">{program.description}</p>
+
+                      {/* Areas */}
+                      <div className="mb-8">
+                        <h4 className="text-xs font-bold text-[#854D0E] tracking-widest uppercase mb-4 font-mono flex items-center gap-2">
+                          <span className="material-symbols-outlined text-sm text-[#EAB308]">auto_awesome</span>
+                          {program.title === 'Montessori Education' ? '5 Areas of Learning' : 
+                           program.title === 'Waldorf Education' ? 'Waldorf Methodology' :
+                           program.title === 'Reggio Emilia' ? 'Key Elements' : 'Key Areas'}
+                        </h4>
+                        <div className="flex flex-wrap gap-2">
+                          {program.areas.map((area, aIdx) => (
+                            <span key={aIdx} className={`bg-gradient-to-r ${program.accent} border border-white/50 px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm`}>
+                              {area}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+
+                      <Link 
+                        to="/contact" 
+                        className="primary-pill px-8 py-3.5 rounded-full text-white font-bold transition-transform hover:scale-105 shadow-lg text-center inline-flex items-center gap-2"
+                      >
+                        Inquire About {program.title.split(' ')[0]}
+                        <span className="material-symbols-outlined text-lg">arrow_forward</span>
+                      </Link>
+                    </div>
+
+                    {/* Right Column â€” Benefits Card */}
+                    <div className={`lg:col-span-5 ${!isEven ? 'lg:order-1' : ''}`}>
+                      <div className={`bg-gradient-to-br ${program.accent} rounded-[2rem] p-8 md:p-10 border border-white/60 shadow-xl relative overflow-hidden`}>
+                        {/* Watermark */}
+                        <div className="absolute -bottom-8 -right-8 opacity-[0.06] pointer-events-none">
+                          <span className="material-symbols-outlined text-[140px]">{program.icon}</span>
+                        </div>
+
+                        <h4 className="text-xs font-bold text-secondary tracking-widest uppercase mb-6 font-mono flex items-center gap-2">
+                          <span className="material-symbols-outlined text-sm text-[#EAB308]">verified</span>
+                          Benefits & Outcomes
+                        </h4>
+                        <div className="space-y-4 relative z-10">
+                          {program.benefits.map((b, bIdx) => (
+                            <div key={bIdx} className="flex items-start gap-3 group">
+                              <div className="w-6 h-6 bg-white/70 rounded-full flex items-center justify-center shrink-0 mt-0.5 shadow-sm group-hover:scale-110 transition-transform">
+                                <span className="material-symbols-outlined text-[#EAB308] text-sm">check</span>
+                              </div>
+                              <span className="text-sm text-tertiary leading-relaxed font-medium">{b}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* â”€â”€â”€ PHILOSOPHY IN ACTION â”€â”€â”€ */}
+      <section className="bg-[#FEFCE8]/30 border-y border-[#FEF08A]/20 py-24 relative z-10">
         <div className="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left Column: Styled classroom image with glowing background */}
+          {/* Left Column: Styled classroom image */}
           <div className="relative group flex justify-center">
             <div className="absolute -inset-4 bg-primary-fixed/20 rounded-[2.5rem] blur-2xl group-hover:bg-primary-fixed/30 transition-all pointer-events-none"></div>
             <div className="organic-cloud-shape overflow-hidden w-80 h-80 md:w-[460px] md:h-[460px] relative shadow-2xl z-10 border-8 border-white/60 hero-float">
               <img 
                 className="w-full h-full object-cover hover:scale-102 transition-transform duration-700" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZHb-lJINmm3725DGogwUG7-h_Fv_lDustxfrpjlfDwKb31mnylzSiEU1ECwuGt3jxLH7dloMiLpLcJxnhGUSXCZEmitW11_b4xanAPti5KxgZ-gpGtzfn4r4L7OQN0w_wiSTp91rx4lmEoNY2RDyRJPq2DaNB9lQ6mpW1D7FwKQd-SeWcKKscsiu2w1BxAdWUKM9paWd7E8IKbhSzSz8sMWBT231MxJTVe7vZO4xjegRRm5g3_dpaT8sNAhz81wh5ttStJHEsFfUH" 
+                src="/images/IMG-20260620-WA0035.jpg.jpeg" 
                 alt="Montessori classroom wonder" 
               />
             </div>
@@ -187,7 +241,7 @@ export default function Programs() {
 
           {/* Right Column: Key pedagogical philosophies */}
           <div className="space-y-8">
-            <span className="bg-secondary-fixed/40 text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider inline-block">PHILOSOPHY IN ACTION</span>
+            <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider inline-block">PHILOSOPHY IN ACTION</span>
             <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight">
               A Curriculum of <br/>
               <span className="lavender-text-gradient">Pure Wonder</span>
@@ -197,8 +251,8 @@ export default function Programs() {
             </p>
             
             <div className="space-y-6 pt-4">
-              <div className="flex gap-5 items-start">
-                <div className="w-12 h-12 flex-shrink-0 bg-secondary-fixed/50 rounded-full flex items-center justify-center text-primary shadow-sm">
+              <div className="flex gap-5 items-start group">
+                <div className="w-14 h-14 flex-shrink-0 bg-[#FEF9C3] rounded-2xl flex items-center justify-center text-[#EAB308] shadow-sm group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>psychology</span>
                 </div>
                 <div>
@@ -207,8 +261,8 @@ export default function Programs() {
                 </div>
               </div>
 
-              <div className="flex gap-5 items-start">
-                <div className="w-12 h-12 flex-shrink-0 bg-primary-fixed/50 rounded-full flex items-center justify-center text-primary shadow-sm">
+              <div className="flex gap-5 items-start group">
+                <div className="w-14 h-14 flex-shrink-0 bg-primary-fixed/40 rounded-2xl flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>palette</span>
                 </div>
                 <div>
@@ -221,15 +275,22 @@ export default function Programs() {
         </div>
       </section>
 
-      {/* Cloud layers bottom dividers */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] transform translate-y-1 pointer-events-none">
-        <svg className="relative block w-[200%] h-[80px] fill-surface-container-high floating-cloud opacity-40" preserveAspectRatio="none" viewBox="0 0 1200 120">
-          <path d="M0,64L48,64C96,64,192,64,288,58.7C384,53,480,43,576,42.7C672,43,768,53,864,58.7C960,64,1056,64,1152,64L1200,64L1200,120L1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
-        </svg>
-        <svg className="absolute bottom-0 left-[-50%] block w-[200%] h-[100px] fill-white opacity-85" preserveAspectRatio="none" viewBox="0 0 1200 120">
-          <path d="M0,64L48,64C96,64,192,64,288,58.7C384,53,480,43,576,42.7C672,43,768,53,864,58.7C960,64,1056,64,1152,64L1200,64L1200,120L1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
-        </svg>
-      </div>
+      {/* â”€â”€â”€ CLOSING CTA â”€â”€â”€ */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="max-w-5xl mx-auto px-gutter text-center relative z-10">
+          <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
+            Ready to Explore <span className="text-[#EAB308]">Our Curricula?</span>
+          </h2>
+          <p className="font-body-lg text-tertiary max-w-xl mx-auto mb-10 leading-relaxed">
+            Schedule a campus tour to see our curricula in action and meet our educator team.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link to="/contact" className="primary-pill px-10 py-4 rounded-full text-white font-bold text-lg transition-transform hover:scale-105 active:scale-95 shadow-lg text-center inline-block">
+              Schedule a Campus Visit
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

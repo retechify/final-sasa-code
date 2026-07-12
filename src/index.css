@@ -50,11 +50,11 @@
   --color-surface-variant: #e7e0ed;
 
   /* Golden / Yellow Accent Tokens */
-  --color-golden: #F59E0B;
-  --color-golden-light: #FEF3C7;
-  --color-golden-soft: #FFFBEB;
-  --color-golden-border: #FDE68A;
-  --color-on-golden: #78350F;
+  --color-golden: #FDE047; /* Yellow 300 */
+  --color-golden-light: #FEF9C3; /* Yellow 100 */
+  --color-golden-soft: #FEFCE8; /* Yellow 50 */
+  --color-golden-border: #FEF08A; /* Yellow 200 */
+  --color-on-golden: #854D0E; /* Yellow 800 */
   
   --font-display-lg: Quicksand, sans-serif;
   --font-display-lg-mobile: Quicksand, sans-serif;
@@ -142,33 +142,33 @@ body {
 
 /* Golden Glass Card — light warm yellow transparent variant */
 .golden-glass-card {
-    background: rgba(254, 243, 199, 0.35);
+    background: rgba(254, 249, 195, 0.4); /* Yellow 100 with opacity */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(253, 230, 138, 0.5);
+    border: 1px solid rgba(254, 240, 138, 0.6); /* Yellow 200 */
     transition: all 0.3s ease;
 }
 .golden-glass-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 16px 40px rgba(245, 158, 11, 0.12);
-    border-color: rgba(245, 158, 11, 0.35);
+    box-shadow: 0 16px 40px rgba(253, 224, 71, 0.15);
+    border-color: rgba(253, 224, 71, 0.4);
 }
 
 /* Golden Pill Button */
 .golden-pill {
-    background: linear-gradient(135deg, #F59E0B, #FBBF24);
-    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.25);
-    color: #78350F;
+    background: linear-gradient(135deg, #FEF08A, #FDE047); /* Yellow 200 to Yellow 300 */
+    box-shadow: 0 4px 15px rgba(253, 224, 71, 0.3);
+    color: #854D0E; /* Yellow 800 */
 }
 .golden-pill:hover {
-    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.35);
+    box-shadow: 0 6px 20px rgba(253, 224, 71, 0.5);
 }
 
 /* Golden Badge Pill */
 .golden-badge {
-    background: rgba(254, 243, 199, 0.6);
-    color: #92400E;
-    border: 1px solid rgba(253, 230, 138, 0.6);
+    background: rgba(254, 249, 195, 0.7); /* Yellow 100 */
+    color: #A16207; /* Yellow 700 */
+    border: 1px solid rgba(254, 240, 138, 0.8); /* Yellow 200 */
 }
 
 .organic-cloud-shape {

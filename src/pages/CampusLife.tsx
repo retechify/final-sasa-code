@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function CampusLife() {
@@ -23,7 +23,7 @@ export default function CampusLife() {
   const detailedActivities = [
     {
       program: 'Value Inculcation Program',
-      activities: '• Learning invaluable Indian Values\n• Social Manners & Etiquette\n• Involved by Parents',
+      activities: 'â€¢ Learning invaluable Indian Values\nâ€¢ Social Manners & Etiquette\nâ€¢ Involved by Parents',
       lifeSkills: 'Character formation',
       icon: 'diversity_1',
       accent: 'from-[#E9DDFF] to-[#F5F3FF]',
@@ -32,16 +32,16 @@ export default function CampusLife() {
     },
     {
       program: 'Lifeskill and Leadership',
-      activities: '• Exclusive Class for Personal Grooming\n• Public Presentation Skills\n• Confidence coaching',
+      activities: 'â€¢ Exclusive Class for Personal Grooming\nâ€¢ Public Presentation Skills\nâ€¢ Confidence coaching',
       lifeSkills: 'To groom every Learner',
       icon: 'stars',
-      accent: 'from-[#FEF3C7] to-[#FFFBEB]',
-      iconBg: 'bg-[#FEF3C7]',
-      iconColor: 'text-[#92400E]'
+      accent: 'from-[#FEF9C3] to-[#FEFCE8]',
+      iconBg: 'bg-[#FEF9C3]',
+      iconColor: 'text-[#854D0E]'
     },
     {
       program: 'Brain Gym',
-      activities: '• Every session commences with Whole brain exercises and activities\n• Integration movements',
+      activities: 'â€¢ Every session commences with Whole brain exercises and activities\nâ€¢ Integration movements',
       lifeSkills: 'Whole Brain development',
       icon: 'psychology',
       accent: 'from-[#D3E5F6] to-[#F0F7FF]',
@@ -50,7 +50,7 @@ export default function CampusLife() {
     },
     {
       program: 'Neuro Linguistic Programming',
-      activities: '• Ambidextrous activity (using two hands simultaneously)\n• Sensory refinement exercises',
+      activities: 'â€¢ Ambidextrous activity (using two hands simultaneously)\nâ€¢ Sensory refinement exercises',
       lifeSkills: 'To quit gadgets and engage in productive activities',
       icon: 'mindfulness',
       accent: 'from-[#FFD8ED] to-[#FFF5FA]',
@@ -59,7 +59,7 @@ export default function CampusLife() {
     },
     {
       program: 'British Council',
-      activities: "• World's No.1 UK based international organization for English communication\n• Interactive speaking tools",
+      activities: "â€¢ World's No.1 UK based international organization for English communication\nâ€¢ Interactive speaking tools",
       lifeSkills: 'Language, Communication and Public Speaking Skill',
       icon: 'language',
       accent: 'from-[#E9DDFF] to-[#F5F3FF]',
@@ -68,7 +68,7 @@ export default function CampusLife() {
     },
     {
       program: 'EduSports',
-      activities: "• India's No.1 Sports education organization\n• Structured age-appropriate physical activities",
+      activities: "â€¢ India's No.1 Sports education organization\nâ€¢ Structured age-appropriate physical activities",
       lifeSkills: 'Physical, Social and Mental Fitness',
       icon: 'sports_tennis',
       accent: 'from-[#D1FAE5] to-[#ECFDF5]',
@@ -77,12 +77,12 @@ export default function CampusLife() {
     },
     {
       program: 'Kinder Dance International',
-      activities: '• USA based Edu Organisation for Education through dance and movement\n• Kinesthetic development',
+      activities: 'â€¢ USA based Edu Organisation for Education through dance and movement\nâ€¢ Kinesthetic development',
       lifeSkills: 'No stage fear & gross motor skills development',
       icon: 'music_note',
-      accent: 'from-[#FEF3C7] to-[#FFFBEB]',
-      iconBg: 'bg-[#FEF3C7]',
-      iconColor: 'text-[#92400E]'
+      accent: 'from-[#FEF9C3] to-[#FEFCE8]',
+      iconBg: 'bg-[#FEF9C3]',
+      iconColor: 'text-[#854D0E]'
     }
   ];
 
@@ -95,9 +95,9 @@ export default function CampusLife() {
       {/* Background washes */}
       <div className="watercolor-gradient absolute -top-40 -left-20 w-[600px] h-[600px] rounded-full blur-3xl opacity-40 pointer-events-none"></div>
       <div className="watercolor-gradient absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>
-      <div className="absolute top-1/3 right-0 w-[400px] h-[400px] bg-[#FEF3C7]/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-1/3 right-0 w-[400px] h-[400px] bg-[#FEF9C3]/20 rounded-full blur-3xl pointer-events-none"></div>
 
-      {/* ─── HERO SECTION ─── */}
+      {/* â”€â”€â”€ HERO SECTION â”€â”€â”€ */}
       <section className="relative max-w-7xl mx-auto px-gutter py-12 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left: Content */}
@@ -106,10 +106,10 @@ export default function CampusLife() {
               FEATURES & ACTIVITIES
             </span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
-              Life at <span className="text-[#F59E0B]">SASHA</span> School
+              Life at <span className="text-[#EAB308]">SASHA</span> School
             </h1>
             <p className="font-body-lg text-body-lg text-tertiary max-w-lg mb-8 leading-relaxed">
-              Leaders groomed for Life – our promise to Parents! We offer a comprehensive educational experience with world-class facilities and a gamut of curated activities.
+              Leaders groomed for Life â€“ our promise to Parents! We offer a comprehensive educational experience with world-class facilities and a gamut of curated activities.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="primary-pill px-8 py-4 rounded-full text-white font-bold transition-transform hover:scale-105 shadow-lg text-center">
@@ -121,13 +121,13 @@ export default function CampusLife() {
             </div>
 
             {/* Quick Stats */}
-            <div className="flex gap-8 mt-12 pt-8 border-t border-[#FDE68A]/40">
+            <div className="flex gap-8 mt-12 pt-8 border-t border-[#FEF08A]/40">
               <div>
                 <span className="font-display-lg text-3xl font-bold text-primary">10+</span>
                 <p className="text-xs text-tertiary font-medium mt-1">Facilities</p>
               </div>
               <div>
-                <span className="font-display-lg text-3xl font-bold text-[#F59E0B]">7</span>
+                <span className="font-display-lg text-3xl font-bold text-[#EAB308]">7</span>
                 <p className="text-xs text-tertiary font-medium mt-1">Curated Programs</p>
               </div>
               <div>
@@ -157,18 +157,18 @@ export default function CampusLife() {
                 />
               </div>
               {/* Decorative Golden Circle */}
-              <div className="absolute -top-6 -right-6 w-24 h-24 md:w-32 md:h-32 bg-[#FEF3C7]/60 rounded-full border-4 border-[#FDE68A]/40 flex items-center justify-center z-30 doodle-float-1">
-                <span className="material-symbols-outlined text-[#F59E0B] text-3xl md:text-4xl">stars</span>
+              <div className="absolute -top-6 -right-6 w-24 h-24 md:w-32 md:h-32 bg-[#FEF9C3]/60 rounded-full border-4 border-[#FEF08A]/40 flex items-center justify-center z-30 doodle-float-1">
+                <span className="material-symbols-outlined text-[#EAB308] text-3xl md:text-4xl">stars</span>
               </div>
               {/* Background Glow */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] h-[130%] bg-gradient-to-br from-primary-fixed/20 via-[#FEF3C7]/15 to-secondary-fixed/20 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] h-[130%] bg-gradient-to-br from-primary-fixed/20 via-[#FEF9C3]/15 to-secondary-fixed/20 rounded-full blur-3xl -z-10 pointer-events-none"></div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ─── PROGRAMS OVERVIEW — Overlapping Editorial Cards ─── */}
-      <section className="py-24 bg-[#FFFBEB]/25 border-y border-[#FDE68A]/20 relative overflow-hidden">
+      {/* â”€â”€â”€ PROGRAMS OVERVIEW â€” Overlapping Editorial Cards â”€â”€â”€ */}
+      <section className="py-24 bg-[#FEFCE8]/25 border-y border-[#FEF08A]/20 relative overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary-fixed/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter">
           <div className="text-center mb-16">
@@ -196,7 +196,7 @@ export default function CampusLife() {
                   </div>
                 </div>
                 {/* Content */}
-                <div className="bg-white/90 backdrop-blur-md p-8 border-t border-[#FDE68A]/30">
+                <div className="bg-white/90 backdrop-blur-md p-8 border-t border-[#FEF08A]/30">
                   <p className="font-body-md text-sm text-tertiary leading-relaxed mb-6">
                     Our structured co-curricular and extra-curricular activities ensure that every child develops not just academically, but also physically, socially and emotionally.
                   </p>
@@ -228,9 +228,9 @@ export default function CampusLife() {
                   </div>
                 </div>
                 {/* Content */}
-                <div className="bg-white/90 backdrop-blur-md p-8 border-t border-[#FDE68A]/30">
+                <div className="bg-white/90 backdrop-blur-md p-8 border-t border-[#FEF08A]/30">
                   <p className="font-body-md text-sm text-tertiary leading-relaxed mb-6">
-                    Yoga, Karate, Silambam, Skating, Dance and Brain Gym – a comprehensive wellness programme for physical and mental development.
+                    Yoga, Karate, Silambam, Skating, Dance and Brain Gym â€“ a comprehensive wellness programme for physical and mental development.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {activities[1].items.map((item, i) => (
@@ -244,7 +244,7 @@ export default function CampusLife() {
         </div>
       </section>
 
-      {/* ─── FACILITIES — Bento Grid Layout ─── */}
+      {/* â”€â”€â”€ FACILITIES â€” Bento Grid Layout â”€â”€â”€ */}
       <section className="py-24 max-w-7xl mx-auto px-gutter relative">
         <div className="text-center mb-16">
           <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider">OUR FACILITIES</span>
@@ -252,28 +252,28 @@ export default function CampusLife() {
           <p className="font-body-lg text-tertiary max-w-2xl mx-auto mt-4">Every detail of the campus is structured to invoke emotional safety and biological curiosity.</p>
         </div>
 
-        {/* Bento Grid — 2 featured tall + 8 compact */}
+        {/* Bento Grid â€” 2 featured tall + 8 compact */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {/* Featured Card 1 — spans 2 rows */}
+          {/* Featured Card 1 â€” spans 2 rows */}
           <div className="lg:row-span-2 golden-glass-card rounded-[2rem] p-8 flex flex-col justify-between relative overflow-hidden group hover:-translate-y-1 transition-all duration-300">
             <div className="absolute -bottom-8 -right-8 opacity-5 group-hover:opacity-10 transition-opacity">
-              <span className="material-symbols-outlined text-[140px] text-[#F59E0B]">{featuredFacilities[0].icon}</span>
+              <span className="material-symbols-outlined text-[140px] text-[#EAB308]">{featuredFacilities[0].icon}</span>
             </div>
             <div>
-              <div className="w-16 h-16 bg-[#FEF3C7] rounded-2xl flex items-center justify-center text-[#F59E0B] mb-6 shadow-sm group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 bg-[#FEF9C3] rounded-2xl flex items-center justify-center text-[#EAB308] mb-6 shadow-sm group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-3xl">{featuredFacilities[0].icon}</span>
               </div>
               <h3 className="font-display-lg text-xl text-primary font-bold mb-3">{featuredFacilities[0].title}</h3>
               <p className="font-body-md text-sm text-tertiary leading-relaxed">{featuredFacilities[0].desc}</p>
             </div>
-            <div className="mt-6 pt-4 border-t border-[#FDE68A]/30">
-              <span className="text-xs font-bold text-[#92400E] uppercase tracking-wider font-mono flex items-center gap-1">
+            <div className="mt-6 pt-4 border-t border-[#FEF08A]/30">
+              <span className="text-xs font-bold text-[#854D0E] uppercase tracking-wider font-mono flex items-center gap-1">
                 <span className="material-symbols-outlined text-sm">verified</span> Premium Standard
               </span>
             </div>
           </div>
 
-          {/* Featured Card 2 — spans 2 rows */}
+          {/* Featured Card 2 â€” spans 2 rows */}
           <div className="lg:row-span-2 glass-card rounded-[2rem] p-8 flex flex-col justify-between relative overflow-hidden group hover:-translate-y-1 transition-all duration-300 bg-primary-fixed/10">
             <div className="absolute -bottom-8 -right-8 opacity-5 group-hover:opacity-10 transition-opacity">
               <span className="material-symbols-outlined text-[140px] text-primary">{featuredFacilities[1].icon}</span>
@@ -292,7 +292,7 @@ export default function CampusLife() {
             </div>
           </div>
 
-          {/* Rest of the facilities — compact cards */}
+          {/* Rest of the facilities â€” compact cards */}
           {restFacilities.map((feat, idx) => {
             const isGolden = idx % 3 === 0;
             return (
@@ -300,7 +300,7 @@ export default function CampusLife() {
                 key={idx}
                 className={`${isGolden ? 'golden-glass-card' : 'glass-card bg-white/70'} rounded-2xl p-6 flex items-start gap-4 group hover:-translate-y-1 transition-all duration-300`}
               >
-                <div className={`w-11 h-11 shrink-0 rounded-xl ${isGolden ? 'bg-[#FEF3C7]' : 'bg-primary-fixed/30'} flex items-center justify-center ${isGolden ? 'text-[#F59E0B]' : 'text-primary'} group-hover:scale-110 transition-transform`}>
+                <div className={`w-11 h-11 shrink-0 rounded-xl ${isGolden ? 'bg-[#FEF9C3]' : 'bg-primary-fixed/30'} flex items-center justify-center ${isGolden ? 'text-[#EAB308]' : 'text-primary'} group-hover:scale-110 transition-transform`}>
                   <span className="material-symbols-outlined text-xl">{feat.icon}</span>
                 </div>
                 <div>
@@ -313,9 +313,9 @@ export default function CampusLife() {
         </div>
       </section>
 
-      {/* ─── CURATED PROGRAMS — Alternating Timeline ─── */}
+      {/* â”€â”€â”€ CURATED PROGRAMS â€” Alternating Timeline â”€â”€â”€ */}
       <section className="py-24 bg-surface-container-low/30 border-y border-white/40 relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#FEF3C7]/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#FEF9C3]/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
           <div className="text-center mb-20">
@@ -327,7 +327,7 @@ export default function CampusLife() {
           {/* Timeline Grid */}
           <div className="relative">
             {/* Center Line (desktop only) */}
-            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#FDE68A]/60 via-primary-fixed/30 to-[#FDE68A]/60"></div>
+            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#FEF08A]/60 via-primary-fixed/30 to-[#FEF08A]/60"></div>
 
             <div className="space-y-8 lg:space-y-12">
               {detailedActivities.map((act, idx) => {
@@ -350,7 +350,7 @@ export default function CampusLife() {
                             </div>
                             <div>
                               <h3 className="font-display-lg text-lg md:text-xl text-primary font-bold">{act.program}</h3>
-                              <span className="text-xs font-mono font-bold text-[#92400E] uppercase tracking-wider flex items-center gap-1 mt-1">
+                              <span className="text-xs font-mono font-bold text-[#854D0E] uppercase tracking-wider flex items-center gap-1 mt-1">
                                 <span className="material-symbols-outlined text-xs">bolt</span>
                                 {act.lifeSkills}
                               </span>
@@ -361,8 +361,8 @@ export default function CampusLife() {
                           <div className="space-y-2">
                             {act.activities.split('\n').map((line, lIdx) => (
                               <div key={lIdx} className="flex items-start gap-3">
-                                <span className="material-symbols-outlined text-[#F59E0B] text-base mt-0.5 shrink-0">check_circle</span>
-                                <p className="text-sm text-tertiary leading-relaxed">{line.replace('• ', '')}</p>
+                                <span className="material-symbols-outlined text-[#EAB308] text-base mt-0.5 shrink-0">check_circle</span>
+                                <p className="text-sm text-tertiary leading-relaxed">{line.replace('â€¢ ', '')}</p>
                               </div>
                             ))}
                           </div>
@@ -372,7 +372,7 @@ export default function CampusLife() {
 
                     {/* Timeline Dot */}
                     <div className="hidden lg:flex w-16 shrink-0 items-center justify-center">
-                      <div className="w-5 h-5 rounded-full bg-[#FEF3C7] border-4 border-[#F59E0B] shadow-md z-10"></div>
+                      <div className="w-5 h-5 rounded-full bg-[#FEF9C3] border-4 border-[#FACC15] shadow-md z-10"></div>
                     </div>
 
                     {/* Spacer for the other side */}
@@ -385,22 +385,22 @@ export default function CampusLife() {
         </div>
       </section>
 
-      {/* ─── CLOSING — Quote + CTA ─── */}
+      {/* â”€â”€â”€ CLOSING â€” Quote + CTA â”€â”€â”€ */}
       <section className="py-24 relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-gutter relative z-10">
           {/* Quote Card */}
           <div className="golden-glass-card rounded-[2.5rem] p-10 md:p-16 text-center relative overflow-hidden shadow-xl mb-16">
-            <span className="material-symbols-outlined text-[#F59E0B] text-7xl absolute -top-4 left-6 opacity-15">format_quote</span>
+            <span className="material-symbols-outlined text-[#EAB308] text-7xl absolute -top-4 left-6 opacity-15">format_quote</span>
             <p className="font-display-lg text-lg md:text-2xl text-secondary italic relative z-20 leading-relaxed max-w-3xl mx-auto">
               "One of the Pioneers in implementing authentic Montessori at primary level in South India. We have a school system supported by a battalion of professionals."
             </p>
-            <p className="mt-8 font-label-sm text-[#92400E] uppercase tracking-widest text-xs font-bold">— SASHA School of Life</p>
+            <p className="mt-8 font-label-sm text-[#854D0E] uppercase tracking-widest text-xs font-bold">â€” SASHA School of Life</p>
           </div>
 
           {/* CTA Block */}
           <div className="text-center">
             <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
-              Ready to <span className="text-[#F59E0B]">Experience</span> SASHA?
+              Ready to <span className="text-[#EAB308]">Experience</span> SASHA?
             </h2>
             <p className="font-body-lg text-tertiary max-w-xl mx-auto mb-10 leading-relaxed">
               Schedule a personal campus tour to explore our facilities, meet our educators, and see why parents choose SASHA.
@@ -409,9 +409,6 @@ export default function CampusLife() {
               <Link to="/contact" className="primary-pill px-10 py-4 rounded-full text-white font-bold text-lg transition-transform hover:scale-105 active:scale-95 shadow-lg text-center inline-block">
                 Schedule a Campus Visit
               </Link>
-              <a href="tel:+919750170007" className="golden-pill px-10 py-4 rounded-full font-bold text-lg transition-transform hover:scale-105 active:scale-95 text-center inline-block">
-                +91 97501 70007
-              </a>
             </div>
           </div>
         </div>

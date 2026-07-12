@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+﻿import { Link, useLocation } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -137,7 +137,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {children}
       </div>
 
-      <footer className="w-full py-16 px-gutter bg-gradient-to-b from-surface via-[#FFFBEB]/20 to-secondary-fixed/20 border-t border-[#FDE68A]/30 mt-20">
+      <footer className="w-full py-16 px-gutter bg-gradient-to-b from-surface via-[#FEFCE8]/20 to-secondary-fixed/20 border-t border-[#FEF08A]/30 mt-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 text-left mb-12">
           {/* Brand Col */}
           <div className="md:col-span-4 space-y-4">
@@ -207,7 +207,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         <div className="max-w-7xl mx-auto pt-8 border-t border-outline-variant/30 text-center flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="font-body-md text-xs text-tertiary opacity-80">
-            © Sasha School of Life. Designed and Developed by Yatratechs.
+            Â© Sasha School of Life. Designed and Developed by Yatratechs.
           </p>
           <div className="flex gap-6 text-xs text-tertiary font-mono">
             <Link to="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
