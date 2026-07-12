@@ -31,6 +31,35 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col relative overflow-x-hidden">
+      {/* Background Floating Colorful Doodles */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        {/* Doodle 1: Golden Star - Top Left */}
+        <span className="material-symbols-outlined absolute text-[#FBBF24] text-7xl md:text-8xl opacity-15 md:opacity-20 doodle-float-1" style={{ top: '12%', left: '4%' }}>star</span>
+        {/* Doodle 2: Sky Blue Cloud - Top Right */}
+        <span className="material-symbols-outlined absolute text-[#38BDF8] text-8xl md:text-9xl opacity-15 md:opacity-20 doodle-float-2" style={{ top: '15%', right: '5%' }}>cloud</span>
+        {/* Doodle 3: Coral Paint Palette - Middle Left */}
+        <span className="material-symbols-outlined absolute text-[#F87171] text-7xl md:text-8xl opacity-15 md:opacity-20 doodle-float-3" style={{ top: '48%', left: '3%' }}>palette</span>
+        {/* Doodle 4: Cherry Pink Heart - Middle Right */}
+        <span className="material-symbols-outlined absolute text-[#F472B6] text-6xl md:text-7xl opacity-20 md:opacity-25 doodle-float-1" style={{ top: '35%', right: '4%' }}>favorite</span>
+        {/* Doodle 5: Mint Green Sprout - Bottom Left */}
+        <span className="material-symbols-outlined absolute text-[#34D399] text-7xl md:text-8xl opacity-15 md:opacity-20 doodle-float-2" style={{ bottom: '20%', left: '8%' }}>spa</span>
+        {/* Doodle 6: Orange Sun - Bottom Right */}
+        <span className="material-symbols-outlined absolute text-[#FB923C] text-8xl md:text-9xl opacity-10 md:opacity-15 doodle-float-3" style={{ bottom: '10%', right: '6%' }}>wb_sunny</span>
+        {/* Doodle 7: Violet Book - Bottom Center Left */}
+        <span className="material-symbols-outlined absolute text-[#A78BFA] text-6xl md:text-7xl opacity-15 md:opacity-20 doodle-float-1" style={{ bottom: '30%', left: '25%' }}>menu_book</span>
+        {/* Doodle 8: Teal Rocket - Top Center Right */}
+        <span className="material-symbols-outlined absolute text-[#2DD4BF] text-7xl md:text-8xl opacity-10 md:opacity-20 doodle-float-2" style={{ top: '25%', right: '30%' }}>rocket_launch</span>
+        {/* Doodle 9: Golden Lightbulb - Bottom Right Center */}
+        <span className="material-symbols-outlined absolute text-[#FDE047] text-7xl md:text-8xl opacity-15 md:opacity-20 doodle-float-1" style={{ bottom: '25%', right: '35%' }}>lightbulb</span>
+        {/* Doodle 10: Yellow Glowing Bolt - Top Center */}
+        <span className="material-symbols-outlined absolute text-[#FBBF24] text-6xl md:text-7xl opacity-25 md:opacity-30 doodle-float-glow" style={{ top: '18%', left: '50%', transform: 'translateX(-50%)' }}>bolt</span>
+        {/* Doodle 11: Yellow Glowing Star - Bottom Left */}
+        <span className="material-symbols-outlined absolute text-[#FDE047] text-5xl md:text-6xl opacity-30 md:opacity-35 doodle-float-glow" style={{ bottom: '40%', left: '15%' }}>stars</span>
+        {/* Doodle 11: Lavender Butterfly - Middle Left Center */}
+        <span className="material-symbols-outlined absolute text-[#C084FC] text-6xl md:text-7xl opacity-20 md:opacity-25 doodle-float-2" style={{ top: '60%', left: '20%' }}>cruelty_free</span>
+        {/* Doodle 12: Sky Blue Kite - Middle Right Center */}
+        <span className="material-symbols-outlined absolute text-[#38BDF8] text-7xl md:text-8xl opacity-15 md:opacity-20 doodle-float-3" style={{ top: '65%', right: '22%' }}>sailing</span>
+      </div>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-6 md:px-8 py-3 mx-auto bg-surface/80 backdrop-blur-md rounded-full transition-all duration-300 border border-white/40 ${
           scrolled ? 'shadow-md mt-2 w-[95%]' : 'shadow-[0_10px_30px_rgba(139,92,246,0.1)] mt-4 md:mt-6 w-[90%]'
@@ -108,7 +137,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {children}
       </div>
 
-      <footer className="w-full py-16 px-gutter bg-gradient-to-b from-surface to-secondary-fixed/20 border-t border-outline-variant/30 mt-20">
+      <footer className="w-full py-16 px-gutter bg-gradient-to-b from-surface via-[#FFFBEB]/20 to-secondary-fixed/20 border-t border-[#FDE68A]/30 mt-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 text-left mb-12">
           {/* Brand Col */}
           <div className="md:col-span-4 space-y-4">
