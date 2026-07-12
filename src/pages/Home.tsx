@@ -9,7 +9,7 @@ export default function Home() {
       title: 'Montessori',
       link: '/programs',
       desc: 'Authentic Montessori at primary level with 5 areas: Exercises of Practical Life, Sensorial, Language, Logic and Culture.',
-      img: '/curiculat images/c 1.jpeg',
+      img: '/curricular images/c 1.jpeg',
       accent: 'from-[#E9DDFF] to-[#F5F3FF]',
       icon: 'psychology',
       tag: 'Child-Centered'
@@ -18,7 +18,7 @@ export default function Home() {
       title: 'IGCSE',
       link: '/programs',
       desc: 'International General Certificate of Secondary Education - a globally recognized curriculum.',
-      img: '/curiculat images/c 2.jpeg',
+      img: '/curricular images/c 2.jpeg',
       accent: 'from-[#FEF9C3] to-[#FEFCE8]',
       icon: 'school',
       tag: 'Global Standard'
@@ -27,7 +27,7 @@ export default function Home() {
       title: 'Waldorf Education',
       link: '/programs',
       desc: 'Holistic approach nurturing Head (Thinking), Heart (Feeling) and Hands (Doing) - Body, Mind and Spirit.',
-      img: '/curiculat images/c3.jpeg',
+      img: '/curricular images/c3.jpeg',
       accent: 'from-[#D3E5F6] to-[#F0F7FF]',
       icon: 'filter_drama',
       tag: 'Holistic'
@@ -36,7 +36,7 @@ export default function Home() {
       title: 'Reggio Emilia',
       link: '/programs',
       desc: 'Creative expression through art, music and imaginative play with the Atelier corner fostering creativity.',
-      img: '/curiculat images/c4.jpeg',
+      img: '/curricular images/c4.jpeg',
       accent: 'from-[#FFD8ED] to-[#FFF5FA]',
       icon: 'palette',
       tag: 'Creative'
@@ -80,20 +80,20 @@ export default function Home() {
 
   return (
     <main className="relative pt-32 overflow-x-hidden">
-      {/* â•â•â•â•â•â•â•â•â•â•â• BACKGROUND WASHES â•â•â•â•â•â•â•â•â•â•â• */}
+      {/*  BACKGROUND WASHES  */}
       <div className="watercolor-gradient absolute -top-40 -left-20 w-[600px] h-[600px] rounded-full blur-3xl opacity-40 pointer-events-none"></div>
       <div className="watercolor-gradient absolute top-1/2 -right-20 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>
       <div className="absolute top-[20%] right-[10%] w-[400px] h-[400px] bg-[#FEF9C3]/15 rounded-full blur-3xl pointer-events-none"></div>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• HERO SECTION â€” SPLIT LAYOUT â•â•â•â•â•â•â•â•â•â•â• */}
+      {/*  HERO SECTION— SPLIT LAYOUT  */}
       <section className="relative max-w-7xl mx-auto px-gutter py-12 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left â€” Content */}
+          {/* Left— Content */}
           <div className="relative z-10 order-2 lg:order-1">
             <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm mb-6 inline-block uppercase tracking-wider">ABOUT SASHA</span>
             
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg max-w-2xl mb-6 leading-tight text-primary">
-              There is More in <span className="text-[#EAB308]">LIFE</span> than Academics
+              There is More in <span className="text-[#F59E0B]">LIFE</span> than Academics
             </h1>
             
             <p className="font-body-lg text-body-lg text-tertiary max-w-lg mb-3 leading-relaxed">
@@ -101,8 +101,8 @@ export default function Home() {
             </p>
 
             <p className="font-headline-md text-headline-md text-secondary mb-8 flex items-center gap-2">
-              <span className="material-symbols-outlined text-[#EAB308] text-lg">school</span>
-              Admission Open â€” Toddler Pre-KG to Grade V
+              <span className="material-symbols-outlined text-[#F59E0B] text-lg">school</span>
+              Admission Open— Toddler Pre-KG to Grade V
             </p>
             
             <div className="flex flex-wrap gap-4 mb-12">
@@ -118,7 +118,7 @@ export default function Home() {
                 <p className="text-xs text-tertiary font-medium mt-1">Years Exp.</p>
               </div>
               <div className="text-center">
-                <span className="font-display-lg text-3xl font-bold text-[#EAB308]">4</span>
+                <span className="font-display-lg text-3xl font-bold text-[#F59E0B]">4</span>
                 <p className="text-xs text-tertiary font-medium mt-1">Curricula</p>
               </div>
               <div className="text-center">
@@ -132,11 +132,13 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right â€” Hero Image Composition */}
+          {/* Right— Hero Image Composition */}
           <div className="relative order-1 lg:order-2 flex justify-center">
             <div className="relative">
+              {/* Dotted Circle Border */}
+              <div className="absolute -inset-6 rounded-full border-[3px] border-dashed border-[#F59E0B]/60 doodle-float-2"></div>
               {/* Main Hero Circle */}
-              <div className="relative z-10 w-72 h-96 md:w-[480px] md:h-[580px] lg:w-[540px] lg:h-[620px] rounded-[2.5rem] overflow-hidden border-8 border-white shadow-2xl hero-float">
+              <div className="relative z-10 w-72 h-72 md:w-[480px] md:h-[480px] lg:w-[540px] lg:h-[540px] rounded-full overflow-hidden border-8 border-white shadow-2xl hero-float">
                 <img 
                   className="w-full h-full object-cover" 
                   src="/hero%20image/hero%20image.png" 
@@ -160,7 +162,7 @@ export default function Home() {
 
               {/* Golden Accent Badge */}
               <div className="absolute top-1/3 -right-6 md:-right-10 z-20 w-14 h-14 md:w-20 md:h-20 bg-[#FEF9C3]/80 backdrop-blur-sm rounded-2xl border-4 border-[#FEF08A]/40 flex items-center justify-center shadow-lg doodle-float-2">
-                <span className="material-symbols-outlined text-[#EAB308] text-2xl md:text-3xl">auto_awesome</span>
+                <span className="material-symbols-outlined text-[#F59E0B] text-2xl md:text-3xl">auto_awesome</span>
               </div>
 
               {/* Background Glow */}
@@ -170,7 +172,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• ABOUT SASHA â€” EDITORIAL SPLIT â•â•â•â•â•â•â•â•â•â•â• */}
+      {/*  ABOUT SASHA— EDITORIAL SPLIT  */}
       <section className="py-24 bg-[#FEFCE8]/25 border-y border-[#FEF08A]/20 relative overflow-hidden">
         <div className="absolute -bottom-20 left-10 w-64 h-64 bg-[#FEF08A]/15 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
@@ -193,10 +195,10 @@ export default function Home() {
             <div className="space-y-6">
               <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider inline-block">ABOUT SASHA</span>
               <h2 className="font-display-lg text-headline-lg md:text-display-lg-mobile text-primary leading-tight">
-                "There is More in <span className="text-[#EAB308]">LIFE</span> than Academics"
+                "There is More in <span className="text-[#F59E0B]">LIFE</span> than Academics"
               </h2>
               <p className="font-body-lg text-body-lg text-tertiary leading-relaxed">
-                Embark on an educational journey where success goes beyond exams, preparing children for the grander challenge â€“ LIFE itself. To nurture essential life skills, we have seamlessly blended the world's finest curricula: IGCSE, Montessori, Waldorf and Reggio Emilia.
+                Embark on an educational journey where success goes beyond exams, preparing children for the grander challenge— LIFE itself. To nurture essential life skills, we have seamlessly blended the world's finest curricula: IGCSE, Montessori, Waldorf and Reggio Emilia.
               </p>
               <p className="font-body-md text-sm text-tertiary leading-relaxed">
                 This carefully crafted approach systematically imparts the UNESCO endorsed 4C's of 21st century life skills, ensuring WHOLE CHILD development.
@@ -210,36 +212,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• CURRICULA â€” EDITORIAL CARDS â•â•â•â•â•â•â•â•â•â•â• */}
+      {/*  CURRICULA— EDITORIAL CARDS  */}
       <section className="py-24 bg-surface-container-low/30 border-y border-white/30 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
           <div className="text-center mb-16">
             <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider">OUR CURRICULA</span>
-            <h2 className="font-display-lg text-headline-lg text-primary mt-4">World-Class Educational <span className="text-[#EAB308]">Approaches</span></h2>
+            <h2 className="font-display-lg text-headline-lg text-primary mt-4">World-Class Educational <span className="text-[#F59E0B]">Approaches</span></h2>
             <p className="font-body-lg text-tertiary max-w-2xl mx-auto mt-4">A balanced mix of international methodologies tailored for child growth.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {curricula.map((item, idx) => (
-              <div key={idx} className={`bg-gradient-to-br ${item.accent} rounded-[2rem] overflow-hidden group hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl border border-white/50 relative`}>
+              <div key={idx} className={`bg-gradient-to-br ${item.accent} rounded-[2rem] overflow-hidden group hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl border border-white/50 relative flex flex-col`}>
                 {/* Image */}
-                <div className="w-full h-56 md:h-64 overflow-hidden relative">
+                <div className="w-full h-40 md:h-48 overflow-hidden relative shrink-0">
                   <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                   {/* Tag */}
-                  <span className="absolute top-4 left-4 golden-badge px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-sm backdrop-blur-sm">{item.tag}</span>
+                  <span className="absolute top-3 left-3 golden-badge px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-sm backdrop-blur-sm">{item.tag}</span>
                   {/* Icon */}
-                  <div className="absolute bottom-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-primary text-xl">{item.icon}</span>
+                  <div className="absolute bottom-3 right-3 w-10 h-10 bg-white/90 backdrop-blur-md rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span className="material-symbols-outlined text-primary text-lg">{item.icon}</span>
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="p-7 md:p-8">
-                  <h3 className="font-display-lg text-xl md:text-2xl text-primary font-bold mb-3">{item.title}</h3>
-                  <p className="font-body-md text-sm text-tertiary leading-relaxed mb-5">{item.desc}</p>
-                  <Link to={item.link} className="text-primary font-bold text-sm flex items-center gap-1.5 group-hover:gap-3 transition-all">
+                <div className="p-5 md:p-6 flex flex-col grow">
+                  <h3 className="font-display-lg text-lg md:text-xl text-primary font-bold mb-2">{item.title}</h3>
+                  <p className="font-body-md text-xs text-tertiary leading-relaxed mb-4 grow">{item.desc}</p>
+                  <Link to={item.link} className="text-primary font-bold text-xs flex items-center gap-1.5 group-hover:gap-2.5 transition-all mt-auto">
                     Learn Details 
                     <span className="material-symbols-outlined text-sm">arrow_forward</span>
                   </Link>
@@ -250,11 +252,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• KEY PILLARS â€” BENTO GRID â•â•â•â•â•â•â•â•â•â•â• */}
+      {/*  KEY PILLARS— BENTO GRID  */}
       <section className="max-w-7xl mx-auto px-gutter py-24 relative">
         <div className="text-center mb-16">
           <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider">Key Pillars</span>
-          <h2 className="font-display-lg text-headline-lg text-primary mt-4">Nurtured For the <span className="text-[#EAB308]">Universe</span></h2>
+          <h2 className="font-display-lg text-headline-lg text-primary mt-4">Nurtured For the <span className="text-[#F59E0B]">Universe</span></h2>
           <p className="font-body-lg text-tertiary max-w-xl mx-auto mt-4">The foundation that makes SASHA an extraordinary place to grow.</p>
         </div>
         
@@ -278,78 +280,40 @@ export default function Home() {
           ))}
         </div>
       </section>
+      {/* ─────────── ACTIVITIES— GRADIENT PILL GRID ─────────── */}
+      <section className="py-24 max-w-7xl mx-auto px-gutter relative overflow-hidden">
+        <div className="text-center mb-16">
+          <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider">BEYOND THE CLASSROOM</span>
+          <h2 className="font-display-lg text-headline-lg text-primary mt-4">Gamut of <span className="text-[#F59E0B]">Co-Curricular</span> Activities</h2>
+          <p className="font-body-lg text-body-md text-tertiary max-w-xl mx-auto mt-4">Cultivating multiple intelligences through customized movement and arts.</p>
+        </div>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• BEYOND THE CLASSROOM â€” PREMIUM EDITORIAL â•â•â•â•â•â•â•â•â•â•â• */}
-      <section className="py-24 bg-gradient-to-b from-[#F5F3FF]/40 via-white/20 to-[#FEFCE8]/30 border-y border-white/30 relative overflow-hidden">
-        <div className="absolute -top-40 -left-20 w-[500px] h-[500px] bg-primary-fixed/8 rounded-full blur-3xl pointer-events-none"></div>
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#FEF9C3]/10 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div className="max-w-7xl mx-auto px-gutter relative z-10">
-          {/* Header Row */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-end mb-16">
-            <div>
-              <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider inline-block mb-4">BEYOND THE CLASSROOM</span>
-              <h2 className="font-display-lg text-headline-lg md:text-display-lg-mobile text-primary leading-tight">
-                A Gamut of <span className="text-[#EAB308]">Co-Curricular</span> Activities
-              </h2>
-              <p className="font-body-lg text-tertiary mt-4 max-w-lg leading-relaxed">
-                We cultivate multiple intelligences through customized movement, arts, and mindful practices â€” preparing confident, well-rounded individuals.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 lg:justify-end">
-              <Link to="/campus-life" className="primary-pill px-8 py-4 rounded-full text-white font-bold text-base transition-transform hover:scale-105 shadow-lg inline-flex items-center gap-2">
-                Explore Campus Life
-                <span className="material-symbols-outlined text-lg">arrow_forward</span>
-              </Link>
-              <Link to="/programs" className="golden-pill px-8 py-4 rounded-full font-bold text-base transition-transform hover:scale-105 inline-flex items-center gap-2">
-                Our Programs
-              </Link>
-            </div>
-          </div>
-
-          {/* Activity Cards â€” 3Ã—2 Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {activities.map((activity, idx) => (
-              <div key={idx} className={`bg-gradient-to-br ${activity.accent} rounded-[2rem] overflow-hidden group hover:-translate-y-2 transition-all duration-300 border border-white/50 shadow-lg hover:shadow-2xl relative`}>
-                {/* Image */}
-                <div className="w-full h-44 overflow-hidden relative">
-                  <img src={activity.img} alt={activity.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                  {/* Icon Badge */}
-                  <div className="absolute bottom-3 right-3 w-11 h-11 bg-white/90 backdrop-blur-md rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>{activity.icon}</span>
-                  </div>
-                </div>
-                {/* Content */}
-                <div className="p-6">
-                  <h3 className="font-display-lg text-lg text-primary font-bold mb-2">{activity.name}</h3>
-                  <p className="font-body-md text-xs text-tertiary leading-relaxed">{activity.desc}</p>
-                </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+          {activities.map((activity, idx) => {
+            const iconAnimations = ['icon-bounce', 'icon-spin', 'icon-pulse', 'icon-swing', 'icon-shake', 'icon-float'];
+            return (
+            <div key={idx} className={`bg-gradient-to-br ${activity.accent} rounded-[2rem] p-7 text-center group hover:-translate-y-2 transition-all duration-300 flex flex-col justify-center items-center gap-4 border border-white/50 shadow-md hover:shadow-xl relative overflow-hidden`}>
+              {/* Watermark */}
+              <div className="absolute -bottom-4 -right-4 opacity-[0.06] pointer-events-none">
+                <span className="material-symbols-outlined text-[70px]">{activity.icon}</span>
               </div>
-            ))}
-          </div>
-
-          {/* Bottom quote strip */}
-          <div className="mt-12 golden-glass-card rounded-[2rem] p-8 md:p-10 flex flex-col md:flex-row items-center gap-6 md:gap-10">
-            <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-[#FACC15] to-[#D97706] rounded-2xl flex items-center justify-center shadow-lg shrink-0">
-              <span className="material-symbols-outlined text-white text-3xl md:text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>emoji_objects</span>
+              <div className="w-14 h-14 rounded-2xl bg-white/70 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shadow-sm">
+                <span className={`material-symbols-outlined text-2xl ${iconAnimations[idx % iconAnimations.length]}`}>{activity.icon}</span>
+              </div>
+              <h3 className="font-headline-md text-base text-primary font-bold">{activity.name}</h3>
             </div>
-            <div className="text-center md:text-left">
-              <p className="font-headline-md text-base md:text-lg text-primary font-bold mb-1">"There is more in LIFE than ACADEMICS, but we are good at that too."</p>
-              <p className="font-body-md text-xs text-tertiary">Every activity is designed to nurture UNESCO's 4C's â€” Communication, Collaboration, Critical Thinking & Creativity.</p>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </section>
-
-      {/* â•â•â•â•â•â•â•â•â•â•â• GALLERY PREVIEW â•â•â•â•â•â•â•â•â•â•â• */}
+      {/*  GALLERY PREVIEW  */}
       <section className="py-24 bg-[#FEFCE8]/15 border-y border-[#FEF08A]/20 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
             <div>
               <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider inline-block mb-4">GALLERY</span>
-              <h2 className="font-display-lg text-headline-lg text-primary leading-tight">Life at <span className="text-[#EAB308]">SASHA</span> School</h2>
+              <h2 className="font-display-lg text-headline-lg text-primary leading-tight">Life at <span className="text-[#F59E0B]">SASHA</span> School</h2>
               <p className="font-body-md text-sm text-tertiary mt-2 max-w-md">A glimpse into joyful learning, outdoor discovery, and creative expression.</p>
             </div>
             <Link to="/gallery" className="golden-pill px-8 py-3.5 rounded-full font-bold transition-transform hover:scale-105 inline-flex items-center gap-2 shrink-0">
@@ -390,7 +354,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• TESTIMONIALS â•â•â•â•â•â•â•â•â•â•â• */}
+      {/*  TESTIMONIALS  */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute top-1/4 -left-20 w-[400px] h-[400px] bg-secondary-fixed/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute bottom-1/4 -right-20 w-[400px] h-[400px] bg-tertiary-fixed/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -399,7 +363,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider inline-block mb-4">PARENT VOICES</span>
             <h2 className="font-display-lg text-headline-lg text-primary leading-tight">
-              Trusted by Families in <span className="text-[#EAB308]">Coimbatore</span>
+              Trusted by Families in <span className="text-[#F59E0B]">Coimbatore</span>
             </h2>
             <p className="font-body-md text-sm text-tertiary mt-4 max-w-xl mx-auto">Hear from our local community about their children's transformative journey at SASHA School.</p>
           </div>
@@ -409,7 +373,7 @@ export default function Home() {
             <div className="glass-card p-8 rounded-[2rem] relative group hover:-translate-y-2 transition-all duration-300">
               <span className="material-symbols-outlined absolute -top-4 -left-4 text-6xl text-[#FEF9C3] opacity-80 z-0 rotate-180" style={{ fontVariationSettings: "'FILL' 1" }}>format_quote</span>
               <div className="relative z-10">
-                <div className="flex text-[#EAB308] mb-4">
+                <div className="flex text-[#F59E0B] mb-4">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   ))}
@@ -433,7 +397,7 @@ export default function Home() {
             <div className="golden-glass-card p-8 rounded-[2rem] relative group hover:-translate-y-2 transition-all duration-300 md:-translate-y-4 shadow-xl">
               <span className="material-symbols-outlined absolute -top-4 -left-4 text-6xl text-white/40 opacity-80 z-0 rotate-180" style={{ fontVariationSettings: "'FILL' 1" }}>format_quote</span>
               <div className="relative z-10">
-                <div className="flex text-[#EAB308] mb-4">
+                <div className="flex text-[#F59E0B] mb-4">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   ))}
@@ -457,7 +421,7 @@ export default function Home() {
             <div className="glass-card p-8 rounded-[2rem] relative group hover:-translate-y-2 transition-all duration-300">
               <span className="material-symbols-outlined absolute -top-4 -left-4 text-6xl text-[#FEF9C3] opacity-80 z-0 rotate-180" style={{ fontVariationSettings: "'FILL' 1" }}>format_quote</span>
               <div className="relative z-10">
-                <div className="flex text-[#EAB308] mb-4">
+                <div className="flex text-[#F59E0B] mb-4">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   ))}
@@ -480,7 +444,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• FAQ â€” EDITORIAL ACCORDION â•â•â•â•â•â•â•â•â•â•â• */}
+      {/*  FAQ— EDITORIAL ACCORDION  */}
       <section className="py-24 bg-[#FEFCE8]/20 border-y border-[#FEF08A]/20 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-4xl mx-auto px-gutter relative z-10">
@@ -488,7 +452,7 @@ export default function Home() {
             {/* Left: Header */}
             <div className="lg:col-span-2 lg:sticky lg:top-32">
               <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider inline-block mb-4">FAQ</span>
-              <h2 className="font-display-lg text-headline-lg text-primary leading-tight">Frequently Asked <span className="text-[#EAB308]">Questions</span></h2>
+              <h2 className="font-display-lg text-headline-lg text-primary leading-tight">Frequently Asked <span className="text-[#F59E0B]">Questions</span></h2>
               <p className="font-body-md text-sm text-tertiary mt-4 leading-relaxed">Everything parents need to know about SASHA School.</p>
               <Link to="/contact" className="primary-pill px-6 py-3 rounded-full text-white font-bold text-sm transition-transform hover:scale-105 shadow-lg mt-6 inline-flex items-center gap-2">
                 Still have questions?
@@ -512,7 +476,7 @@ export default function Home() {
                         </span>
                         {faq.question}
                       </span>
-                      <span className={`material-symbols-outlined text-[#EAB308] transition-transform duration-300 ${activeFaq === idx ? 'rotate-180' : ''}`}>
+                      <span className={`material-symbols-outlined text-[#F59E0B] transition-transform duration-300 ${activeFaq === idx ? 'rotate-180' : ''}`}>
                         keyboard_arrow_down
                       </span>
                     </button>
@@ -533,7 +497,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• CLOSING CTA â€” GRADIENT BANNER â•â•â•â•â•â•â•â•â•â•â• */}
+      {/*  CLOSING CTA— GRADIENT BANNER  */}
       <section className="py-24 px-gutter relative overflow-hidden">
         <div className="max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-br from-[#8B5CF6] to-[#C4B5FD] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl">
           {/* Decorative circles */}
@@ -546,7 +510,7 @@ export default function Home() {
           <div className="relative z-10 max-w-3xl mx-auto">
             <span className="bg-white/20 text-white px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider inline-block mb-6 backdrop-blur-sm">HAPPY SCHOOLING!</span>
             <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 leading-tight">
-              Leaders Groomed for Life â€“ <br/>Our Promise to <span className="text-[#FEF08A]">Parents!</span>
+              Leaders Groomed for Life— <br/>Our Promise to <span className="text-[#FEF08A]">Parents!</span>
             </h2>
             <p className="font-body-lg text-body-lg opacity-90 max-w-xl mx-auto mb-12 leading-relaxed">
               One of the Pioneers in implementing authentic Montessori at primary level in South India. Exclusive Life Skills and Leadership Programme with a school system supported by a battalion of professionals.

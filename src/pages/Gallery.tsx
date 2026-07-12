@@ -22,10 +22,10 @@ export default function Gallery() {
     { src: '/images/IMG-20260205-WA0025.jpg.jpeg', alt: 'Adventure Play', category: 'Activities' },
 
     // Learning
-    { src: '/curiculat images/c 1.jpeg', alt: 'Montessori Learning', category: 'Learning' },
-    { src: '/curiculat images/c 2.jpeg', alt: 'Hands-on Discovery', category: 'Learning' },
-    { src: '/curiculat images/c3.jpeg', alt: 'Creative Classroom', category: 'Learning' },
-    { src: '/curiculat images/c4.jpeg', alt: 'Art & Expression', category: 'Learning' },
+    { src: '/curricular images/c 1.jpeg', alt: 'Montessori Learning', category: 'Learning' },
+    { src: '/curricular images/c 2.jpeg', alt: 'Hands-on Discovery', category: 'Learning' },
+    { src: '/curricular images/c3.jpeg', alt: 'Creative Classroom', category: 'Learning' },
+    { src: '/curricular images/c4.jpeg', alt: 'Art & Expression', category: 'Learning' },
     { src: '/images/IMG-20260620-WA0035.jpg.jpeg', alt: 'Montessori Letter Work', category: 'Learning' },
     { src: '/images/IMG-20260620-WA0036.jpg.jpeg', alt: 'Classroom Activity', category: 'Learning' },
     { src: '/images/IMG-20260620-WA0037.jpg.jpeg', alt: 'Guided Learning', category: 'Learning' },
@@ -94,14 +94,14 @@ export default function Gallery() {
       <div className="watercolor-gradient absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>
       <div className="absolute top-1/3 right-0 w-[400px] h-[400px] bg-[#FEF9C3]/20 rounded-full blur-3xl pointer-events-none"></div>
 
-      {/* â”€â”€â”€ HERO SECTION â”€â”€â”€ */}
+      {/* ─── HERO SECTION ─── */}
       <section className="relative max-w-7xl mx-auto px-gutter py-12 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-8">
           {/* Left: Content */}
           <div className="relative z-10">
             <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm mb-6 inline-block uppercase tracking-wider">GALLERY</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
-              Moments at <span className="text-[#EAB308]">SASHA</span> School
+              Moments at <span className="text-[#F59E0B]">SASHA</span> School
             </h1>
             <p className="font-body-lg text-body-lg text-tertiary max-w-lg mb-8 leading-relaxed">
               A glimpse into the vibrant, sun-drenched world of self-directed learning, play, and organic discovery at our campus.
@@ -110,7 +110,7 @@ export default function Gallery() {
             {/* Category Count */}
             <div className="flex flex-wrap gap-6 pt-6 border-t border-[#FEF08A]/40">
               <div className="text-center">
-                <span className="font-display-lg text-2xl font-bold text-[#EAB308]">{images.length}</span>
+                <span className="font-display-lg text-2xl font-bold text-[#F59E0B]">{images.length}</span>
                 <p className="text-xs text-tertiary font-medium mt-1">Total Photos</p>
               </div>
               {categories.slice(1, 5).map(cat => (
@@ -140,7 +140,7 @@ export default function Gallery() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ FILTER TABS â”€â”€â”€ */}
+      {/* ─── FILTER TABS ─── */}
       <section className="max-w-7xl mx-auto px-gutter mb-12">
         <div className="flex flex-wrap justify-center gap-2 p-2 bg-white/40 backdrop-blur-sm rounded-full border border-white/50 shadow-sm max-w-fit mx-auto">
           {categories.map((cat) => (
@@ -162,7 +162,7 @@ export default function Gallery() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ MASONRY GALLERY â”€â”€â”€ */}
+      {/* ─── MASONRY GALLERY ─── */}
       <section className="pb-24 px-gutter max-w-7xl mx-auto z-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[200px] md:auto-rows-[220px] gap-4">
           {filteredImages.map((img, idx) => (
@@ -194,21 +194,27 @@ export default function Gallery() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ CTA â”€â”€â”€ */}
-      <section className="py-16 relative">
-        <div className="max-w-4xl mx-auto px-gutter text-center">
-          <div className="golden-glass-card rounded-[2.5rem] p-10 md:p-16 relative overflow-hidden shadow-xl">
-            <h2 className="font-display-lg text-2xl md:text-3xl text-primary mb-4 font-bold leading-tight">
-              See Our Campus <span className="text-[#EAB308]">in Person</span>
+      {/* ─── CTA ─── */}
+      <section className="py-24 px-gutter relative overflow-hidden">
+        <div className="max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-br from-[#8B5CF6] to-[#C4B5FD] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl">
+          <div className="absolute inset-0 opacity-10 pointer-events-none">
+            <div className="absolute top-8 left-8 w-20 h-20 bg-white rounded-full"></div>
+            <div className="absolute bottom-8 right-8 w-32 h-32 bg-white rounded-full"></div>
+            <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white rounded-full"></div>
+          </div>
+          <div className="relative z-10 max-w-3xl mx-auto">
+            <span className="bg-white/20 text-white px-4 py-1.5 rounded-full text-label-sm font-label-sm uppercase tracking-wider inline-block mb-6 backdrop-blur-sm">GALLERY</span>
+            <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 leading-tight">
+              See Our Campus <span className="text-[#FEF08A]">in Person</span>
             </h2>
-            <p className="font-body-lg text-tertiary max-w-lg mx-auto mb-8 leading-relaxed">
+            <p className="font-body-lg text-body-lg opacity-90 max-w-xl mx-auto mb-12 leading-relaxed">
               Photos can only capture so much. Schedule a visit to experience the warmth and wonder of SASHA School firsthand.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link to="/contact" className="primary-pill px-10 py-4 rounded-full text-white font-bold text-lg transition-transform hover:scale-105 shadow-lg text-center inline-block">
+              <Link to="/contact" className="bg-white text-primary px-10 py-5 rounded-full font-bold shadow-xl hover:scale-105 transition-transform inline-block text-lg">
                 Book a Campus Tour
               </Link>
-              <Link to="/campus-life" className="golden-pill px-10 py-4 rounded-full font-bold text-lg transition-transform hover:scale-105 text-center inline-block">
+              <Link to="/campus-life" className="border-2 border-white/30 text-white px-10 py-5 rounded-full font-bold hover:bg-white/10 transition-all inline-block text-lg backdrop-blur-sm">
                 Explore Campus Life
               </Link>
             </div>
@@ -216,7 +222,7 @@ export default function Gallery() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ LIGHTBOX MODAL â”€â”€â”€ */}
+      {/* ─── LIGHTBOX MODAL ─── */}
       {lightboxIdx !== null && (
         <div 
           className="fixed inset-0 z-50 bg-black/90 backdrop-blur-lg flex flex-col items-center justify-center p-4"

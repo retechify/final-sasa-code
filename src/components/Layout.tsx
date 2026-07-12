@@ -1,14 +1,16 @@
-﻿import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
+      setShowScrollTop(window.scrollY > 300);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -27,6 +29,57 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { name: 'Campus Life', path: '/campus-life' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },
+  ];
+
+  const [fabOpen, setFabOpen] = useState(false);
+
+  const socialLinks = [
+    {
+      name: 'Google Business',
+      url: 'https://share.google/FmgJGbqSkDUe6rP79',
+      color: 'hover:bg-[#4285F4] hover:text-white',
+      bgColor: 'bg-white text-[#4285F4]',
+      icon: (
+        <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M12.24 10.285V13.4h6.887c-.275 1.565-1.88 4.604-6.887 4.604-4.33 0-7.859-3.578-7.859-8s3.53-8 7.859-8c2.46 0 4.105 1.025 5.047 1.926l2.427-2.334C17.955 2.192 15.34 1 12.24 1 5.26 1 0 6.26 0 12.75s5.26 11.75 12.24 11.75c7.29 0 12.13-5.12 12.13-12.35 0-.83-.09-1.465-.2-1.865H12.24z"/>
+        </svg>
+      )
+    },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/sashaschoolforlife?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+      color: 'hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-white',
+      bgColor: 'bg-white text-[#ee2a7b]',
+      icon: (
+        <svg className="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      )
+    },
+    {
+      name: 'YouTube',
+      url: 'https://youtube.com/@sashaschoolforlife?si=GB5j83TC7xkW3TOl',
+      color: 'hover:bg-[#FF0000] hover:text-white',
+      bgColor: 'bg-white text-[#FF0000]',
+      icon: (
+        <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.53 3.5 12 3.5 12 3.5s-7.53 0-9.388.555A3.002 3.002 0 0 0 .502 6.163C0 8.07 0 12 0 12s0 3.93.502 5.837a3.003 3.003 0 0 0 2.11 2.108C4.47 20.5 12 20.5 12 20.5s7.53 0 9.388-.555a3.002 3.002 0 0 0 2.11-2.108C24 15.93 24 12 24 12s0-3.93-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+      )
+    },
+    {
+      name: 'Facebook',
+      url: 'https://www.facebook.com/sashaschoolforlife',
+      color: 'hover:bg-[#1877F2] hover:text-white',
+      bgColor: 'bg-white text-[#1877F2]',
+      icon: (
+        <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/>
+        </svg>
+      )
+    }
   ];
 
   return (
@@ -104,9 +157,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="fixed inset-0 z-40 bg-surface/95 backdrop-blur-lg flex flex-col items-center justify-center gap-8 md:hidden animate-fade-in">
           <div className="absolute top-6 left-6">
             <Link to="/">
-<img src="/logo/logo.png" alt="SASHA School" className="h-14 w-auto" />
-          </Link>
-        </div>
+              <img src="/logo/logo.png" alt="SASHA School" className="h-14 w-auto" />
+            </Link>
+          </div>
           
           <div className="flex flex-col items-center gap-6">
             {navLinks.map(link => (
@@ -148,15 +201,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               There is more in LIFE than ACADEMICS, but we are good at that too
             </p>
             <div className="flex gap-3">
-              <Link to="#" className="w-9 h-9 rounded-full border border-outline-variant/50 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
-                <span className="material-symbols-outlined text-sm">public</span>
-              </Link>
-              <Link to="#" className="w-9 h-9 rounded-full border border-outline-variant/50 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
-                <span className="material-symbols-outlined text-sm">mail</span>
-              </Link>
-              <Link to="#" className="w-9 h-9 rounded-full border border-outline-variant/50 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
-                <span className="material-symbols-outlined text-sm">share</span>
-              </Link>
+              {socialLinks.map((social) => (
+                <a 
+                  key={social.name}
+                  href={social.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={`w-9 h-9 rounded-full border border-outline-variant/50 flex items-center justify-center text-primary ${social.color} transition-all`}
+                  title={social.name}
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
 
@@ -207,7 +263,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         <div className="max-w-7xl mx-auto pt-8 border-t border-outline-variant/30 text-center flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="font-body-md text-xs text-tertiary opacity-80">
-            Â© Sasha School of Life. Designed and Developed by Yatratechs.
+            © Sasha School of Life. Designed and Developed by Yatratechs.
           </p>
           <div className="flex gap-6 text-xs text-tertiary font-mono">
             <Link to="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
@@ -216,6 +272,57 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </footer>
+
+      {/* Scroll to Top Button */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className={`fixed bottom-6 md:bottom-10 left-6 md:left-10 z-50 w-14 h-14 rounded-full shadow-[0_8px_30px_rgba(139,92,246,0.3)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300 border-2 border-white/80 bg-white text-primary ${showScrollTop ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-8 pointer-events-none'}`}
+        aria-label="Scroll to top"
+      >
+        <span className="material-symbols-outlined text-3xl">keyboard_arrow_up</span>
+      </button>
+
+      {/* Premium Floating Speed Dial Button */}
+      <div className="fixed bottom-6 md:bottom-10 right-6 md:right-10 z-50 flex flex-col-reverse items-end gap-4">
+        {/* Main Floating Trigger Button */}
+        <button 
+          onClick={() => setFabOpen(!fabOpen)}
+          className={`w-16 h-16 rounded-full shadow-[0_8px_30px_rgba(234,179,8,0.4)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-20 duration-500 relative border-2 border-white/80 ${fabOpen ? 'bg-white text-primary' : 'bg-gradient-to-tr from-[#FACC15] to-[#D97706] text-white'}`}
+          aria-label="Connect with us"
+        >
+          {/* Subtle pulse ring when closed */}
+          {!fabOpen && (
+            <span className="absolute inset-0 rounded-full bg-[#FACC15] animate-ping opacity-40 pointer-events-none" style={{ animationDuration: '2.5s' }}></span>
+          )}
+          <span className={`material-symbols-outlined text-3xl transition-all duration-500 ease-out ${fabOpen ? 'rotate-90 scale-0 opacity-0 absolute' : 'rotate-0 scale-100 opacity-100'}`}>
+            share
+          </span>
+          <span className={`material-symbols-outlined text-3xl transition-all duration-500 ease-out ${fabOpen ? 'rotate-0 scale-100 opacity-100' : '-rotate-90 scale-0 opacity-0 absolute'}`}>
+            close
+          </span>
+        </button>
+
+        {/* Floating Icons */}
+        <div className={`flex flex-col items-end gap-4 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] origin-bottom ${fabOpen ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-12 pointer-events-none'}`}>
+          {socialLinks.map((social, idx) => (
+            <div key={social.name} className="flex items-center gap-4 group" style={{ transitionDelay: `${(socialLinks.length - idx) * 50}ms` }}>
+              {/* Tooltip Label */}
+              <span className="bg-white/95 backdrop-blur-md text-primary text-sm font-bold px-4 py-2 rounded-xl shadow-xl border border-white/50 whitespace-nowrap opacity-0 group-hover:opacity-100 group-hover:-translate-x-2 transition-all pointer-events-none duration-300">
+                {social.name}
+              </span>
+              {/* Icon Action Button */}
+              <a 
+                href={social.url}
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={`w-14 h-14 rounded-full shadow-[0_8px_20px_rgba(0,0,0,0.1)] flex items-center justify-center border-2 border-white/80 transition-all duration-300 hover:scale-110 active:scale-95 ${social.bgColor} ${social.color}`}
+              >
+                {social.icon}
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

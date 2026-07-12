@@ -69,12 +69,12 @@ export default function CoreTeam() {
       <div className="watercolor-gradient absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>
       <div className="absolute top-1/3 right-0 w-[400px] h-[400px] bg-[#FEF9C3]/20 rounded-full blur-3xl pointer-events-none"></div>
 
-      {/* â”€â”€â”€ HERO SECTION â”€â”€â”€ */}
+      {/* ─── HERO SECTION ─── */}
       <section className="relative max-w-7xl mx-auto px-gutter py-12 md:py-20">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm mb-6 inline-block uppercase tracking-wider">OUR CORE TEAM</span>
           <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
-            The People Behind <span className="text-[#EAB308]">SASHA</span>
+            The People Behind <span className="text-[#F59E0B]">SASHA</span>
           </h1>
           <p className="font-body-lg text-body-lg text-tertiary max-w-2xl mx-auto leading-relaxed">
             Our school system is supported by a battalion of world-class educational professionals dedicated to nurturing your child's journey.
@@ -87,7 +87,7 @@ export default function CoreTeam() {
               <p className="text-xs text-tertiary font-medium mt-1">Years Combined</p>
             </div>
             <div className="text-center">
-              <span className="font-display-lg text-3xl font-bold text-[#EAB308]">4</span>
+              <span className="font-display-lg text-3xl font-bold text-[#F59E0B]">4</span>
               <p className="text-xs text-tertiary font-medium mt-1">Expert Mentors</p>
             </div>
             <div className="text-center">
@@ -98,7 +98,7 @@ export default function CoreTeam() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ TEAM MEMBERS â€” Alternating Editorial â”€â”€â”€ */}
+      {/* ─── TEAM MEMBERS— Alternating Editorial ─── */}
       <section className="relative z-10">
         {team.map((member, idx) => {
           const isEven = idx % 2 === 0;
@@ -137,13 +137,13 @@ export default function CoreTeam() {
                         {member.roles.map((role, rIdx) => (
                           <div key={rIdx} className={`bg-gradient-to-br ${member.accent} rounded-2xl p-6 border border-white/50 shadow-md`}>
                             <h4 className="font-headline-md text-sm text-primary font-bold mb-4 flex items-center gap-2">
-                              <span className="material-symbols-outlined text-[#EAB308] text-sm">verified</span>
+                              <span className="material-symbols-outlined text-[#F59E0B] text-sm">verified</span>
                               {role.title}
                             </h4>
                             <ul className="space-y-2">
                               {role.items.map((item, iIdx) => (
                                 <li key={iIdx} className="flex items-start gap-2.5 text-xs text-tertiary leading-relaxed">
-                                  <span className="material-symbols-outlined text-[#EAB308] text-xs shrink-0 mt-0.5">check_circle</span>
+                                  <span className="material-symbols-outlined text-[#F59E0B] text-xs shrink-0 mt-0.5">check_circle</span>
                                   <span>{item}</span>
                                 </li>
                               ))}
@@ -154,13 +154,13 @@ export default function CoreTeam() {
                     ) : (
                       <div className={`bg-gradient-to-br ${member.accent} rounded-2xl p-6 border border-white/50 shadow-md`}>
                         <h4 className="font-headline-md text-sm text-primary font-bold mb-4 flex items-center gap-2">
-                          <span className="material-symbols-outlined text-[#EAB308] text-sm">workspace_premium</span>
+                          <span className="material-symbols-outlined text-[#F59E0B] text-sm">workspace_premium</span>
                           Professional Expertise
                         </h4>
                         <ul className="space-y-3">
                           {member.details?.map((detail, dIdx) => (
                             <li key={dIdx} className="flex items-start gap-3 text-sm text-tertiary leading-relaxed">
-                              <span className="material-symbols-outlined text-[#EAB308] text-sm shrink-0 mt-0.5">check_circle</span>
+                              <span className="material-symbols-outlined text-[#F59E0B] text-sm shrink-0 mt-0.5">check_circle</span>
                               <span>{detail}</span>
                             </li>
                           ))}
@@ -175,31 +175,31 @@ export default function CoreTeam() {
         })}
       </section>
 
-      {/* â”€â”€â”€ CLOSING CTA â”€â”€â”€ */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="max-w-5xl mx-auto px-gutter relative z-10">
-          {/* Quote */}
-          <div className="golden-glass-card rounded-[2.5rem] p-10 md:p-16 text-center relative overflow-hidden shadow-xl mb-16">
-            <span className="material-symbols-outlined text-[#EAB308] text-7xl absolute -top-4 left-6 opacity-15">format_quote</span>
-            <p className="font-display-lg text-lg md:text-2xl text-secondary italic relative z-20 leading-relaxed max-w-3xl mx-auto">
-              "We have a school system supported by a battalion of professionals â€” each one passionate about nurturing the whole child."
-            </p>
-            <p className="mt-8 font-label-sm text-[#854D0E] uppercase tracking-widest text-xs font-bold">â€” SASHA School of Life</p>
+      {/* ─── CLOSING CTA ─── */}
+      <section className="py-24 px-gutter relative overflow-hidden">
+        <div className="max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-br from-[#8B5CF6] to-[#C4B5FD] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl">
+          <div className="absolute inset-0 opacity-10 pointer-events-none">
+            <div className="absolute top-8 left-8 w-20 h-20 bg-white rounded-full"></div>
+            <div className="absolute bottom-8 right-8 w-32 h-32 bg-white rounded-full"></div>
+            <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white rounded-full"></div>
           </div>
-
-          {/* CTA */}
-          <div className="text-center">
-            <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
-              Meet Our Educators <span className="text-[#EAB308]">in Person</span>
+          <div className="relative z-10 max-w-3xl mx-auto">
+            <span className="material-symbols-outlined text-white/30 text-7xl block mb-4">format_quote</span>
+            <p className="font-display-lg text-lg md:text-2xl italic leading-relaxed mb-8 opacity-90">
+              "We have a school system supported by a battalion of professionals— each one passionate about nurturing the whole child."
+            </p>
+            <p className="text-sm uppercase tracking-widest text-[#FEF08A] font-bold mb-12">— SASHA School of Life</p>
+            <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">
+              Meet Our Educators <span className="text-[#FEF08A]">in Person</span>
             </h2>
-            <p className="font-body-lg text-tertiary max-w-xl mx-auto mb-10 leading-relaxed">
+            <p className="font-body-lg text-body-lg opacity-90 max-w-xl mx-auto mb-12 leading-relaxed">
               We invite you to visit our campus, observe a Montessori session, and interact with our dedicated mentors.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link to="/contact" className="primary-pill px-10 py-4 rounded-full text-white font-bold text-lg transition-transform hover:scale-105 active:scale-95 shadow-lg text-center inline-block">
+              <Link to="/contact" className="bg-white text-primary px-10 py-5 rounded-full font-bold shadow-xl hover:scale-105 transition-transform inline-block text-lg">
                 Schedule a Campus Tour
               </Link>
-              <Link to="/about" className="golden-pill px-10 py-4 rounded-full font-bold text-lg transition-transform hover:scale-105 active:scale-95 text-center inline-block">
+              <Link to="/about" className="border-2 border-white/30 text-white px-10 py-5 rounded-full font-bold hover:bg-white/10 transition-all inline-block text-lg backdrop-blur-sm">
                 About Our Founders
               </Link>
             </div>

@@ -16,13 +16,13 @@ export default function About() {
       <div className="watercolor-gradient absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>
       <div className="absolute top-1/3 right-0 w-[400px] h-[400px] bg-[#FEF9C3]/20 rounded-full blur-3xl pointer-events-none"></div>
 
-      {/* â”€â”€â”€ HERO SECTION â”€â”€â”€ */}
+      {/* ─── HERO SECTION ─── */}
       <section className="relative max-w-7xl mx-auto px-gutter py-12 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative z-10">
             <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm mb-6 inline-block uppercase tracking-wider">Our Origin</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
-              There is More in <span className="text-[#EAB308]">LIFE</span> than Academics
+              There is More in <span className="text-[#F59E0B]">LIFE</span> than Academics
             </h1>
             <p className="font-body-lg text-body-lg text-tertiary max-w-lg mb-8 leading-relaxed">
               Motivated by our deep commitment and extensive research in education, we established this school exclusively for the sake of our cherished daughter. As fellow parents, we understand the profound impact a nurturing educational environment can have on a child. This school is founded by parents, for parents, with the shared goal of positively influencing the educational experience of every child entrusted to our care.
@@ -43,7 +43,7 @@ export default function About() {
                 <img src="/about%20hero/campus.png" alt="SASHA School Campus" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -top-4 -right-4 w-20 h-20 md:w-28 md:h-28 bg-[#FEF9C3]/60 rounded-full border-4 border-[#FEF08A]/40 flex items-center justify-center z-20 doodle-float-1">
-                <span className="material-symbols-outlined text-[#EAB308] text-2xl md:text-3xl">auto_awesome</span>
+                <span className="material-symbols-outlined text-[#F59E0B] text-2xl md:text-3xl">auto_awesome</span>
               </div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] h-[130%] bg-gradient-to-br from-primary-fixed/20 via-[#FEF9C3]/15 to-secondary-fixed/20 rounded-full blur-3xl -z-10 pointer-events-none"></div>
             </div>
@@ -51,7 +51,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ FOUNDERS SECTION â”€â”€â”€ */}
+      {/* ─── FOUNDERS SECTION ─── */}
       <section className="py-24 bg-[#FEFCE8]/15 border-y border-[#FEF08A]/20 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-gutter relative z-10">
@@ -70,7 +70,7 @@ export default function About() {
                     <img src="/gallery/erer.png" alt="Dr. Sashi Kumaar Samraj" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
                   </div>
                   <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-[#FEF9C3] to-[#FEFCE8] rounded-2xl border border-white/50 flex items-center justify-center z-20 shadow-lg">
-                    <span className="material-symbols-outlined text-[#EAB308] text-xl">school</span>
+                    <span className="material-symbols-outlined text-[#F59E0B] text-xl">school</span>
                   </div>
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#E9DDFF] to-[#F5F3FF] rounded-full blur-3xl -z-10 opacity-50 pointer-events-none"></div>
                 </div>
@@ -87,23 +87,23 @@ export default function About() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="bg-gradient-to-br from-[#E9DDFF] to-[#F5F3FF] rounded-2xl p-6 border border-white/50 shadow-md">
                     <h4 className="font-headline-md text-sm text-primary font-bold mb-3 flex items-center gap-2">
-                      <span className="material-symbols-outlined text-[#EAB308] text-sm">school</span>
+                      <span className="material-symbols-outlined text-[#F59E0B] text-sm">school</span>
                       Founder Chairman
                     </h4>
                     <ul className="space-y-2">
                       {['The Western Ghats International School', 'Dora Montessori Schools, Coimbatore', 'SASHA School for Life, Coimbatore'].map((item, i) => (
-                        <li key={i} className="flex items-start gap-2 text-xs text-tertiary"><span className="material-symbols-outlined text-[#EAB308] text-xs shrink-0 mt-0.5">check_circle</span>{item}</li>
+                        <li key={i} className="flex items-start gap-2 text-xs text-tertiary"><span className="material-symbols-outlined text-[#F59E0B] text-xs shrink-0 mt-0.5">check_circle</span>{item}</li>
                       ))}
                     </ul>
                   </div>
                   <div className="bg-gradient-to-br from-[#FEF9C3] to-[#FEFCE8] rounded-2xl p-6 border border-white/50 shadow-md">
                     <h4 className="font-headline-md text-sm text-primary font-bold mb-3 flex items-center gap-2">
-                      <span className="material-symbols-outlined text-[#EAB308] text-sm">corporate_fare</span>
+                      <span className="material-symbols-outlined text-[#F59E0B] text-sm">corporate_fare</span>
                       Executive Roles
                     </h4>
                     <ul className="space-y-2">
-                      {['Managing Trustee â€” SASHA Charitable Trust', 'Managing Director â€” Winfinity Educare', 'President â€” EducationKnot (HQ Bangalore)'].map((item, i) => (
-                        <li key={i} className="flex items-start gap-2 text-xs text-tertiary"><span className="material-symbols-outlined text-[#EAB308] text-xs shrink-0 mt-0.5">check_circle</span>{item}</li>
+                      {['Managing Trustee— SASHA Charitable Trust', 'Managing Director— Winfinity Educare', 'President— EducationKnot (HQ Bangalore)'].map((item, i) => (
+                        <li key={i} className="flex items-start gap-2 text-xs text-tertiary"><span className="material-symbols-outlined text-[#F59E0B] text-xs shrink-0 mt-0.5">check_circle</span>{item}</li>
                       ))}
                     </ul>
                   </div>
@@ -138,23 +138,23 @@ export default function About() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="bg-gradient-to-br from-[#FFD8ED] to-[#FFF5FA] rounded-2xl p-6 border border-white/50 shadow-md">
                     <h4 className="font-headline-md text-sm text-primary font-bold mb-3 flex items-center gap-2">
-                      <span className="material-symbols-outlined text-[#EAB308] text-sm">workspace_premium</span>
+                      <span className="material-symbols-outlined text-[#F59E0B] text-sm">workspace_premium</span>
                       Founder Correspondent
                     </h4>
                     <ul className="space-y-2">
                       {['The Western Ghats International School', 'Dora Montessori Schools, Coimbatore', 'SASHA School for Life, Coimbatore'].map((item, i) => (
-                        <li key={i} className="flex items-start gap-2 text-xs text-tertiary"><span className="material-symbols-outlined text-[#EAB308] text-xs shrink-0 mt-0.5">check_circle</span>{item}</li>
+                        <li key={i} className="flex items-start gap-2 text-xs text-tertiary"><span className="material-symbols-outlined text-[#F59E0B] text-xs shrink-0 mt-0.5">check_circle</span>{item}</li>
                       ))}
                     </ul>
                   </div>
                   <div className="bg-gradient-to-br from-[#D3E5F6] to-[#F0F7FF] rounded-2xl p-6 border border-white/50 shadow-md">
                     <h4 className="font-headline-md text-sm text-primary font-bold mb-3 flex items-center gap-2">
-                      <span className="material-symbols-outlined text-[#EAB308] text-sm">auto_fix_high</span>
+                      <span className="material-symbols-outlined text-[#F59E0B] text-sm">auto_fix_high</span>
                       Montessori Leadership
                     </h4>
                     <ul className="space-y-2">
-                      {['Secretary â€” SASHA Charitable Trust', 'Centre Coordinator â€” IMTTI, Bangalore', 'Curriculum Advisor â€” Indian Airforce School, Sulur'].map((item, i) => (
-                        <li key={i} className="flex items-start gap-2 text-xs text-tertiary"><span className="material-symbols-outlined text-[#EAB308] text-xs shrink-0 mt-0.5">check_circle</span>{item}</li>
+                      {['Secretary— SASHA Charitable Trust', 'Centre Coordinator— IMTTI, Bangalore', 'Curriculum Advisor— Indian Airforce School, Sulur'].map((item, i) => (
+                        <li key={i} className="flex items-start gap-2 text-xs text-tertiary"><span className="material-symbols-outlined text-[#F59E0B] text-xs shrink-0 mt-0.5">check_circle</span>{item}</li>
                       ))}
                     </ul>
                   </div>
@@ -165,7 +165,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ CORE PILLARS â”€â”€â”€ */}
+      {/* ─── CORE PILLARS ─── */}
       <section className="py-24 px-gutter relative">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -191,34 +191,54 @@ export default function About() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ MESSAGE FROM MANAGEMENT â”€â”€â”€ */}
+      {/* ─── MESSAGE FROM MANAGEMENT ─── */}
       <section className="py-24 px-gutter relative overflow-hidden">
         <div className="max-w-4xl mx-auto relative z-10">
-          <div className="golden-glass-card p-8 md:p-14 rounded-[2.5rem] relative overflow-hidden shadow-xl">
-            <span className="material-symbols-outlined text-[#EAB308] text-7xl absolute -top-4 left-6 opacity-15">format_quote</span>
-            <h2 className="font-display-lg text-headline-lg text-primary text-center mb-10">Message from the Management</h2>
+          <div className="bg-white/90 backdrop-blur-md p-8 md:p-14 rounded-[2.5rem] relative overflow-hidden shadow-xl border border-white/60">
+            <div className="absolute -top-6 -right-6 w-40 h-40 bg-gradient-to-br from-[#E9DDFF] to-[#F5F3FF] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+            <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-[#FEF9C3]/40 rounded-full blur-3xl pointer-events-none"></div>
             
-            <div className="space-y-6 font-body-lg text-body-lg text-tertiary leading-relaxed relative z-10">
-              <p>Dear Parents,</p>
-              <p>
+            <div className="flex items-center gap-3 mb-10">
+              <div className="w-10 h-10 bg-gradient-to-br from-[#E9DDFF] to-[#D3E5F6] rounded-xl flex items-center justify-center text-primary shadow-sm">
+                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>quick_phrases</span>
+              </div>
+              <h2 className="font-display-lg text-headline-lg text-primary">Message from the Management</h2>
+            </div>
+            
+            <div className="space-y-5 font-body-lg text-body-lg text-primary leading-[1.8] relative z-10">
+              <span className="material-symbols-outlined text-[#F59E0B] text-5xl block -mb-4 opacity-60">format_quote</span>
+              <p className="text-primary font-medium text-lg">Dear Parents,</p>
+              <p className="text-tertiary">
                 We wanted to share with you the heartfelt foundation upon which our institution stands. Motivated by our deep commitment and extensive research in education, we established this school exclusively for the sake of our cherished daughter. As fellow parents, we understand the profound impact a nurturing educational environment can have on a child.
               </p>
-              <p>
+              <p className="text-tertiary">
                 We are excited to inform you that every aspect of your child's schooling journey here is crafted with the same care and dedication that we envisioned for our own daughter. This school is founded by parents, for parents, with the shared goal of positively influencing the educational experience of every child entrusted to our care.
               </p>
-              <p className="font-medium text-secondary text-lg">
-                Let's partner in making your child's educational experience truly exceptional! We firmly focus to nurture our children not only for UNIVERSITY, but also for UNIVERSE.
-              </p>
-              <div className="pt-6 border-t border-[#FEF08A]/40 mt-8 flex flex-col sm:flex-row justify-between items-start gap-4">
-                <div>
-                  <p className="text-xs uppercase tracking-wider text-tertiary">Warm Regards,</p>
-                  <p className="font-bold text-primary mt-1">Dr. Sashi Kumaar Samraj</p>
-                  <p className="text-xs text-tertiary">Founder Chairman</p>
+              <div className="bg-gradient-to-br from-[#E9DDFF]/30 to-[#F5F3FF]/30 p-6 md:p-8 rounded-2xl border border-white/60 my-6">
+                <p className="font-headline-md text-headline-md text-primary text-center leading-relaxed">
+                  "Let's partner in making your child's educational experience truly exceptional! We firmly focus to nurture our children not only for <span className="text-[#F59E0B] font-bold">UNIVERSITY</span>, but also for <span className="text-[#F59E0B] font-bold">UNIVERSE</span>."
+                </p>
+              </div>
+              <div className="pt-6 border-t border-[#FEF08A]/30 mt-8 flex flex-col sm:flex-row justify-between items-start gap-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#E9DDFF] to-[#D3E5F6] rounded-full flex items-center justify-center text-primary shadow-sm shrink-0">
+                    <span className="material-symbols-outlined text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>person</span>
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-tertiary font-mono font-semibold">Warm Regards,</p>
+                    <p className="font-bold text-primary text-base mt-0.5">Dr. Sashi Kumaar Samraj</p>
+                    <p className="text-xs text-tertiary">Founder Chairman</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-xs uppercase tracking-wider text-tertiary">Co-signed,</p>
-                  <p className="font-bold text-primary mt-1">Smt. Hemalatha Sashi Kumaar</p>
-                  <p className="text-xs text-tertiary">Founder Correspondent</p>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FEF9C3] to-[#FEFCE8] rounded-full flex items-center justify-center text-[#854D0E] shadow-sm shrink-0">
+                    <span className="material-symbols-outlined text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>person</span>
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-tertiary font-mono font-semibold">Co-signed,</p>
+                    <p className="font-bold text-primary text-base mt-0.5">Smt. Hemalatha Sashi Kumaar</p>
+                    <p className="text-xs text-tertiary">Founder Correspondent</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -226,7 +246,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ CLOSING CTA â”€â”€â”€ */}
+      {/* ─── CLOSING CTA ─── */}
       <section className="py-24 px-gutter relative overflow-hidden">
         <div className="max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-br from-[#8B5CF6] to-[#C4B5FD] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
@@ -237,7 +257,7 @@ export default function About() {
           
           <div className="relative z-10 max-w-3xl mx-auto">
             <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 leading-tight">
-              Nurturing Children Not Only for UNIVERSITY, <br/>But Also for UNIVERSE
+              Nurturing Children Not Only for <span className="text-[#FEF08A]">UNIVERSITY</span>, <br/>But Also for <span className="text-[#FEF08A]">UNIVERSE</span>
             </h2>
             <p className="font-body-lg text-body-lg opacity-90 max-w-xl mx-auto mb-12 leading-relaxed">
               We firmly focus on nurturing your child's educational experience truly exceptional. Let's partner in making your child's educational journey remarkable!

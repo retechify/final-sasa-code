@@ -56,11 +56,11 @@ export default function Programs() {
       iconBg: 'bg-tertiary-fixed/40',
       iconColor: 'text-tertiary',
       tag: 'Holistic & Creative',
-      description: "The Waldorf education system, also known as the Steiner education method, emphasizes a holistic approach to education, focusing on nurturing a child's intellectual, artistic, and practical skills in a balanced way. It aims to develop the whole child â€“ cognitive, emotional, physical, and social aspects.",
+      description: "The Waldorf education system, also known as the Steiner education method, emphasizes a holistic approach to education, focusing on nurturing a child's intellectual, artistic, and practical skills in a balanced way. It aims to develop the whole child 2013 cognitive, emotional, physical, and social aspects.",
       areas: [
-        'Head â€” Thinking (Intellectual Skills)',
-        'Heart â€” Feeling (Artistic & Social Skills)',
-        'Hands â€” Doing (Practical & Gross Motor Skills)'
+        'Head— Thinking (Intellectual Skills)',
+        'Heart— Feeling (Artistic & Social Skills)',
+        'Hands— Doing (Practical & Gross Motor Skills)'
       ],
       benefits: [
         'Balanced, holistic development',
@@ -101,14 +101,14 @@ export default function Programs() {
       <div className="watercolor-gradient absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>
       <div className="absolute top-1/3 right-0 w-[400px] h-[400px] bg-[#FEF9C3]/20 rounded-full blur-3xl pointer-events-none"></div>
 
-      {/* â”€â”€â”€ HERO SECTION â”€â”€â”€ */}
+      {/* ─── HERO SECTION ─── */}
       <section className="max-w-7xl mx-auto px-gutter relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-24">
           {/* Left: Content */}
           <div className="relative z-10">
             <span className="golden-badge px-4 py-1.5 rounded-full text-label-sm font-label-sm mb-6 inline-block uppercase tracking-wider">OUR CURRICULA</span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
-              World-Class <span className="text-[#EAB308]">Educational</span> Approaches
+              World-Class <span className="text-[#F59E0B]">Educational</span> Approaches
             </h1>
             <p className="font-body-lg text-body-lg text-tertiary max-w-lg mb-8 leading-relaxed">
               SASHA School seamlessly blends the world's finest curricula: Montessori, IGCSE, Waldorf Education and Reggio Emilia, systematically imparting the UNESCO endorsed 4C's of 21st century life skills.
@@ -123,7 +123,7 @@ export default function Programs() {
             </div>
           </div>
 
-          {/* Right: Visual â€” 4 curricula icons grid */}
+          {/* Right: Visual— 4 curricula icons grid */}
           <div className="relative flex justify-center">
             <div className="grid grid-cols-2 gap-5 max-w-sm">
               {curricula.map((c, i) => (
@@ -142,7 +142,7 @@ export default function Programs() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ PROGRAM DETAILS â€” Alternating Editorial Cards â”€â”€â”€ */}
+      {/* ─── PROGRAM DETAILS— Alternating Editorial Cards ─── */}
       <section className="relative z-10">
         <div className="space-y-8">
           {curricula.map((program, idx) => {
@@ -151,7 +151,7 @@ export default function Programs() {
               <div key={idx} className={`py-16 ${isEven ? 'bg-[#FEFCE8]/20' : 'bg-surface-container-low/30'} border-y border-white/30`}>
                 <div className="max-w-7xl mx-auto px-gutter">
                   <div className={`grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start ${isEven ? '' : 'direction-rtl'}`}>
-                    {/* Left Column â€” Main Info */}
+                    {/* Left Column— Main Info */}
                     <div className={`lg:col-span-7 ${!isEven ? 'lg:order-2' : ''}`}>
                       {/* Tag */}
                       <div className="flex items-center gap-3 mb-6">
@@ -169,7 +169,7 @@ export default function Programs() {
                       {/* Areas */}
                       <div className="mb-8">
                         <h4 className="text-xs font-bold text-[#854D0E] tracking-widest uppercase mb-4 font-mono flex items-center gap-2">
-                          <span className="material-symbols-outlined text-sm text-[#EAB308]">auto_awesome</span>
+                          <span className="material-symbols-outlined text-sm text-[#F59E0B]">auto_awesome</span>
                           {program.title === 'Montessori Education' ? '5 Areas of Learning' : 
                            program.title === 'Waldorf Education' ? 'Waldorf Methodology' :
                            program.title === 'Reggio Emilia' ? 'Key Elements' : 'Key Areas'}
@@ -192,7 +192,7 @@ export default function Programs() {
                       </Link>
                     </div>
 
-                    {/* Right Column â€” Benefits Card */}
+                    {/* Right Column— Benefits Card */}
                     <div className={`lg:col-span-5 ${!isEven ? 'lg:order-1' : ''}`}>
                       <div className={`bg-gradient-to-br ${program.accent} rounded-[2rem] p-8 md:p-10 border border-white/60 shadow-xl relative overflow-hidden`}>
                         {/* Watermark */}
@@ -201,14 +201,14 @@ export default function Programs() {
                         </div>
 
                         <h4 className="text-xs font-bold text-secondary tracking-widest uppercase mb-6 font-mono flex items-center gap-2">
-                          <span className="material-symbols-outlined text-sm text-[#EAB308]">verified</span>
+                          <span className="material-symbols-outlined text-sm text-[#F59E0B]">verified</span>
                           Benefits & Outcomes
                         </h4>
                         <div className="space-y-4 relative z-10">
                           {program.benefits.map((b, bIdx) => (
                             <div key={bIdx} className="flex items-start gap-3 group">
                               <div className="w-6 h-6 bg-white/70 rounded-full flex items-center justify-center shrink-0 mt-0.5 shadow-sm group-hover:scale-110 transition-transform">
-                                <span className="material-symbols-outlined text-[#EAB308] text-sm">check</span>
+                                <span className="material-symbols-outlined text-[#F59E0B] text-sm">check</span>
                               </div>
                               <span className="text-sm text-tertiary leading-relaxed font-medium">{b}</span>
                             </div>
@@ -224,7 +224,7 @@ export default function Programs() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ PHILOSOPHY IN ACTION â”€â”€â”€ */}
+      {/* ─── PHILOSOPHY IN ACTION ─── */}
       <section className="bg-[#FEFCE8]/30 border-y border-[#FEF08A]/20 py-24 relative z-10">
         <div className="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Column: Styled classroom image */}
@@ -252,7 +252,7 @@ export default function Programs() {
             
             <div className="space-y-6 pt-4">
               <div className="flex gap-5 items-start group">
-                <div className="w-14 h-14 flex-shrink-0 bg-[#FEF9C3] rounded-2xl flex items-center justify-center text-[#EAB308] shadow-sm group-hover:scale-110 transition-transform">
+                <div className="w-14 h-14 flex-shrink-0 bg-[#FEF9C3] rounded-2xl flex items-center justify-center text-[#F59E0B] shadow-sm group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>psychology</span>
                 </div>
                 <div>
@@ -275,19 +275,26 @@ export default function Programs() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ CLOSING CTA â”€â”€â”€ */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="max-w-5xl mx-auto px-gutter text-center relative z-10">
-          <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
-            Ready to Explore <span className="text-[#EAB308]">Our Curricula?</span>
-          </h2>
-          <p className="font-body-lg text-tertiary max-w-xl mx-auto mb-10 leading-relaxed">
-            Schedule a campus tour to see our curricula in action and meet our educator team.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact" className="primary-pill px-10 py-4 rounded-full text-white font-bold text-lg transition-transform hover:scale-105 active:scale-95 shadow-lg text-center inline-block">
-              Schedule a Campus Visit
-            </Link>
+      {/* ─── CLOSING CTA ─── */}
+      <section className="py-24 px-gutter relative overflow-hidden">
+        <div className="max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-br from-[#8B5CF6] to-[#C4B5FD] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl">
+          <div className="absolute inset-0 opacity-10 pointer-events-none">
+            <div className="absolute top-8 left-8 w-20 h-20 bg-white rounded-full"></div>
+            <div className="absolute bottom-8 right-8 w-32 h-32 bg-white rounded-full"></div>
+            <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white rounded-full"></div>
+          </div>
+          <div className="relative z-10 max-w-3xl mx-auto">
+            <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 leading-tight">
+              Ready to Explore <span className="text-[#FEF08A]">Our Curricula?</span>
+            </h2>
+            <p className="font-body-lg text-body-lg opacity-90 max-w-xl mx-auto mb-12 leading-relaxed">
+              Schedule a campus tour to see our curricula in action and meet our educator team.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link to="/contact" className="bg-white text-primary px-10 py-5 rounded-full font-bold shadow-xl hover:scale-105 transition-transform inline-block text-lg">
+                Schedule a Campus Visit
+              </Link>
+            </div>
           </div>
         </div>
       </section>

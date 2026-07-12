@@ -288,3 +288,50 @@ body {
     50% { filter: drop-shadow(0 0 16px rgba(253, 224, 71, 0.6)) drop-shadow(0 0 40px rgba(253, 224, 71, 0.2)); }
 }
 
+/* Activity Icon Animations */
+.icon-bounce {
+    animation: iconBounce 2s ease-in-out infinite;
+}
+.icon-spin {
+    animation: iconSpin 4s linear infinite;
+}
+.icon-pulse {
+    animation: iconPulse 1.5s ease-in-out infinite;
+}
+.icon-swing {
+    animation: iconSwing 2.5s ease-in-out infinite;
+}
+.icon-shake {
+    animation: iconShake 1.5s ease-in-out infinite;
+}
+.icon-float {
+    animation: iconFloat 3s ease-in-out infinite;
+}
+
+@keyframes iconBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+@keyframes iconSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+@keyframes iconSwing {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+}
+@keyframes iconShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+}
+@keyframes iconFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-6px) rotate(3deg); }
+}
+
