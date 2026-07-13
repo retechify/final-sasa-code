@@ -126,13 +126,13 @@ export default function Gallery() {
           <div className="relative flex justify-center">
             <div className="relative">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-[2.5rem] overflow-hidden border-8 border-white shadow-2xl z-10 relative">
-                <img src="/images/IMG-20260620-WA0062.jpg.jpeg" alt="Campus" className="w-full h-full object-cover" />
+                <img src="/images/IMG-20260620-WA0062.jpg.jpeg" alt="Campus" className="w-full h-full object-cover" loading="lazy" decoding="async" />
               </div>
               <div className="absolute -bottom-6 -left-6 w-36 h-36 md:w-48 md:h-48 rounded-[2rem] overflow-hidden border-6 border-white shadow-xl z-20 hero-float" style={{ animationDelay: '1s' }}>
-                <img src="/images/IMG-20260620-WA0040.jpg.jpeg" alt="Student" className="w-full h-full object-cover" />
+                <img src="/images/IMG-20260620-WA0040.jpg.jpeg" alt="Student" className="w-full h-full object-cover" loading="lazy" decoding="async" />
               </div>
               <div className="absolute -top-4 -right-4 w-20 h-20 md:w-28 md:h-28 rounded-2xl overflow-hidden border-4 border-white shadow-lg z-20 doodle-float-1">
-                <img src="/images/IMG-20260620-WA0056.jpg.jpeg" alt="Nature" className="w-full h-full object-cover" />
+                <img src="/images/IMG-20260620-WA0056.jpg.jpeg" alt="Nature" className="w-full h-full object-cover" loading="lazy" decoding="async" />
               </div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] h-[130%] bg-gradient-to-br from-primary-fixed/15 via-[#FEF9C3]/10 to-secondary-fixed/15 rounded-full blur-3xl -z-10 pointer-events-none"></div>
             </div>
@@ -171,11 +171,13 @@ export default function Gallery() {
               onClick={() => setLightboxIdx(idx)}
               className={`${getSizeClass(idx)} rounded-[1.5rem] overflow-hidden group cursor-pointer relative shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1`}
             >
-              <img 
-                src={img.src} 
-                alt={img.alt}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              />
+                <img 
+                  src={img.src} 
+                  alt={img.alt}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
               {/* Hover Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6">
                 <span className="text-white font-bold text-base drop-shadow-lg">{img.alt}</span>
@@ -267,6 +269,8 @@ export default function Gallery() {
             <img 
               src={filteredImages[lightboxIdx].src} 
               alt={filteredImages[lightboxIdx].alt} 
+              loading="lazy"
+              decoding="async"
               className="max-w-full max-h-[80vh] object-contain rounded-2xl"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-8 text-center">
