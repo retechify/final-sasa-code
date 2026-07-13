@@ -126,7 +126,7 @@ export default function Admissions() {
           <div className="relative order-1 lg:order-2 flex justify-center">
             <div className="relative">
               <div className="organic-cloud-shape overflow-hidden w-72 h-72 md:w-[420px] md:h-[420px] relative shadow-2xl z-10 border-8 border-white/50 hero-float">
-                <img className="w-full h-full object-cover" src="/hero%20image/hero%20image.png" alt="SASHA School smiling kids" />
+                <img className="w-full h-full object-cover" src="/hero%20image/hero%20image.jpeg" alt="SASHA School smiling kids" />
               </div>
               {/* Decorative Golden Circle */}
               <div className="absolute -top-4 -right-4 w-20 h-20 md:w-28 md:h-28 bg-[#FEF9C3]/60 rounded-full border-4 border-[#FEF08A]/40 flex items-center justify-center z-20 doodle-float-1">

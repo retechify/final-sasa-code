@@ -134,7 +134,7 @@ export default function Home() {
             <div className="relative z-10 w-80 h-80 md:w-[500px] md:h-[500px] rounded-full overflow-hidden border-8 border-white shadow-2xl hero-float">
               <img 
                 className="w-full h-full object-cover" 
-                src="/hero%20image/hero%20image.png" 
+                src="/hero%20image/hero%20image.jpeg" 
                 alt="SASHA School Happy Kids"
               />
             </div>
