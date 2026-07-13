@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Gallery() {
@@ -95,7 +95,7 @@ export default function Gallery() {
       <div className="absolute top-1/3 right-0 w-[400px] h-[400px] bg-[#FEF9C3]/20 rounded-full blur-3xl pointer-events-none"></div>
 
       {/* ─── HERO SECTION ─── */}
-      <section className="relative max-w-7xl mx-auto px-gutter py-12 md:py-20 reveal">
+      <section className="relative max-w-7xl mx-auto px-gutter py-12 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-8">
           {/* Left: Content */}
           <div className="relative z-10">
@@ -141,7 +141,7 @@ export default function Gallery() {
       </section>
 
       {/* ─── FILTER TABS ─── */}
-      <section className="max-w-7xl mx-auto px-gutter mb-12 reveal">
+      <section className="max-w-7xl mx-auto px-gutter mb-12">
         <div className="flex flex-wrap justify-center gap-2 p-2 bg-white/40 backdrop-blur-sm rounded-full border border-white/50 shadow-sm max-w-fit mx-auto">
           {categories.map((cat) => (
             <button
@@ -163,7 +163,7 @@ export default function Gallery() {
       </section>
 
       {/* ─── MASONRY GALLERY ─── */}
-      <section className="pb-24 px-gutter max-w-7xl mx-auto z-10 relative reveal">
+      <section className="pb-24 px-gutter max-w-7xl mx-auto z-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[200px] md:auto-rows-[220px] gap-4">
           {filteredImages.map((img, idx) => (
             <div 
@@ -179,16 +179,16 @@ export default function Gallery() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6 pointer-events-none">
                 <span className="text-white font-bold text-base drop-shadow-lg">{img.alt}</span>
                 <span className="text-white/70 text-xs font-mono uppercase tracking-wider mt-1">{img.category}</span>
               </div>
               {/* Category Tag */}
-              <span className="absolute top-3 left-3 golden-badge px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-sm backdrop-blur-sm opacity-90">
+              <span className="absolute top-3 left-3 golden-badge px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-sm backdrop-blur-sm opacity-90 pointer-events-none">
                 {img.category}
               </span>
               {/* Zoom Icon */}
-              <div className="absolute top-3 right-3 w-9 h-9 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 scale-75 group-hover:scale-100">
+              <div className="absolute top-3 right-3 w-9 h-9 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 scale-75 group-hover:scale-100 pointer-events-none">
                 <span className="material-symbols-outlined text-white text-base">zoom_in</span>
               </div>
             </div>
@@ -197,7 +197,7 @@ export default function Gallery() {
       </section>
 
       {/* ─── CTA ─── */}
-      <section className="py-24 px-gutter relative overflow-hidden reveal">
+      <section className="py-24 px-gutter relative overflow-hidden">
         <div className="max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-br from-[#8B5CF6] to-[#C4B5FD] p-12 lg:p-24 relative overflow-hidden text-center text-white shadow-2xl">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <div className="absolute top-8 left-8 w-20 h-20 bg-white rounded-full"></div>
@@ -227,12 +227,12 @@ export default function Gallery() {
       {/* ─── LIGHTBOX MODAL ─── */}
       {lightboxIdx !== null && (
         <div 
-          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-lg flex flex-col items-center justify-center p-4"
+          className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-lg flex flex-col items-center justify-center p-4"
           onClick={() => setLightboxIdx(null)}
         >
           {/* Close */}
           <button 
-            className="absolute top-6 right-6 text-white bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors z-50"
+            className="absolute top-6 right-6 text-white bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors z-10"
             onClick={() => setLightboxIdx(null)}
             aria-label="Close"
           >
@@ -242,7 +242,7 @@ export default function Gallery() {
           {/* Nav: Previous */}
           {lightboxIdx > 0 && (
             <button 
-              className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors z-50"
+              className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors z-10"
               onClick={(e) => { e.stopPropagation(); navigateLightbox(-1); }}
               aria-label="Previous"
             >
@@ -253,7 +253,7 @@ export default function Gallery() {
           {/* Nav: Next */}
           {lightboxIdx < filteredImages.length - 1 && (
             <button 
-              className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors z-50"
+              className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors z-10"
               onClick={(e) => { e.stopPropagation(); navigateLightbox(1); }}
               aria-label="Next"
             >
