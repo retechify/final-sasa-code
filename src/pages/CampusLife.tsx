@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 export default function CampusLife() {
   const facilities = [
@@ -92,6 +93,11 @@ export default function CampusLife() {
 
   return (
     <main className="relative pt-32 pb-20 overflow-x-hidden">
+      <SEO 
+        title="Campus Life & Facilities | SASHA School Coimbatore"
+        description="Explore the state-of-the-art campus at SASHA School in Kovaipudur. Featuring imported Montessori materials, Edusports, brain gym, and robust safety measures."
+        url="/campus-life"
+      />
       {/* Background washes */}
       <div className="watercolor-gradient absolute -top-40 -left-20 w-[600px] h-[600px] rounded-full blur-3xl opacity-40 pointer-events-none"></div>
       <div className="watercolor-gradient absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>

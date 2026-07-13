@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 export default function About() {
   const pillars = [
@@ -11,6 +12,11 @@ export default function About() {
 
   return (
     <main className="relative overflow-x-hidden pt-32 pb-20">
+      <SEO 
+        title="About SASHA School of Life | Visionary Founders & History"
+        description="Learn about SASHA School's origin in Coimbatore, founded by Dr. Sashi Kumaar Samraj & Smt. Hemalatha Sashi Kumaar. Discover our core pillars of holistic education."
+        url="/about"
+      />
       {/* Background washes */}
       <div className="watercolor-gradient absolute -top-40 -left-20 w-[600px] h-[600px] rounded-full blur-3xl opacity-40 pointer-events-none"></div>
       <div className="watercolor-gradient absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>

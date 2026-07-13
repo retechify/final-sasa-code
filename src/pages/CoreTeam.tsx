@@ -1,5 +1,6 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 export default function CoreTeam() {
   const team = [
@@ -64,6 +65,11 @@ export default function CoreTeam() {
 
   return (
     <main className="relative pt-32 pb-20 overflow-x-hidden">
+      <SEO 
+        title="Our Core Team | SASHA School Leadership"
+        description="Meet the dedicated educational leaders and Montessori consultants at SASHA School of Life. Over 30 years of combined experience in holistic education."
+        url="/core-team"
+      />
       {/* Background washes */}
       <div className="watercolor-gradient absolute -top-40 -left-20 w-[600px] h-[600px] rounded-full blur-3xl opacity-40 pointer-events-none"></div>
       <div className="watercolor-gradient absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>
@@ -110,7 +116,7 @@ export default function CoreTeam() {
                   <div className={`lg:col-span-4 flex justify-center ${!isEven ? 'lg:order-2' : ''}`}>
                     <div className="relative">
                       <div className={`w-56 h-56 md:w-72 md:h-72 rounded-[2.5rem] overflow-hidden border-8 border-white shadow-2xl hero-float relative z-10`} style={{ animationDelay: `${idx * 0.5}s` }}>
-                        <img src={member.image} alt={member.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                        <img src={member.image} alt={member.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" />
                       </div>
                       {/* Decorative accent */}
                       <div className={`absolute -bottom-4 ${isEven ? '-right-4' : '-left-4'} w-20 h-20 bg-gradient-to-br ${member.accent} rounded-2xl border border-white/50 flex items-center justify-center z-20 shadow-lg`}>

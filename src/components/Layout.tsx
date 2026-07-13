@@ -304,7 +304,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <span className="material-symbols-outlined text-primary text-lg mt-0.5" style={{ fontVariationSettings: "'FILL' 1" }}>location_on</span>
                 <span>Kulathupalayam Kovaipudur, Coimbatore</span>
               </div>
-              <a href={`tel:+919750170007`} className="flex items-start gap-3 group">
+              <a href={`tel:+919750170007`} aria-label="Call us" className="flex items-start gap-3 group">
                 <span className="material-symbols-outlined text-primary text-lg mt-0.5" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
                 <span className="group-hover:text-primary transition-colors">+91 97501 70007</span>
               </a>
@@ -372,6 +372,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 href={social.url}
                 target="_blank" 
                 rel="noopener noreferrer" 
+                aria-label={social.name}
                 className={`w-14 h-14 rounded-full shadow-[0_8px_20px_rgba(0,0,0,0.1)] flex items-center justify-center border-2 border-white/80 transition-all duration-300 hover:scale-110 active:scale-95 ${social.bgColor} ${social.color}`}
               >
                 {social.icon}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 export default function Admissions() {
   const process = [
@@ -73,6 +74,11 @@ export default function Admissions() {
 
   return (
     <main className="relative pt-32 pb-20 overflow-x-hidden">
+      <SEO 
+        title="Admissions Open | SASHA School of Life Coimbatore"
+        description="Enroll your child at SASHA School in Kovaipudur. Explore our admissions process, eligibility criteria, and schedule a campus visit today."
+        url="/admissions"
+      />
       {/* Background washes */}
       <div className="watercolor-gradient absolute -top-40 -left-20 w-[600px] h-[600px] rounded-full blur-3xl opacity-40 pointer-events-none"></div>
       <div className="watercolor-gradient absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>

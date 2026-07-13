@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 export default function Programs() {
   const curricula = [
@@ -94,8 +95,34 @@ export default function Programs() {
     }
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What is the Montessori curriculum at SASHA School?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SASHA School offers authentic Montessori at the primary level focusing on Practical Life, Sensorial, Language, Logic, and Culture to help children learn to explore."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Does SASHA School offer Cambridge IGCSE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we integrate the globally recognized Cambridge IGCSE curriculum to prepare our students for international standards of excellence."
+      }
+    }]
+  };
+
   return (
     <main className="relative pt-32 pb-32 overflow-hidden">
+      <SEO 
+        title="Our Curricula | Montessori, IGCSE, Waldorf & Reggio Emilia in Coimbatore"
+        description="Explore the 4 pillars of SASHA School's education: Montessori, Cambridge IGCSE, Waldorf, and Reggio Emilia. Holistic development for your child."
+        url="/programs"
+        schema={faqSchema}
+      />
       {/* Background washes */}
       <div className="watercolor-gradient absolute -top-40 left-1/4 w-[600px] h-[600px] rounded-full blur-3xl opacity-40 pointer-events-none"></div>
       <div className="watercolor-gradient absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>

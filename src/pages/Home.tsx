@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 export default function Home() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -78,8 +79,43 @@ export default function Home() {
     }
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What curricula does SASHA School offer in Coimbatore?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SASHA School offers four world-class curricula: Montessori Education, Cambridge IGCSE, Waldorf Education, and Reggio Emilia, blended with AI-enhanced learning tools and life skills training."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Where is SASHA School located in Coimbatore?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SASHA School is located at Kulathupalayam Road, Kovaipudur, Coimbatore, Tamil Nadu 641042."
+      }
+    }, {
+      "@type": "Question",
+      "name": "What age groups does SASHA School admit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We admit children from Toddler Pre-KG to Grade V, nurturing children from 2.5 to 6 years in our primary cycles."
+      }
+    }]
+  };
+
   return (
     <main className="relative pt-32 overflow-x-hidden">
+      <SEO 
+        title="SASHA School of Life | Best Primary School in Coimbatore"
+        description="Premium primary school in Coimbatore offering Montessori, IGCSE, Waldorf & Reggio Emilia curricula with AI-enhanced learning and life skills development."
+        keywords="best school in Coimbatore, primary school Coimbatore, Montessori school Coimbatore, IGCSE school Coimbatore, preschool Coimbatore, Kovaipudur school"
+        url="/"
+        schema={faqSchema}
+      />
+      
       {/*  BACKGROUND WASHES  */}
       <div className="watercolor-gradient absolute -top-40 -left-20 w-[600px] h-[600px] rounded-full blur-3xl opacity-40 pointer-events-none"></div>
       <div className="watercolor-gradient absolute top-1/2 -right-20 w-[500px] h-[500px] rounded-full blur-3xl opacity-30 pointer-events-none"></div>
@@ -204,7 +240,7 @@ export default function Home() {
               <div key={idx} className={`bg-gradient-to-br ${item.accent} rounded-[2rem] overflow-hidden group hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl border border-white/50 relative flex flex-col`}>
                 {/* Image */}
                 <div className="w-full h-40 md:h-48 overflow-hidden relative shrink-0">
-                  <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" decoding="async" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                   {/* Tag */}
                   <span className="absolute top-3 left-3 golden-badge px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-sm backdrop-blur-sm">{item.tag}</span>
@@ -320,6 +356,8 @@ export default function Home() {
                     src={img.src} 
                     alt={img.alt}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-5">
