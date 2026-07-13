@@ -71,20 +71,22 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           {/* Left Column: Info Cards */}
           <div className="lg:col-span-5 space-y-5">
-            {/* Email */}
-            <div className="bg-gradient-to-br from-[#E9DDFF] to-[#F5F3FF] p-7 rounded-[1.5rem] border border-white/50 flex items-start gap-5 group hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-lg">
-              <div className="w-13 h-13 bg-white/80 p-3.5 rounded-2xl flex items-center justify-center text-primary shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>mail</span>
+            {/* WhatsApp */}
+            <a href="https://wa.me/919750170007?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20SASHA%20School%20of%20Life." target="_blank" rel="noopener noreferrer" className="bg-gradient-to-br from-[#E8F5E9] to-[#F1FFF2] p-7 rounded-[1.5rem] border border-white/50 flex items-start gap-5 group hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer block">
+              <div className="w-13 h-13 bg-white/80 p-3.5 rounded-2xl flex items-center justify-center text-[#25D366] shrink-0 shadow-sm group-hover:scale-110 transition-transform">
+                <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
               </div>
               <div>
-                <h3 className="font-headline-md text-lg text-primary font-bold mb-1">Email Us</h3>
-                <p className="font-body-md text-sm text-tertiary font-medium">sashaschoolcbe@gmail.com</p>
-                <span className="inline-flex items-center gap-1 mt-2 text-xs text-primary/70 font-mono font-semibold">
-                  <span className="material-symbols-outlined text-xs text-[#F59E0B]">schedule</span>
-                  We respond within 24 hours
+                <h3 className="font-headline-md text-lg text-[#25D366] font-bold mb-1">Chat With Us</h3>
+                <p className="font-body-md text-sm text-tertiary font-medium">+91 97501 70007</p>
+                <span className="inline-flex items-center gap-1 mt-2 text-xs text-[#25D366]/70 font-mono font-semibold">
+                  <span className="material-symbols-outlined text-xs text-[#25D366]">open_in_new</span>
+                  Message us on WhatsApp
                 </span>
               </div>
-            </div>
+            </a>
 
             {/* Phone */}
             <a href="tel:+919750170007" className="golden-glass-card p-7 rounded-[1.5rem] flex items-start gap-5 group hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer block">
@@ -114,65 +116,42 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Instagram */}
-            <a href="https://www.instagram.com/sashaschoolforlife?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-br from-[#FCE4EC] to-[#FFF0F5] p-7 rounded-[1.5rem] border border-white/50 flex items-start gap-5 group hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer block">
-              <div className="w-13 h-13 bg-white/80 p-3.5 rounded-2xl flex items-center justify-center text-[#E1306C] shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>camera_alt</span>
+            {/* Email */}
+            <div className="bg-gradient-to-br from-[#E9DDFF] to-[#F5F3FF] p-7 rounded-[1.5rem] border border-white/50 flex items-start gap-5 group hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-lg">
+              <div className="w-13 h-13 bg-white/80 p-3.5 rounded-2xl flex items-center justify-center text-primary shrink-0 shadow-sm group-hover:scale-110 transition-transform">
+                <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>mail</span>
               </div>
               <div>
-                <h3 className="font-headline-md text-lg text-[#E1306C] font-bold mb-1">Follow Us</h3>
-                <p className="font-body-md text-sm text-tertiary font-medium">@sashaschoolforlife</p>
-                <span className="inline-flex items-center gap-1 mt-2 text-xs text-[#E1306C]/70 font-mono font-semibold">
-                  <span className="material-symbols-outlined text-xs text-[#F59E0B]">open_in_new</span>
-                  Follow us on Instagram
+                <h3 className="font-headline-md text-lg text-primary font-bold mb-1">Email Us</h3>
+                <p className="font-body-md text-sm text-tertiary font-medium">sashaschoolcbe@gmail.com</p>
+                <span className="inline-flex items-center gap-1 mt-2 text-xs text-primary/70 font-mono font-semibold">
+                  <span className="material-symbols-outlined text-xs text-[#F59E0B]">schedule</span>
+                  We respond within 24 hours
                 </span>
               </div>
-            </a>
+            </div>
 
-            {/* YouTube */}
-            <a href="https://www.youtube.com/@sashaschoolforlife" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-br from-[#FFEBEE] to-[#FFF5F5] p-7 rounded-[1.5rem] border border-white/50 flex items-start gap-5 group hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer block">
-              <div className="w-13 h-13 bg-white/80 p-3.5 rounded-2xl flex items-center justify-center text-[#FF0000] shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-2xl">smart_display</span>
-              </div>
+            {/* Social Media Links Group */}
+            <div className="bg-gradient-to-br from-[#FCE4EC] to-[#F5F9FF] p-7 rounded-[1.5rem] border border-white/50 flex flex-col gap-4 shadow-md hover:shadow-lg transition-all duration-300">
               <div>
-                <h3 className="font-headline-md text-lg text-[#FF0000] font-bold mb-1">Watch Us</h3>
-                <p className="font-body-md text-sm text-tertiary font-medium">SASHA School of Life</p>
-                <span className="inline-flex items-center gap-1 mt-2 text-xs text-[#FF0000]/70 font-mono font-semibold">
-                  <span className="material-symbols-outlined text-xs text-[#F59E0B]">open_in_new</span>
-                  Subscribe on YouTube
-                </span>
+                <h3 className="font-headline-md text-lg text-primary font-bold mb-1">Connect With Us</h3>
+                <p className="font-body-md text-sm text-tertiary font-medium">Follow us on our social platforms</p>
               </div>
-            </a>
-
-            {/* Facebook */}
-            <a href="https://www.facebook.com/sashaschoolforlife" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-br from-[#E3F2FD] to-[#F5F9FF] p-7 rounded-[1.5rem] border border-white/50 flex items-start gap-5 group hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer block">
-              <div className="w-13 h-13 bg-white/80 p-3.5 rounded-2xl flex items-center justify-center text-[#1877F2] shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>thumb_up</span>
+              <div className="flex flex-wrap gap-4 mt-2">
+                <a href="https://www.instagram.com/sashaschoolforlife?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-[#E1306C] shadow-sm hover:scale-110 transition-transform hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-white" title="Instagram">
+                  <svg className="w-6 h-6 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://www.youtube.com/@sashaschoolforlife" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-[#FF0000] shadow-sm hover:scale-110 transition-transform hover:bg-[#FF0000] hover:text-white" title="YouTube">
+                  <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.53 3.5 12 3.5 12 3.5s-7.53 0-9.388.555A3.002 3.002 0 0 0 .502 6.163C0 8.07 0 12 0 12s0 3.93.502 5.837a3.003 3.003 0 0 0 2.11 2.108C4.47 20.5 12 20.5 12 20.5s7.53 0 9.388-.555a3.002 3.002 0 0 0 2.11-2.108C24 15.93 24 12 24 12s0-3.93-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/sashaschoolforlife" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-[#1877F2] shadow-sm hover:scale-110 transition-transform hover:bg-[#1877F2] hover:text-white" title="Facebook">
+                  <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+                </a>
+                <a href="https://share.google/FmgJGbqSkDUe6rP79" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-[#34A853] shadow-sm hover:scale-110 transition-transform hover:bg-[#34A853] hover:text-white" title="Google Business">
+                  <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.24 10.285V13.4h6.887c-.275 1.565-1.88 4.604-6.887 4.604-4.33 0-7.859-3.578-7.859-8s3.53-8 7.859-8c2.46 0 4.105 1.025 5.047 1.926l2.427-2.334C17.955 2.192 15.34 1 12.24 1 5.26 1 0 6.26 0 12.75s5.26 11.75 12.24 11.75c7.29 0 12.13-5.12 12.13-12.35 0-.83-.09-1.465-.2-1.865H12.24z"/></svg>
+                </a>
               </div>
-              <div>
-                <h3 className="font-headline-md text-lg text-[#1877F2] font-bold mb-1">Like Us</h3>
-                <p className="font-body-md text-sm text-tertiary font-medium">@sashaschoolforlife</p>
-                <span className="inline-flex items-center gap-1 mt-2 text-xs text-[#1877F2]/70 font-mono font-semibold">
-                  <span className="material-symbols-outlined text-xs text-[#F59E0B]">open_in_new</span>
-                  Follow on Facebook
-                </span>
-              </div>
-            </a>
-
-            {/* Google Business */}
-            <a href="https://share.google/FmgJGbqSkDUe6rP79" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-br from-[#E8F5E9] to-[#F1FFF2] p-7 rounded-[1.5rem] border border-white/50 flex items-start gap-5 group hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer block">
-              <div className="w-13 h-13 bg-white/80 p-3.5 rounded-2xl flex items-center justify-center text-[#34A853] shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>storefront</span>
-              </div>
-              <div>
-                <h3 className="font-headline-md text-lg text-[#34A853] font-bold mb-1">Review Us</h3>
-                <p className="font-body-md text-sm text-tertiary font-medium">SASHA School of Life</p>
-                <span className="inline-flex items-center gap-1 mt-2 text-xs text-[#34A853]/70 font-mono font-semibold">
-                  <span className="material-symbols-outlined text-xs text-[#F59E0B]">open_in_new</span>
-                  Write a Google Review
-                </span>
-              </div>
-            </a>
+            </div>
           </div>
 
           {/* Right Column: Contact Form */}

@@ -90,7 +90,7 @@ export default function Home() {
         {/* Image Top */}
         <div className="relative mb-12 w-full max-w-4xl flex items-center justify-center h-96 md:h-[580px]">
           {/* Rainbow Ring Background */}
-          <div className="hero-rainbow absolute top-[120%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95vw] sm:w-[600px] md:w-[850px] lg:w-[1000px] aspect-square opacity-50 rounded-full -z-10"></div>
+          <div className="hero-rainbow absolute top-[110%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95vw] sm:w-[600px] md:w-[850px] lg:w-[1000px] aspect-square opacity-50 rounded-full -z-10"></div>
 
           {/* Image & Badges Wrapper */}
           <div className="relative">
@@ -117,7 +117,7 @@ export default function Home() {
           Premium Primary School for Progressive Parents
         </p>
 
-        <p className="font-headline-md text-headline-md text-secondary mb-6 flex items-center gap-2">
+        <p className="font-headline-md text-headline-md text-[#8B5CF6] mb-6 flex items-center gap-2">
           <span className="material-symbols-outlined text-[#F59E0B] text-lg">school</span>
           Admission Open— Toddler Pre-KG to Grade V
         </p>
@@ -139,7 +139,7 @@ export default function Home() {
             <p className="text-xs text-tertiary font-medium mt-1">Curricula</p>
           </div>
           <div className="text-center">
-            <span className="font-display-lg text-3xl font-bold text-secondary">1:10</span>
+            <span className="font-display-lg text-3xl font-bold text-primary">1:10</span>
             <p className="text-xs text-tertiary font-medium mt-1">Edu. Ratio</p>
           </div>
           <div className="text-center">
