@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { Link } from 'react-router-dom';
 
 export default function Gallery() {
@@ -225,7 +226,7 @@ export default function Gallery() {
       </section>
 
       {/* ─── LIGHTBOX MODAL ─── */}
-      {lightboxIdx !== null && (
+      {lightboxIdx !== null && createPortal(
         <div 
           className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-lg flex flex-col items-center justify-center p-4"
           onClick={() => setLightboxIdx(null)}
@@ -281,7 +282,8 @@ export default function Gallery() {
               </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </main>
   );
