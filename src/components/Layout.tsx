@@ -189,18 +189,26 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-surface/95 backdrop-blur-lg flex flex-col items-center justify-center gap-8 md:hidden animate-fade-in">
+        <div className="fixed inset-0 z-[60] bg-surface/95 backdrop-blur-lg flex flex-col items-center justify-center gap-8 md:hidden animate-fade-in">
           <div className="absolute top-6 left-6">
-            <Link to="/">
-              <img src="/logo/logo.png" alt="SASHA School" className="h-6 w-auto" />
+            <Link to="/" onClick={() => setMobileMenuOpen(false)}>
+              <img src="/logo/logo.png" alt="SASHA School" className="h-8 w-auto" />
             </Link>
           </div>
+          <button
+            onClick={() => setMobileMenuOpen(false)}
+            className="absolute top-6 right-6 flex items-center justify-center p-2 text-primary hover:text-primary-container focus:outline-none"
+            aria-label="Close Menu"
+          >
+            <span className="material-symbols-outlined text-3xl">close</span>
+          </button>
           
           <div className="flex flex-col items-center gap-6">
             {navLinks.map(link => (
               <Link
                 key={link.path}
                 to={link.path}
+                onClick={() => setMobileMenuOpen(false)}
                 className={`font-display-lg text-2xl transition-all duration-300 ${
                   location.pathname === link.path
                     ? 'text-primary font-bold border-b-2 border-primary pb-1'
@@ -214,6 +222,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <Link
             to="/contact"
+            onClick={() => setMobileMenuOpen(false)}
             className="mt-4 bg-gradient-to-r from-[#8B5CF6] to-[#C4B5FD] text-on-primary px-8 py-3 rounded-full font-headline-md shadow-md hover:scale-95 active:scale-90 transition-transform"
           >
             Book a Campus Visit
