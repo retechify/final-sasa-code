@@ -438,19 +438,5 @@ body {
     }
 }
 
-/* ─── MOBILE PERFORMANCE: Reduce animations on small screens ─── */
-@media (max-width: 768px) {
-    .doodle-float-1, .doodle-float-2, .doodle-float-3,
-    .doodle-float-glow, .doodle-float-glow-pink, .doodle-float-glow-green,
-    .doodle-float-glow-orange, .doodle-float-glow-purple, .doodle-float-glow-teal,
-    .doodle-float-glow-blue,
-    .hero-float, .hero-rainbow {
-        animation: none !important;
-        transform: none !important;
-    }
-    .icon-bounce, .icon-spin, .icon-pulse, .icon-swing, .icon-shake, .icon-float {
-        animation: none !important;
-        transform: none !important;
-    }
-}
+
 
