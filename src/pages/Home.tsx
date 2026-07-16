@@ -483,7 +483,7 @@ export default function Home() {
                   <div key={idx} className={`rounded-2xl overflow-hidden transition-all duration-300 border border-white/50 shadow-sm hover:shadow-md ${activeFaq === idx ? `bg-gradient-to-br ${accents[idx]}` : 'bg-white/60'}`}>
                     <button
                       onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
-                      className="w-full px-6 py-5 text-left flex justify-between items-center gap-4 hover:bg-white/30 transition-colors"
+                      className="w-full px-6 py-5 text-left flex justify-between items-center gap-4 hover:bg-white/30 transition-colors cursor-pointer select-none"
                     >
                       <span className="font-headline-md text-base md:text-lg text-primary font-bold flex items-center gap-3">
                         <span className={`w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold ${activeFaq === idx ? 'bg-[#FACC15] text-white' : 'bg-[#FEF9C3] text-[#854D0E]'} transition-colors shadow-sm`}>

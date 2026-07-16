@@ -117,7 +117,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col relative overflow-x-hidden">
       {/* Background Floating Colorful Doodles */}
-      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+      <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
         {/* Doodle 1: Golden Star - Top Left */}
         <span className="material-symbols-outlined absolute text-[#FBBF24] text-8xl md:text-9xl opacity-20 md:opacity-30 doodle-float-glow" style={{ top: '10%', left: '3%' }}>star</span>
         {/* Doodle 2: Sky Blue Cloud - Top Right */}
@@ -340,11 +340,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </button>
 
       {/* Premium Floating Speed Dial Button */}
-      <div className="fixed bottom-6 md:bottom-10 right-6 md:right-10 z-50 flex flex-col-reverse items-end gap-4">
+      <div className="fixed bottom-6 md:bottom-10 right-6 md:right-10 z-50 flex flex-col-reverse items-end gap-4 pointer-events-none">
         {/* Main Floating Trigger Button */}
         <button 
           onClick={() => setFabOpen(!fabOpen)}
-          className={`w-16 h-16 rounded-full shadow-[0_8px_30px_rgba(139,92,246,0.25)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-20 duration-500 relative border-2 border-white/80 bg-white text-primary`}
+          className={`w-16 h-16 rounded-full shadow-[0_8px_30px_rgba(139,92,246,0.25)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-20 duration-500 relative border-2 border-white/80 bg-white text-primary pointer-events-auto`}
           aria-label="Connect with us"
         >
           {/* Subtle pulse ring when closed */}
@@ -360,7 +360,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </button>
 
         {/* Floating Icons */}
-        <div className={`flex flex-col items-end gap-4 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] origin-bottom ${fabOpen ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-12 pointer-events-none'}`}>
+        <div className={`flex flex-col items-end gap-4 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] origin-bottom ${fabOpen ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto' : 'opacity-0 scale-50 translate-y-12 pointer-events-none'}`}>
           {socialLinks.map((social, idx) => (
             <div key={social.name} className="flex items-center gap-4 group" style={{ transitionDelay: `${(socialLinks.length - idx) * 50}ms` }}>
               {/* Tooltip Label */}
