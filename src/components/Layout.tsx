@@ -160,8 +160,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <span className="material-symbols-outlined absolute text-[#FB923C] text-6xl md:text-8xl opacity-20 md:opacity-25 doodle-float-glow-orange" style={{ top: '20%', right: '15%' }}>flare</span>
       </div>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 max-w-7xl flex justify-between items-center px-6 md:px-8 py-3 mx-auto bg-golden-soft/70 backdrop-blur-md rounded-full transition-all duration-300 border border-golden-border/40 ${
-          scrolled ? 'shadow-md mt-2 w-[95%]' : 'shadow-[0_10px_30px_rgba(253,224,71,0.15)] mt-4 md:mt-6 w-[90%]'
+        className={`fixed top-0 left-0 right-0 z-50 max-w-7xl flex justify-between items-center px-6 md:px-8 py-3 mx-auto bg-sky-100/70 backdrop-blur-md rounded-full transition-all duration-300 border border-sky-200/40 ${
+          scrolled ? 'shadow-md mt-2 w-[95%]' : 'shadow-[0_10px_30px_rgba(14,165,233,0.12)] mt-4 md:mt-6 w-[90%]'
         }`}
       >
         <Link to="/" className="flex items-center">
