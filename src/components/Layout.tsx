@@ -165,7 +165,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         }`}
       >
         <Link to="/" className="flex items-center">
-          <img src="/logo/logo.png" alt="SASHA School" className="h-6 md:h-8 w-auto" />
+          <img src="/logo/logo.png" alt="SASHA School" className="h-10 md:h-14 w-auto drop-shadow-sm" />
         </Link>
         <div className="hidden md:flex gap-8 items-center">
           {navLinks.filter(link => link.name !== 'Contact').map(link => (
@@ -203,7 +203,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="fixed inset-0 z-[60] bg-surface/95 backdrop-blur-lg flex flex-col items-center justify-center gap-8 md:hidden animate-fade-in">
           <div className="absolute top-6 left-6">
             <Link to="/" onClick={() => setMobileMenuOpen(false)}>
-              <img src="/logo/logo.png" alt="SASHA School" className="h-8 w-auto" />
+              <img src="/logo/logo.png" alt="SASHA School" className="h-12 w-auto drop-shadow-sm" />
             </Link>
           </div>
           <button
@@ -250,7 +250,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Brand Col */}
           <div className="md:col-span-4 space-y-4">
             <Link to="/" className="inline-block">
-              <img src="/logo/logo.png" alt="SASHA School" className="h-10 w-auto" />
+              <img src="/logo/logo.png" alt="SASHA School" className="h-16 md:h-20 w-auto drop-shadow-sm" />
             </Link>
             <p className="font-body-md text-sm text-tertiary leading-relaxed">
               There is more in LIFE than ACADEMICS, but we are good at that too
